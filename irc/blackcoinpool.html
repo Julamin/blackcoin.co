@@ -1,0 +1,1062 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- This page was created on 9.7.2014 12:58 with a registered version (#3117DE3) of mIRCStats v1.24 by Mikko "Ave" Auvinen -->
+<!-- SLPL parser engine configuration: "mIRC 7.22 compliant" created by Ave -->
+<!-- Do not modify the page source! (Lines: 923819) -->
+
+<!-- mIRCStats WWW: http://www.nic.fi/~mauvinen/mircstats/ -->
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>#blackcoinpool statistics created with mIRCStats v1.24 by Soepkip</title>
+<style type="text/css">
+<!--
+body { text-align: center; font-family: "Verdana", Arial, sans-serif; background-color: #303030; color: #FFFFFF; font-size: 12px }
+h1 { font-family: "Arial"; color: #FFFFFF; font-size: 26px; font-weight: normal; margin: 4px }
+h3 { font-family: "Arial"; color: #FFFFFF; font-size: 20px; font-weight: normal; margin: 3px }
+h4 { font-family: "Arial"; color: #F08000; font-size: 16px; font-weight: normal; margin: 2px }
+h5 { font-family: "Arial"; color: #FFFFFF; font-size: 16px; font-weight: normal; margin: 2px }
+table { border: 0px ; padding: 0px; border-spacing: 1px }
+img { border-width: 0px; }
+.ttxt { border: 0px; padding: 2px }
+.tgr,  .tinv { border: 0px }
+.tadj { border-style: none; border-collapse: collapse }
+.tadj td { border: 0px none; padding: 0px }
+.txt1 { font-family: "Verdana"; color: #FFFFFF; font-size: 12px; text-align: left }
+.txt2 { font-family: "Verdana"; color: #F08000; font-size: 12px; text-align: left }
+
+.t1 { font-family: "Verdana"; color: #F0F0F0; font-size: 12px; text-align: left; font-weight: bold }
+.t2 { font-family: "Verdana"; color: #E0E0E0; font-size: 12px; text-align: left; font-style: normal }
+.t5 { font-family:"Arial"; color:#E0E0E0; font-size:12px; text-align:left; font-weight:normal; font-style: italic }
+.t6 { font-family:"Verdana"; color:#E0E0E0; font-size:10px; text-align:right; font-style: normal; white-space:nowrap; }
+.tal { text-align: left }
+.tar { text-align: right }
+.tac { text-align: center }
+
+.s1 { font-family: "Arial"; color: #F08000; font-size: 9px; vertical-align: bottom; text-align: center  }
+.s2 { font-family: "Arial"; color: #FFFFFF; font-size: 9px; vertical-align: bottom; text-align: center ; border: 0px }
+.s3 { font-family: "Arial"; color: #E0E0E0; font-size: 9px; vertical-align: bottom; text-align: center }
+.s4 { font-family: "Verdana"; color: #E0E0E0; font-size: 10px; text-align: left }
+.s5 { font-family: "Verdana"; color: #E0E0E0; font-size: 10px; text-align: left; border:0px }
+.sq { font-style: italic }
+.win { font-weight: bold }
+.toc { font-family: "Arial"; color: #F08000; font-size: 16px; font-weight: normal; margin: 2px }
+.ra { font-family: "Arial"; color: #F0F0F0; font-size: 32px; text-align: center; border-style: solid; border-width: 4px; border-color: #ffffff #000000 #000000 #ffffff; }
+.rn { font-family:"Verdana"; color:#FFFFFF;font-size:16px; text-align:left;font-weight:bold; font-style:normal; }
+.rb { border-style:solid;border-width:3px 0px; border-color:#484848; color:#FFFFFF}
+.box { Border: 1px solid #F0F0F0 }
+.ac { font-family: "Verdana", Arial, sans-serif; color:#000000; font-size: 10px; vertical-align: middle; text-align: center }
+.am { vertical-align: top; Border: 1px solid #FFFFFF }
+.cr { background-color: #303030; padding: 2px; border-style: outset; border-width: 2px; font-family: Arial, sans-serif; color: #FFFFFF; font-size: 12px; vertical-align: middle; text-align: left }
+.ca { background-color: #505050 }
+.cb { background-color: #484848 }
+.cc { background-color: #404040 }
+.cbg { background-color: #303030 }
+.cn { background-color: #F08000 }
+.cd { background-color: #505050 }
+.ce { background-color: #484848 }
+.cf { background-color: #404040 }
+.cns { background-color: #F39933 }
+.cas { background-color: #737373 }
+.cbs { background-color: #6C6C6C }
+.ccs { background-color: #666666 }
+.cds { background-color: #737373 }
+.ces { background-color: #6C6C6C }
+.cfs { background-color: #666666 }
+.cda { background-color: #4E4E4E }
+.cdb { background-color: #4C4C4C }
+.cdc { background-color: #4A4A4A }
+.cea { background-color: #464646 }
+.ceb { background-color: #444444 }
+.cec { background-color: #424242 }
+.cfa { background-color: #444444 }
+.cfb { background-color: #484848 }
+.cfc { background-color: #4C4C4C }
+.cs0 { background-color: #A0A0A0 }
+.cs1 { background-color: #FF0000 }
+.cs2 { background-color: #FFFF00 }
+.cs3 { background-color: #00FF00 }
+.cs4 { background-color: #00FFFF }
+.cs5 { background-color: #0000FF }
+.cacl { background-color: #FF0000 }
+.cacm { background-color: #FFFF00 }
+.cach { background-color: #00FF00 }
+.cs1a { background-color: #FF7F00 }
+.cs2a { background-color: #7FFF00 }
+.cs3a { background-color: #00FF7F }
+.cs4a { background-color: #007FFF }
+A { color: #FFFFFF }
+-->
+</style>
+
+</head>
+<body><center>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="5" face="Arial">#blackcoinpool statistics generated by <a href="http://www.blackcoin.co">Soepkip</a></font>
+<br><font color="#FFFFFF" size="2" face="Arial">Soepkip requested this update
+</center></td></tr></table></center></td></tr></table><br>
+<span class=txt2>Statistics generated from Thursday 20.3.2014 to Wednesday 9.7.2014<br>
+4543 people visited #blackcoinpool during this 112-day reporting period<br>
+<br></span>
+<!-- mircstatsheader.txt: Add here your own header html code! -->
+
+ 
+1. Main page
+ | <a href="blackcoinpool_page_2.html" target="_self">2. Detailed info</a>
+ | <a href="blackcoinpool_page_3.html" target="_self">3. Personal Stats</a>
+<br><br>
+<a name="dail"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">Daily chat activity</font>
+</center></td></tr></table></center></td></tr></table><br>
+<Table cellspacing=1 cellpadding=2><tr class=s1 valign=bottom>
+<td class=tgr>3726<br><img src="pipe4v.png" width="19" height="26"><br><img src="pipe3v.png" width="19" height="6"><br><img src="pipe2v.png" width="19" height="19"><br><img src="pipe1v.png" width="19" height="15"></td>
+<td class=tgr>5215<br><img src="pipe4v.png" width="19" height="36"><br><img src="pipe3v.png" width="19" height="16"><br><img src="pipe2v.png" width="19" height="15"><br><img src="pipe1v.png" width="19" height="25"></td>
+<td class=tgr>3210<br><img src="pipe4v.png" width="19" height="25"><br><img src="pipe3v.png" width="19" height="5"><br><img src="pipe2v.png" width="19" height="10"><br><img src="pipe1v.png" width="19" height="17"></td>
+<td class=tgr>2375<br><img src="pipe4v.png" width="19" height="12"><br><img src="pipe3v.png" width="19" height="16"><br><img src="pipe2v.png" width="19" height="8"><br><img src="pipe1v.png" width="19" height="6"></td>
+<td class=tgr>2382<br><img src="pipe4v.png" width="19" height="10"><br><img src="pipe3v.png" width="19" height="13"><br><img src="pipe2v.png" width="19" height="7"><br><img src="pipe1v.png" width="19" height="12"></td>
+<td class=tgr>1910<br><img src="pipe4v.png" width="19" height="8"><br><img src="pipe3v.png" width="19" height="9"><br><img src="pipe2v.png" width="19" height="6"><br><img src="pipe1v.png" width="19" height="11"></td>
+<td class=tgr>1693<br><img src="pipe4v.png" width="19" height="15"><br><img src="pipe3v.png" width="19" height="7"><br><img src="pipe2v.png" width="19" height="4"><br><img src="pipe1v.png" width="19" height="4"></td>
+<td class=tgr>2931<br><img src="pipe4v.png" width="19" height="23"><br><img src="pipe3v.png" width="19" height="5"><br><img src="pipe2v.png" width="19" height="7"><br><img src="pipe1v.png" width="19" height="18"></td>
+<td class=tgr>2805<br><img src="pipe4v.png" width="19" height="23"><br><img src="pipe3v.png" width="19" height="7"><br><img src="pipe2v.png" width="19" height="5"><br><img src="pipe1v.png" width="19" height="15"></td>
+<td class=tgr>1815<br><img src="pipe4v.png" width="19" height="16"><br><img src="pipe3v.png" width="19" height="16"><br></td>
+<td class=tgr>2887<br><img src="pipe4v.png" width="19" height="17"><br><img src="pipe3v.png" width="19" height="21"><br><img src="pipe2v.png" width="19" height="6"><br><img src="pipe1v.png" width="19" height="8"></td>
+<td class=tgr>2297<br><img src="pipe4v.png" width="19" height="15"><br><img src="pipe3v.png" width="19" height="7"><br><img src="pipe2v.png" width="19" height="10"><br><img src="pipe1v.png" width="19" height="9"></td>
+<td class=tgr>2162<br><img src="pipe4v.png" width="19" height="13"><br><img src="pipe3v.png" width="19" height="5"><br><img src="pipe2v.png" width="19" height="11"><br><img src="pipe1v.png" width="19" height="9"></td>
+<td class=tgr>3195<br><img src="pipe4v.png" width="19" height="16"><br><img src="pipe3v.png" width="19" height="18"><br><img src="pipe2v.png" width="19" height="15"><br><img src="pipe1v.png" width="19" height="7"></td>
+<td class=tgr>2275<br><img src="pipe4v.png" width="19" height="14"><br><img src="pipe3v.png" width="19" height="12"><br><img src="pipe2v.png" width="19" height="5"><br><img src="pipe1v.png" width="19" height="9"></td>
+<td class=tgr>2846<br><img src="pipe4v.png" width="19" height="19"><br><img src="pipe3v.png" width="19" height="13"><br><img src="pipe2v.png" width="19" height="4"><br><img src="pipe1v.png" width="19" height="14"></td>
+<td class=tgr>3112<br><img src="pipe4v.png" width="19" height="10"><br><img src="pipe3v.png" width="19" height="22"><br><img src="pipe2v.png" width="19" height="3"><br><img src="pipe1v.png" width="19" height="21"></td>
+<td class=tgr>1799<br><img src="pipe4v.png" width="19" height="13"><br><img src="pipe3v.png" width="19" height="7"><br><img src="pipe2v.png" width="19" height="2"><br><img src="pipe1v.png" width="19" height="10"></td>
+<td class=tgr>2323<br><img src="pipe4v.png" width="19" height="16"><br><img src="pipe3v.png" width="19" height="16"><br><img src="pipe2v.png" width="19" height="1"><br><img src="pipe1v.png" width="19" height="7"></td>
+<td class=tgr>1908<br><img src="pipe4v.png" width="19" height="14"><br><img src="pipe3v.png" width="19" height="4"><br><img src="pipe2v.png" width="19" height="2"><br><img src="pipe1v.png" width="19" height="13"></td>
+<td class=tgr>3472<br><img src="pipe4v.png" width="19" height="24"><br><img src="pipe3v.png" width="19" height="25"><br><img src="pipe2v.png" width="19" height="9"><br><img src="pipe1v.png" width="19" height="4"></td>
+<td class=tgr>5648<br><img src="pipe4v.png" width="19" height="38"><br><img src="pipe3v.png" width="19" height="21"><br><img src="pipe2v.png" width="19" height="18"><br><img src="pipe1v.png" width="19" height="24"></td>
+<td class=tgr>4762<br><img src="pipe4v.png" width="19" height="25"><br><img src="pipe3v.png" width="19" height="19"><br><img src="pipe2v.png" width="19" height="10"><br><img src="pipe1v.png" width="19" height="30"></td>
+<td class=tgr>3996<br><img src="pipe4v.png" width="19" height="26"><br><img src="pipe3v.png" width="19" height="13"><br><img src="pipe2v.png" width="19" height="9"><br><img src="pipe1v.png" width="19" height="23"></td>
+<td class=tgr>3695<br><img src="pipe4v.png" width="19" height="29"><br><img src="pipe3v.png" width="19" height="19"><br><img src="pipe2v.png" width="19" height="3"><br><img src="pipe1v.png" width="19" height="15"></td>
+<td class=tgr>2079<br><img src="pipe4v.png" width="19" height="13"><br><img src="pipe3v.png" width="19" height="9"><br><img src="pipe2v.png" width="19" height="6"><br><img src="pipe1v.png" width="19" height="9"></td>
+<td class=tgr>1861<br><img src="pipe4v.png" width="19" height="11"><br><img src="pipe3v.png" width="19" height="12"><br><img src="pipe2v.png" width="19" height="2"><br><img src="pipe1v.png" width="19" height="8"></td>
+<td class=tgr>2743<br><img src="pipe4v.png" width="19" height="16"><br><img src="pipe3v.png" width="19" height="18"><br><img src="pipe2v.png" width="19" height="7"><br><img src="pipe1v.png" width="19" height="7"></td>
+<td class=tgr>3190<br><img src="pipe4v.png" width="19" height="22"><br><img src="pipe3v.png" width="19" height="11"><br><img src="pipe2v.png" width="19" height="3"><br><img src="pipe1v.png" width="19" height="21"></td>
+<td class=tgr>893<br><img src="pipe2v.png" width="19" height="3"><br><img src="pipe1v.png" width="19" height="13"></td>
+</tr><tr class=s3>
+<td class=cf>10.6.</td>
+<td class=cf>11.6.</td>
+<td class=cf>12.6.</td>
+<td class=cf>13.6.</td>
+<td class=cd>14.6.</td>
+<td class=cd>15.6.</td>
+<td class=cf>16.6.</td>
+<td class=cf>17.6.</td>
+<td class=cf>18.6.</td>
+<td class=cf>19.6.</td>
+<td class=cf>20.6.</td>
+<td class=cd>21.6.</td>
+<td class=cd>22.6.</td>
+<td class=cf>23.6.</td>
+<td class=cf>24.6.</td>
+<td class=cf>25.6.</td>
+<td class=cf>26.6.</td>
+<td class=cf>27.6.</td>
+<td class=cd>28.6.</td>
+<td class=cd>29.6.</td>
+<td class=cf>30.6.</td>
+<td class=cf>1.7.</td>
+<td class=cf>2.7.</td>
+<td class=cf>3.7.</td>
+<td class=cf>4.7.</td>
+<td class=cd>5.7.</td>
+<td class=cd>6.7.</td>
+<td class=cf>7.7.</td>
+<td class=cf>8.7.</td>
+<td class=cf>9.7.</td>
+</tr></table><br>
+<Table border=0 class=txt1><tr>
+<td class=tinv><img src="pipe1.png" height="15" width="30" align=top title="0-6"> Hours 0-6</td><td class=tinv width=20></td>
+<td class=tinv><img src="pipe2.png" height="15" width="30" align=top title="6-12"> Hours 6-12</td><td class=tinv width=20></td>
+<td class=tinv><img src="pipe3.png" height="15" width="30" align=top title="12-18"> Hours 12-18</td><td class=tinv width=20></td>
+<td class=tinv><img src="pipe4.png" height="15" width="30" align=top title="18-24"> Hours 18-24</td>
+
+</tr></table><br>
+<a name="hourl"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">Channel load by hours</font>
+</center></td></tr></table></center></td></tr></table><br>
+<Table cellspacing=1 cellpadding=0><tr class=s1 valign=bottom>
+<td class=tgr><img src="pipe1.png" width="3" height="119"></td><td class=tgr><img src="pipe1.png" width="3" height="119"></td><td class=tgr><img src="pipe1.png" width="3" height="118"></td><td class=tgr><img src="pipe1.png" width="3" height="117"></td><td class=tgr><img src="pipe1.png" width="3" height="116"></td><td class=tgr><img src="pipe1.png" width="3" height="114"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="112"></td><td class=tgr><img src="pipe1.png" width="3" height="111"></td><td class=tgr><img src="pipe1.png" width="3" height="109"></td><td class=tgr><img src="pipe1.png" width="3" height="107"></td><td class=tgr><img src="pipe1.png" width="3" height="106"></td><td class=tgr><img src="pipe1.png" width="3" height="105"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="104"></td><td class=tgr><img src="pipe1.png" width="3" height="104"></td><td class=tgr><img src="pipe1.png" width="3" height="104"></td><td class=tgr><img src="pipe1.png" width="3" height="104"></td><td class=tgr><img src="pipe1.png" width="3" height="103"></td><td class=tgr><img src="pipe1.png" width="3" height="103"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="102"></td><td class=tgr><img src="pipe1.png" width="3" height="101"></td><td class=tgr><img src="pipe1.png" width="3" height="99"></td><td class=tgr><img src="pipe1.png" width="3" height="97"></td><td class=tgr><img src="pipe1.png" width="3" height="95"></td><td class=tgr><img src="pipe1.png" width="3" height="95"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="95"></td><td class=tgr><img src="pipe1.png" width="3" height="95"></td><td class=tgr><img src="pipe1.png" width="3" height="96"></td><td class=tgr><img src="pipe1.png" width="3" height="97"></td><td class=tgr><img src="pipe1.png" width="3" height="97"></td><td class=tgr><img src="pipe1.png" width="3" height="97"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="96"></td><td class=tgr><img src="pipe1.png" width="3" height="96"></td><td class=tgr><img src="pipe1.png" width="3" height="95"></td><td class=tgr><img src="pipe1.png" width="3" height="95"></td><td class=tgr><img src="pipe1.png" width="3" height="95"></td><td class=tgr><img src="pipe1.png" width="3" height="94"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="93"></td><td class=tgr><img src="pipe2.png" width="3" height="92"></td><td class=tgr><img src="pipe2.png" width="3" height="91"></td><td class=tgr><img src="pipe2.png" width="3" height="89"></td><td class=tgr><img src="pipe2.png" width="3" height="87"></td><td class=tgr><img src="pipe2.png" width="3" height="86"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="85"></td><td class=tgr><img src="pipe2.png" width="3" height="84"></td><td class=tgr><img src="pipe2.png" width="3" height="83"></td><td class=tgr><img src="pipe2.png" width="3" height="82"></td><td class=tgr><img src="pipe2.png" width="3" height="82"></td><td class=tgr><img src="pipe2.png" width="3" height="81"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="80"></td><td class=tgr><img src="pipe2.png" width="3" height="80"></td><td class=tgr><img src="pipe2.png" width="3" height="80"></td><td class=tgr><img src="pipe2.png" width="3" height="81"></td><td class=tgr><img src="pipe2.png" width="3" height="81"></td><td class=tgr><img src="pipe2.png" width="3" height="82"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="83"></td><td class=tgr><img src="pipe2.png" width="3" height="83"></td><td class=tgr><img src="pipe2.png" width="3" height="84"></td><td class=tgr><img src="pipe2.png" width="3" height="84"></td><td class=tgr><img src="pipe2.png" width="3" height="84"></td><td class=tgr><img src="pipe2.png" width="3" height="84"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="84"></td><td class=tgr><img src="pipe2.png" width="3" height="85"></td><td class=tgr><img src="pipe2.png" width="3" height="85"></td><td class=tgr><img src="pipe2.png" width="3" height="86"></td><td class=tgr><img src="pipe2.png" width="3" height="88"></td><td class=tgr><img src="pipe2.png" width="3" height="89"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="90"></td><td class=tgr><img src="pipe2.png" width="3" height="91"></td><td class=tgr><img src="pipe2.png" width="3" height="92"></td><td class=tgr><img src="pipe2.png" width="3" height="92"></td><td class=tgr><img src="pipe2.png" width="3" height="93"></td><td class=tgr><img src="pipe2.png" width="3" height="94"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="95"></td><td class=tgr><img src="pipe3.png" width="3" height="96"></td><td class=tgr><img src="pipe3.png" width="3" height="97"></td><td class=tgr><img src="pipe3.png" width="3" height="98"></td><td class=tgr><img src="pipe3.png" width="3" height="98"></td><td class=tgr><img src="pipe3.png" width="3" height="98"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="97"></td><td class=tgr><img src="pipe3.png" width="3" height="96"></td><td class=tgr><img src="pipe3.png" width="3" height="96"></td><td class=tgr><img src="pipe3.png" width="3" height="95"></td><td class=tgr><img src="pipe3.png" width="3" height="96"></td><td class=tgr><img src="pipe3.png" width="3" height="97"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="98"></td><td class=tgr><img src="pipe3.png" width="3" height="100"></td><td class=tgr><img src="pipe3.png" width="3" height="101"></td><td class=tgr><img src="pipe3.png" width="3" height="103"></td><td class=tgr><img src="pipe3.png" width="3" height="105"></td><td class=tgr><img src="pipe3.png" width="3" height="107"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="108"></td><td class=tgr><img src="pipe3.png" width="3" height="110"></td><td class=tgr><img src="pipe3.png" width="3" height="112"></td><td class=tgr><img src="pipe3.png" width="3" height="113"></td><td class=tgr><img src="pipe3.png" width="3" height="115"></td><td class=tgr><img src="pipe3.png" width="3" height="116"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="116"></td><td class=tgr><img src="pipe3.png" width="3" height="118"></td><td class=tgr><img src="pipe3.png" width="3" height="118"></td><td class=tgr><img src="pipe3.png" width="3" height="119"></td><td class=tgr><img src="pipe3.png" width="3" height="118"></td><td class=tgr><img src="pipe3.png" width="3" height="118"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="117"></td><td class=tgr><img src="pipe3.png" width="3" height="116"></td><td class=tgr><img src="pipe3.png" width="3" height="115"></td><td class=tgr><img src="pipe3.png" width="3" height="114"></td><td class=tgr><img src="pipe3.png" width="3" height="114"></td><td class=tgr><img src="pipe3.png" width="3" height="113"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="113"></td><td class=tgr><img src="pipe4.png" width="3" height="114"></td><td class=tgr><img src="pipe4.png" width="3" height="114"></td><td class=tgr><img src="pipe4.png" width="3" height="114"></td><td class=tgr><img src="pipe4.png" width="3" height="114"></td><td class=tgr><img src="pipe4.png" width="3" height="114"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="114"></td><td class=tgr><img src="pipe4.png" width="3" height="113"></td><td class=tgr><img src="pipe4.png" width="3" height="113"></td><td class=tgr><img src="pipe4.png" width="3" height="112"></td><td class=tgr><img src="pipe4.png" width="3" height="112"></td><td class=tgr><img src="pipe4.png" width="3" height="112"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="113"></td><td class=tgr><img src="pipe4.png" width="3" height="113"></td><td class=tgr><img src="pipe4.png" width="3" height="114"></td><td class=tgr><img src="pipe4.png" width="3" height="114"></td><td class=tgr><img src="pipe4.png" width="3" height="115"></td><td class=tgr><img src="pipe4.png" width="3" height="115"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="116"></td><td class=tgr><img src="pipe4.png" width="3" height="116"></td><td class=tgr><img src="pipe4.png" width="3" height="117"></td><td class=tgr><img src="pipe4.png" width="3" height="117"></td><td class=tgr><img src="pipe4.png" width="3" height="118"></td><td class=tgr><img src="pipe4.png" width="3" height="118"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="118"></td><td class=tgr><img src="pipe4.png" width="3" height="118"></td><td class=tgr><img src="pipe4.png" width="3" height="119"></td><td class=tgr><img src="pipe4.png" width="3" height="118"></td><td class=tgr><img src="pipe4.png" width="3" height="118"></td><td class=tgr><img src="pipe4.png" width="3" height="118"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="119"></td><td class=tgr><img src="pipe4.png" width="3" height="119"></td><td class=tgr><img src="pipe4.png" width="3" height="119"></td><td class=tgr><img src="pipe4.png" width="3" height="120"></td><td class=tgr><img src="pipe4.png" width="3" height="120"></td><td class=tgr><img src="pipe4.png" width="3" height="120"></td>
+</tr><tr class=s1>
+<td colspan=6>4,7%</td>
+<td colspan=6>4,4%</td>
+<td colspan=6>4,2%</td>
+<td colspan=6>4,0%</td>
+<td colspan=6>3,9%</td>
+<td colspan=6>3,9%</td>
+<td colspan=6>3,6%</td>
+<td colspan=6>3,3%</td>
+<td colspan=6>3,3%</td>
+<td colspan=6>3,4%</td>
+<td colspan=6>3,5%</td>
+<td colspan=6>3,7%</td>
+<td colspan=6>3,9%</td>
+<td colspan=6>3,9%</td>
+<td colspan=6>4,1%</td>
+<td colspan=6>4,5%</td>
+<td colspan=6>4,8%</td>
+<td colspan=6>4,7%</td>
+<td colspan=6>4,6%</td>
+<td colspan=6>4,6%</td>
+<td colspan=6>4,6%</td>
+<td colspan=6>4,7%</td>
+<td colspan=6>4,8%</td>
+<td colspan=6><span class=s2>4,8%</span></td>
+</tr><tr class=s3>
+<td colspan=6  class=cd>0</td>
+<td colspan=6  class=cd>1</td>
+<td colspan=6  class=cd>2</td>
+<td colspan=6  class=cd>3</td>
+<td colspan=6  class=cd>4</td>
+<td colspan=6  class=cd>5</td>
+<td colspan=6  class=cd>6</td>
+<td colspan=6  class=cd>7</td>
+<td colspan=6  class=cd>8</td>
+<td colspan=6  class=cd>9</td>
+<td colspan=6  class=cd>10</td>
+<td colspan=6  class=cd>11</td>
+<td colspan=6  class=cd>12</td>
+<td colspan=6  class=cd>13</td>
+<td colspan=6  class=cd>14</td>
+<td colspan=6  class=cd>15</td>
+<td colspan=6  class=cd>16</td>
+<td colspan=6  class=cd>17</td>
+<td colspan=6  class=cd>18</td>
+<td colspan=6  class=cd>19</td>
+<td colspan=6  class=cd>20</td>
+<td colspan=6  class=cd>21</td>
+<td colspan=6  class=cd>22</td>
+<td colspan=6  class=ca>23</td>
+</tr></table><br>
+<a name="user"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">50 most talkative nicks</font>
+</center></td></tr></table></center></td></tr></table><br>
+<Table border=0 cellspacing=1 cellpadding=2 class=t2>
+<tr class=t1><td class=tinv>&nbsp;</td><td class=ca> Nick </td>
+<td class=cb> Lines Written </td>
+<td colspan=2 class=cc> Random Quote </td></tr>
+<tr><td class="cns tar">1</td>
+<td class="cds win">@africanos</td>
+<td class="ces win"><img src="pipe1.png" height="15" width="20" title="7360"><img src="pipe2.png" height="15" width="31" title="10988"><img src="pipe3.png" height="15" width="28" title="10292"><img src="pipe4.png" height="15" width="21" title="7562"> 36202</td>
+<td class="cfs t6"> 20.3. 22:53 </td>
+<td class="cfs t5"> "Whales cant do shit with less coins out to play with" </td>
+</tr>
+<tr><td class="cn tar">2</td>
+<td class=cd>@Soepkip</td>
+<td class=ce><img src="pipe1.png" height="15" width="28" title="10240"><img src="pipe2.png" height="15" width="11" title="3730"><img src="pipe3.png" height="15" width="22" title="7995"><img src="pipe4.png" height="15" width="23" title="8615"> 30580</td>
+<td class="cf t6"> 28.3. 4:01 </td>
+<td class="cf t5"> "Why not (\/) (',,,,') (\/)!" </td>
+</tr>
+<tr><td class="cns tar">3</td>
+<td class=cds>@maarx</td>
+<td class=ces><img src="pipe1.png" height="15" width="19" title="6933"><img src="pipe2.png" height="15" width="4" title="1412"><img src="pipe3.png" height="15" width="20" title="7156"><img src="pipe4.png" height="15" width="22" title="7959"> 23460</td>
+<td class="cfs t6"> 17.6. 2:01 </td>
+<td class="cfs t5"> "I downloaded like 100 dependencies :P" </td>
+</tr>
+<tr><td class="cn tar">4</td>
+<td class=cd>+goblynn</td>
+<td class=ce><img src="pipe1.png" height="15" width="22" title="8092"><img src="pipe2.png" height="15" width="11" title="3759"><img src="pipe3.png" height="15" width="6" title="2433"><img src="pipe4.png" height="15" width="14" title="5012"> 19296</td>
+<td class="cf t6"> 10.4. 21:57 </td>
+<td class="cf t5"> "we should get a bunch of the crappiest coins we can..and send him<br> some" </td>
+</tr>
+<tr><td class="cns tar">5</td>
+<td class=cds>@w000tBot</td>
+<td class=ces><img src="pipe1.png" height="15" width="13" title="4635"><img src="pipe2.png" height="15" width="7" title="2521"><img src="pipe3.png" height="15" width="16" title="5843"><img src="pipe4.png" height="15" width="16" title="5709"> 18708</td>
+<td class="cfs t6"> 21.4. 14:02 </td>
+<td class="cfs t5"> "cmon srsly? :D my bot went down and oyu used !donate haha :D" </td>
+</tr>
+<tr><td class="cn tar">6</td>
+<td class=cd>@DarkFox</td>
+<td class=ce><img src="pipe1.png" height="15" width="7" title="2530"><img src="pipe2.png" height="15" width="15" title="5278"><img src="pipe3.png" height="15" width="16" title="5887"> 13760</td>
+<td class="cf t6"> 10.5. 15:13 </td>
+<td class="cf t5"> "vect: You mean profiting from daytrading with bc/btc?" </td>
+</tr>
+<tr><td class="cns tar">7</td>
+<td class=cds>@Gritt-N-Auld</td>
+<td class=ces><img src="pipe1.png" height="15" width="3" title="1264"><img src="pipe2.png" height="15" width="9" title="3059"><img src="pipe3.png" height="15" width="10" title="3617"><img src="pipe4.png" height="15" width="9" title="3423"> 11363</td>
+<td class="cfs t6"> 30.6. 9:38 </td>
+<td class="cfs t5"> "So if they do not pay you, they still lose $200." </td>
+</tr>
+<tr><td class="cn tar">8</td>
+<td class=cd>+Sevith</td>
+<td class=ce><img src="pipe1.png" height="15" width="8" title="2723"><img src="pipe2.png" height="15" width="1" title="479"><img src="pipe3.png" height="15" width="7" title="2674"><img src="pipe4.png" height="15" width="14" title="4870"> 10746</td>
+<td class="cf t6"> 22.4. 6:28 </td>
+<td class="cf t5"> "10% interest daily yellowcoin ?" </td>
+</tr>
+<tr><td class="cns tar">9</td>
+<td class=cds>+sinetek</td>
+<td class=ces><img src="pipe1.png" height="15" width="11" title="3907"><img src="pipe2.png" height="15" width="8" title="2824"><img src="pipe3.png" height="15" width="2" title="909"><img src="pipe4.png" height="15" width="8" title="2704"> 10344</td>
+<td class="cfs t6"> 31.5. 3:18 </td>
+<td class="cfs t5"> "everybody on the theblackdoge now" </td>
+</tr>
+<tr><td class="cn tar">10</td>
+<td class=cd>surestrike</td>
+<td class=ce><img src="pipe2.png" height="15" width="10" title="3451"><img src="pipe3.png" height="15" width="12" title="4462"><img src="pipe4.png" height="15" width="4" title="1558"> 9506</td>
+<td class="cf t6"> 22.5. 13:37 </td>
+<td class="cf t5"> "100% ignore all of it." </td>
+</tr>
+<tr><td class="cns tar">11</td>
+<td class=cds>+KBomba</td>
+<td class=ces><img src="pipe1.png" height="15" width="4" title="1481"><img src="pipe2.png" height="15" width="2" title="717"><img src="pipe3.png" height="15" width="8" title="2985"><img src="pipe4.png" height="15" width="11" title="3761"> 8944</td>
+<td class="cfs t6"> 28.3. 20:44 </td>
+<td class="cfs t5"> "All the profits I got from my first month of mining ;)" </td>
+</tr>
+<tr><td class="cn tar">12</td>
+<td class=cd>@TheDogeOfWallSt</td>
+<td class=ce><img src="pipe1.png" height="15" width="7" title="2620"><img src="pipe2.png" height="15" width="9" title="3288"><img src="pipe3.png" height="15" width="4" title="1226"><img src="pipe4.png" height="15" width="5" title="1738"> 8872</td>
+<td class="cf t6"> 11.4. 14:23 </td>
+<td class="cf t5"> "I was at the NY Crypt con" </td>
+</tr>
+<tr><td class="cns tar">13</td>
+<td class=cds>Wurlitzer</td>
+<td class=ces><img src="pipe1.png" height="15" width="5" title="1881"><img src="pipe2.png" height="15" width="4" title="1321"><img src="pipe3.png" height="15" width="8" title="2929"><img src="pipe4.png" height="15" width="7" title="2629"> 8760</td>
+<td class="cfs t6"> 20.5. 17:05 </td>
+<td class="cfs t5"> "like a screenshot from the clip?" </td>
+</tr>
+<tr><td class="cn tar">14</td>
+<td class=cd>@jcstone</td>
+<td class=ce><img src="pipe1.png" height="15" width="10" title="3668"><img src="pipe2.png" height="15" width="4" title="1576"><img src="pipe3.png" height="15" width="3" title="1058"><img src="pipe4.png" height="15" width="5" title="1683"> 7985</td>
+<td class="cf t6"> 25.3. 5:06 </td>
+<td class="cf t5"> "but dumps allow you to buy more :D" </td>
+</tr>
+<tr><td class="cns tar">15</td>
+<td class=cds>+Amperage</td>
+<td class=ces><img src="pipe1.png" height="15" width="7" title="2437"><img src="pipe2.png" height="15" width="9" title="3463"><img src="pipe3.png" height="15" width="3" title="834"><img src="pipe4.png" height="15" width="3" title="1233"> 7967</td>
+<td class="cfs t6"> 20.3. 10:33 </td>
+<td class="cfs t5"> "set some rediculous sell" </td>
+</tr>
+<tr><td class="cn tar">16</td>
+<td class=cd>@BiTMiND</td>
+<td class=ce><img src="pipe1.png" height="15" width="7" title="2543"><img src="pipe2.png" height="15" width="2" title="870"><img src="pipe3.png" height="15" width="6" title="1959"><img src="pipe4.png" height="15" width="7" title="2552"> 7924</td>
+<td class="cf t6"> 4.5. 23:56 </td>
+<td class="cf t5"> "god.. small dogs freak me out.." </td>
+</tr>
+<tr><td class="cns tar">17</td>
+<td class=cds>@chnchapters</td>
+<td class=ces><img src="pipe1.png" height="15" width="8" title="3056"><img src="pipe2.png" height="15" width="11" title="3721"><img src="pipe4.png" height="15" width="1" title="518"> 7432</td>
+<td class="cfs t6"> 5.6. 4:50 </td>
+<td class="cfs t5"> "i can help u guys lol, im the qquestion guy" </td>
+</tr>
+<tr><td class="cn tar">18</td>
+<td class=cd>@dibdab</td>
+<td class=ce><img src="pipe1.png" height="15" width="1" title="337"><img src="pipe2.png" height="15" width="7" title="2386"><img src="pipe3.png" height="15" width="5" title="1924"><img src="pipe4.png" height="15" width="7" title="2761"> 7408</td>
+<td class="cf t6"> 25.6. 23:27 </td>
+<td class="cf t5"> "wow they must have gotten a lot of interest last days" </td>
+</tr>
+<tr><td class="cns tar">19</td>
+<td class=cds>+syllabear</td>
+<td class=ces><img src="pipe1.png" height="15" width="4" title="1617"><img src="pipe2.png" height="15" width="6" title="2074"><img src="pipe3.png" height="15" width="7" title="2539"><img src="pipe4.png" height="15" width="1" title="353"> 6583</td>
+<td class="cfs t6"> 23.6. 11:52 </td>
+<td class="cfs t5"> "Gritt-N-Auld: you can try 莱特币" </td>
+</tr>
+<tr><td class="cn tar">20</td>
+<td class=cd>+vect</td>
+<td class=ce><img src="pipe1.png" height="15" width="1" title="289"><img src="pipe2.png" height="15" width="1" title="504"><img src="pipe3.png" height="15" width="7" title="2522"><img src="pipe4.png" height="15" width="9" title="3211"> 6526</td>
+<td class="cf t6"> 5.5. 20:10 </td>
+<td class="cf t5"> "whats the adress for x11???" </td>
+</tr>
+<tr><td class="cns tar">21</td>
+<td class=cds>+DumpyDump</td>
+<td class=ces><img src="pipe1.png" height="15" width="3" title="1003"><img src="pipe2.png" height="15" width="4" title="1517"><img src="pipe3.png" height="15" width="6" title="2032"><img src="pipe4.png" height="15" width="4" title="1672"> 6224</td>
+<td class="cfs t6"> 13.5. 19:22 </td>
+<td class="cfs t5"> "BCDolphin permission denied" </td>
+</tr>
+<tr><td class="cn tar">22</td>
+<td class=cd>@Vizique</td>
+<td class=ce><img src="pipe1.png" height="15" width="3" title="1001"><img src="pipe2.png" height="15" width="4" title="1364"><img src="pipe3.png" height="15" width="5" title="1988"><img src="pipe4.png" height="15" width="4" title="1498"> 5851</td>
+<td class="cf t6"> 15.4. 11:49 </td>
+<td class="cf t5"> "they wanted lower price, made it happen" </td>
+</tr>
+<tr><td class="cns tar">23</td>
+<td class=cds>zooka</td>
+<td class=ces><img src="pipe1.png" height="15" width="5" title="1923"><img src="pipe2.png" height="15" width="2" title="505"><img src="pipe3.png" height="15" width="1" title="648"><img src="pipe4.png" height="15" width="8" title="2636"> 5712</td>
+<td class="cfs t6"> 6.5. 21:22 </td>
+<td class="cfs t5"> "&lt;Raindeer&gt; there are windows binaries, look for the .zip file <a href="https://github.com/rat4/blackcoin/releases" class=t5 target="_blank">https://g...<br>...ithub.com/rat4/blackcoin/releases</a>" </td>
+</tr>
+<tr><td class="cn tar">24</td>
+<td class=cd>+balfouri</td>
+<td class=ce><img src="pipe2.png" height="15" width="8" title="2936"><img src="pipe3.png" height="15" width="6" title="2292"><img src="pipe4.png" height="15" width="2" title="385"> 5619</td>
+<td class="cf t6"> 26.4. 10:44 </td>
+<td class="cf t5"> "we need bc energy drink :D" </td>
+</tr>
+<tr><td class="cns tar">25</td>
+<td class=cds>@Wizfarm</td>
+<td class=ces><img src="pipe1.png" height="15" width="6" title="2069"><img src="pipe2.png" height="15" width="1" title="318"><img src="pipe3.png" height="15" width="3" title="1294"><img src="pipe4.png" height="15" width="5" title="1847"> 5528</td>
+<td class="cfs t6"> 29.3. 20:27 </td>
+<td class="cfs t5"> "wao Mintpal is th eplace for BC" </td>
+</tr>
+<tr><td class="cn tar">26</td>
+<td class=cd>justtryme90</td>
+<td class=ce><img src="pipe1.png" height="15" width="6" title="2208"><img src="pipe2.png" height="15" width="1" title="349"><img src="pipe3.png" height="15" width="2" title="872"><img src="pipe4.png" height="15" width="6" title="2007"> 5436</td>
+<td class="cf t6"> 3.4. 17:48 </td>
+<td class="cf t5"> "I will look forward to its implementation. Color me excited." </td>
+</tr>
+<tr><td class="cns tar">27</td>
+<td class=cds>cryptol</td>
+<td class=ces><img src="pipe1.png" height="15" width="3" title="1171"><img src="pipe2.png" height="15" width="3" title="1128"><img src="pipe3.png" height="15" width="3" title="1109"><img src="pipe4.png" height="15" width="5" title="1536"> 4944</td>
+<td class="cfs t6"> 11.5. 18:16 </td>
+<td class="cfs t5"> "this past week has been unreal with new speculative coins and pumps<br>, it's really crazy - i can barely keep up" </td>
+</tr>
+<tr><td class="cn tar">28</td>
+<td class=cd>+jshriver</td>
+<td class=ce><img src="pipe1.png" height="15" width="7" title="2471"><img src="pipe2.png" height="15" width="3" title="1029"><img src="pipe4.png" height="15" width="3" title="1105"> 4870</td>
+<td class="cf t6"> 26.3. 7:29 </td>
+<td class="cf t5"> "TheDogeOfWallSt, really hope you guys get early access to the trading<br> API at mintpal" </td>
+</tr>
+<tr><td class="cns tar">29</td>
+<td class=cds>purg</td>
+<td class=ces><img src="pipe1.png" height="15" width="1" title="282"><img src="pipe2.png" height="15" width="2" title="968"><img src="pipe3.png" height="15" width="5" title="1499"><img src="pipe4.png" height="15" width="5" title="2038"> 4787</td>
+<td class="cfs t6"> 4.5. 18:40 </td>
+<td class="cfs t5"> "maybe someone have some answer" </td>
+</tr>
+<tr><td class="cn tar">30</td>
+<td class=cd>blackie</td>
+<td class=ce><img src="pipe1.png" height="15" width="4" title="1379"><img src="pipe2.png" height="15" width="2" title="968"><img src="pipe3.png" height="15" width="4" title="1149"><img src="pipe4.png" height="15" width="3" title="1268"> 4764</td>
+<td class="cf t6"> 20.5. 19:54 </td>
+<td class="cf t5"> "Will my dream come true Wex?." </td>
+</tr>
+<tr><td class="cns tar">31</td>
+<td class=cds>FeeRaHuri</td>
+<td class=ces><img src="pipe1.png" height="15" width="5" title="1854"><img src="pipe2.png" height="15" width="1" title="401"><img src="pipe3.png" height="15" width="2" title="756"><img src="pipe4.png" height="15" width="4" title="1401"> 4412</td>
+<td class="cfs t6"> 14.4. 22:03 </td>
+<td class="cfs t5"> "recovery in progress" </td>
+</tr>
+<tr><td class="cn tar">32</td>
+<td class=cd>+King Schultz</td>
+<td class=ce><img src="pipe1.png" height="15" width="3" title="1057"><img src="pipe2.png" height="15" width="1" title="570"><img src="pipe3.png" height="15" width="2" title="693"><img src="pipe4.png" height="15" width="4" title="1475"> 3795</td>
+<td class="cf t6"> 12.6. 23:08 </td>
+<td class="cf t5"> "just put one of my rigs up cheap to test betarigs and get reviews :P<br> <a href="https://www.betarigs.com/rig/6732" class=t5 target="_blank">https://www.betarigs.com/rig/6732</a>" </td>
+</tr>
+<tr><td class="cns tar">33</td>
+<td class=cds>kikaida</td>
+<td class=ces><img src="pipe1.png" height="15" width="2" title="788"><img src="pipe2.png" height="15" width="6" title="2063"><img src="pipe3.png" height="15" width="1" title="415"><img src="pipe4.png" height="15" width="1" title="492"> 3758</td>
+<td class="cfs t6"> 5.4. 10:12 </td>
+<td class="cfs t5"> "1bc = 1 hot wheels mint in package" </td>
+</tr>
+<tr><td class="cn tar">34</td>
+<td class=cd>prisius</td>
+<td class=ce><img src="pipe1.png" height="15" width="4" title="1605"><img src="pipe2.png" height="15" width="1" title="151"><img src="pipe3.png" height="15" width="2" title="697"><img src="pipe4.png" height="15" width="3" title="1226"> 3679</td>
+<td class="cf t6"> 22.6. 22:49 </td>
+<td class="cf t5"> "things are going down and up" </td>
+</tr>
+<tr><td class="cns tar">35</td>
+<td class=cds>+XBladeX</td>
+<td class=ces><img src="pipe1.png" height="15" width="2" title="846"><img src="pipe2.png" height="15" width="1" title="232"><img src="pipe3.png" height="15" width="1" title="489"><img src="pipe4.png" height="15" width="6" title="2096"> 3663</td>
+<td class="cfs t6"> 15.6. 23:50 </td>
+<td class="cfs t5"> "NXT was iteresting but i don't want instal java" </td>
+</tr>
+<tr><td class="cn tar">36</td>
+<td class=cd>tuj</td>
+<td class=ce><img src="pipe1.png" height="15" width="4" title="1498"><img src="pipe2.png" height="15" width="4" title="1244"><img src="pipe4.png" height="15" width="1" title="668"> 3659</td>
+<td class="cf t6"> 28.3. 4:38 </td>
+<td class="cf t5"> "the good old resin :)" </td>
+</tr>
+<tr><td class="cns tar">37</td>
+<td class=cds>+mckie</td>
+<td class=ces><img src="pipe1.png" height="15" width="2" title="696"><img src="pipe2.png" height="15" width="1" title="485"><img src="pipe3.png" height="15" width="3" title="883"><img src="pipe4.png" height="15" width="4" title="1593"> 3657</td>
+<td class="cfs t6"> 8.5. 16:37 </td>
+<td class="cfs t5"> "@Rat4--I see what you're trying to do" </td>
+</tr>
+<tr><td class="cn tar">38</td>
+<td class=cd>Fraxinus</td>
+<td class=ce><img src="pipe2.png" height="15" width="5" title="1901"><img src="pipe3.png" height="15" width="3" title="1144"><img src="pipe4.png" height="15" width="2" title="447"> 3645</td>
+<td class="cf t6"> 10.6. 14:12 </td>
+<td class="cf t5"> "it has been eaten a bit" </td>
+</tr>
+<tr><td class="cns tar">39</td>
+<td class=cds>+souljah1h-CIGAR</td>
+<td class=ces><img src="pipe1.png" height="15" width="3" title="1258"><img src="pipe2.png" height="15" width="1" title="84"><img src="pipe3.png" height="15" width="5" title="1955"><img src="pipe4.png" height="15" width="1" title="343"> 3640</td>
+<td class="cfs t6"> 3.6. 14:59 </td>
+<td class="cfs t5"> "Yeah nature is a force you cant fight :)" </td>
+</tr>
+<tr><td class="cn tar">40</td>
+<td class=cd>Ashdrake-Bot</td>
+<td class=ce><img src="pipe1.png" height="15" width="3" title="971"><img src="pipe2.png" height="15" width="1" title="304"><img src="pipe3.png" height="15" width="3" title="1132"><img src="pipe4.png" height="15" width="3" title="1169"> 3576</td>
+<td class="cf t6"> 6.5. 3:22 </td>
+<td class="cf t5"> "people really are not consistent" </td>
+</tr>
+<tr><td class="cns tar">41</td>
+<td class=cds>ButrosFunky</td>
+<td class=ces><img src="pipe1.png" height="15" width="1" title="429"><img src="pipe2.png" height="15" width="2" title="623"><img src="pipe3.png" height="15" width="4" title="1363"><img src="pipe4.png" height="15" width="2" title="986"> 3401</td>
+<td class="cfs t6"> 31.5. 16:22 </td>
+<td class="cfs t5"> "It's legal in 2 states to own some plants" </td>
+</tr>
+<tr><td class="cn tar">42</td>
+<td class=cd>@gnu user</td>
+<td class=ce><img src="pipe1.png" height="15" width="2" title="658"><img src="pipe2.png" height="15" width="4" title="1523"><img src="pipe3.png" height="15" width="1" title="500"><img src="pipe4.png" height="15" width="2" title="668"> 3349</td>
+<td class="cf t6"> 22.3. 11:28 </td>
+<td class="cf t5"> "L3p: Glad to hear that, even with all the coin cycling" </td>
+</tr>
+<tr><td class="cns tar">43</td>
+<td class=cds>+kvelertak</td>
+<td class=ces><img src="pipe2.png" height="15" width="2" title="814"><img src="pipe3.png" height="15" width="3" title="1120"><img src="pipe4.png" height="15" width="3" title="1107"> 3170</td>
+<td class="cfs t6"> 11.4. 14:02 </td>
+<td class="cfs t5"> "watercooling the 7950 for warm water." </td>
+</tr>
+<tr><td class="cn tar">44</td>
+<td class=cd>bcmarket</td>
+<td class=ce><img src="pipe1.png" height="15" width="2" title="766"><img src="pipe2.png" height="15" width="3" title="883"><img src="pipe3.png" height="15" width="1" title="625"><img src="pipe4.png" height="15" width="2" title="770"> 3044</td>
+<td class="cf t6"> 7.7. 12:25 </td>
+<td class="cf t5"> "BTC Price @ Bitstamp: Last: 625.52 Volume: 2702.46212894 High: 637.80<br> Low: 624.00" </td>
+</tr>
+<tr><td class="cns tar">45</td>
+<td class=cds>+MrCoins</td>
+<td class=ces><img src="pipe2.png" height="15" width="1" title="243"><img src="pipe3.png" height="15" width="4" title="1415"><img src="pipe4.png" height="15" width="3" title="1249"> 2985</td>
+<td class="cfs t6"> 8.4. 0:06 </td>
+<td class="cfs t5"> "oh.. i think he was lying" </td>
+</tr>
+<tr><td class="cn tar">46</td>
+<td class=cd>+akstunt600</td>
+<td class=ce><img src="pipe1.png" height="15" width="2" title="894"><img src="pipe2.png" height="15" width="3" title="954"><img src="pipe3.png" height="15" width="1" title="262"><img src="pipe4.png" height="15" width="2" title="865"> 2975</td>
+<td class="cf t6"> 27.4. 3:46 </td>
+<td class="cf t5"> "my socks stink when I cycle" </td>
+</tr>
+<tr><td class="cns tar">47</td>
+<td class=cds>@|00Smurf</td>
+<td class=ces><img src="pipe1.png" height="15" width="2" title="824"><img src="pipe2.png" height="15" width="2" title="655"><img src="pipe3.png" height="15" width="2" title="604"><img src="pipe4.png" height="15" width="2" title="885"> 2968</td>
+<td class="cfs t6"> 26.5. 21:36 </td>
+<td class="cfs t5"> "i sent 134 different 1k transactions lol" </td>
+</tr>
+<tr><td class="cn tar">48</td>
+<td class=cd>@Arigard</td>
+<td class=ce><img src="pipe1.png" height="15" width="3" title="1068"><img src="pipe2.png" height="15" width="1" title="218"><img src="pipe3.png" height="15" width="1" title="535"><img src="pipe4.png" height="15" width="3" title="1132"> 2953</td>
+<td class="cf t6"> 20.4. 22:45 </td>
+<td class="cf t5"> "They are all convinced itsgoing to get pumped once it hits PoS Lol" </td>
+</tr>
+<tr><td class="cns tar">49</td>
+<td class=cds>@StGNU</td>
+<td class=ces><img src="pipe1.png" height="15" width="4" title="1409"><img src="pipe2.png" height="15" width="2" title="879"><img src="pipe3.png" height="15" width="1" title="131"><img src="pipe4.png" height="15" width="1" title="481"> 2900</td>
+<td class="cfs t6"> 8.5. 7:50 </td>
+<td class="cfs t5"> "and you can get a real feeling for what blackcoinpool is all about ;)" </td>
+</tr>
+<tr><td class="cn tar">50</td>
+<td class=cd>+blade87</td>
+<td class=ce><img src="pipe1.png" height="15" width="3" title="1243"><img src="pipe2.png" height="15" width="1" title="258"><img src="pipe3.png" height="15" width="1" title="346"><img src="pipe4.png" height="15" width="3" title="992"> 2839</td>
+<td class="cf t6"> 27.3. 0:35 </td>
+<td class="cf t5"> "it gave me time to focus on some css :)" </td>
+</tr>
+</table>
+<br><h5>Those who didn't reach the Top 50</h5>
+<Table border=0 cellspacing=1 cellpadding=2 class=s4>
+<tr>
+<td class=ce> Blackcoinboy (2775) </td>
+<td class=ce> foaman (2747) </td>
+<td class=ce> radaaam (2637) </td>
+<td class=ce> SAmg (2514) </td>
+<td class=ce> +BCDolphin (2499) </td>
+<td class=ce> kartojal (2454) </td>
+</tr>
+<tr>
+<td class=ces> +RouletteRun (2382) </td>
+<td class=ces> Wex (2373) </td>
+<td class=ces> +BlackCoin-TipBot (2366) </td>
+<td class=ces> Animatronicus (2277) </td>
+<td class=ces> towlie (2153) </td>
+<td class=ces> slic (2151) </td>
+</tr>
+<tr>
+<td class=ce> +ddeaNewtOn (2151) </td>
+<td class=ce> fuuuuuu (2128) </td>
+<td class=ce> +dognip (2085) </td>
+<td class=ce> buy-black (2053) </td>
+<td class=ce> cutepuppies (2007) </td>
+<td class=ce> +Ralphvd (1991) </td>
+</tr>
+<tr>
+<td class=ces> +TheGentleman (1957) </td>
+<td class=ces> digicidal (1957) </td>
+<td class=ces> @DogeyMcDoge (1916) </td>
+<td class=ces> +bobcaticus (1892) </td>
+<td class=ces> +brammien (1830) </td>
+<td class=ces> +MintPalBot (1822) </td>
+</tr>
+<tr>
+<td class=ce> +Maxikose (1807) </td>
+<td class=ce> Xuthus (1799) </td>
+<td class=ce> kaushik29 (1790) </td>
+<td class=ce> jamofox (1763) </td>
+<td class=ce> +Subtuppel (1737) </td>
+<td class=ce> Merzhin (1737) </td>
+</tr>
+<tr>
+<td class=ces> +BlkHandAfricanos (1715) </td>
+<td class=ces> oioioi (1686) </td>
+<td class=ces> basicus (1667) </td>
+<td class=ces> derpypolecat (1658) </td>
+<td class=ces> +L3p (1656) </td>
+<td class=ces> yoslo (1616) </td>
+</tr>
+<tr>
+<td class=ce> +gpools (1602) </td>
+<td class=ce> xranby (1577) </td>
+<td class=ce> +jdebunt (1543) </td>
+<td class=ce> mrkk (1539) </td>
+<td class=ce> @Ghash (1533) </td>
+<td class=ce> Thothstopher (1525) </td>
+</tr>
+<tr>
+<td class=ces> +TxCrypto (1511) </td>
+<td class=ces> Slowdive (1476) </td>
+<td class=ces> @BLKDogeOfWallSt (1472) </td>
+<td class=ces> mousetu (1466) </td>
+<td class=ces> AltCoinGamer (1444) </td>
+<td class=ces> popers (1427) </td>
+</tr>
+<tr>
+<td class=ce> willzminame (1357) </td>
+<td class=ce> +StableEvan (1354) </td>
+<td class=ce> Walrusbonzo (1352) </td>
+<td class=ce> Methric (1343) </td>
+<td class=ce> deerp (1311) </td>
+<td class=ce> vig (1304) </td>
+</tr>
+<tr>
+<td class=ces> alexne (1295) </td>
+<td class=ces> NC (1282) </td>
+<td class=ces> +Gezoez (1267) </td>
+<td class=ces> whatminer (1225) </td>
+<td class=ces> mpmcsweeney (1224) </td>
+<td class=ces> svojoe (1221) </td>
+</tr>
+</table><br>
+<span class=txt2>The remaining 4433 nicks didn't talk that much...</span><br>
+<br>
+<a name="bign"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">Big Numbers</font>
+</center></td></tr></table></center></td></tr></table><br>
+<Table cellspacing=1 cellpadding=6 width="800" class=t2 style="white-space:nowrap">
+<tr><td class=cd><b>blackie</b> needs to get a better connection - joined #blackcoinpool 781 times during this reporting period...</td></tr>
+<tr><td class=cda><b>Soepkip</b> really wanted others to know what was doing - 1529 descriptions altogether.<br>
+<span class=s4>Example:</span><table class=tinv><tr><td width=30 class=tinv>&nbsp;</td><td class=s5>11.4. 0:01 * Soepkip <span class=sq>lazy</span><br></td></tr></table>
+</td></tr>
+<tr><td class=cdb>The evil guard of #blackcoinpool was <b>Soepkip</b> who got this reputation after kicking out 269 people.<br>
+<span class=s4>Example:</span><table class=tinv><tr><td width=30 class=tinv>&nbsp;</td><td class=s5>16.4. 8:29 &lt;uuu&gt; <span class=sq>I'm afraid BC is dead. Sorry guys. This drop is unrecoverable. Better dump anything you still have.</span><br>16.4. 8:29 *** uuu was kicked by Soepkip (<span class=sq>uuu</span>)</td></tr></table>
+<span class=s4><br>maarx only managed to kick 68 people.</span><br>
+</td></tr>
+<tr><td class=cdc><b>KBomba</b> had a problem with authority and got booted out 63 times.<br>
+<span class=s4>Example:</span><table class=tinv><tr><td width=30 class=tinv>&nbsp;</td><td class=s5>28.3. 18:48 &lt;KBomba&gt; <span class=sq>BELG</span><br>28.3. 18:48 *** KBomba was kicked by Soepkip (<span class=sq>free kicks</span>)</td></tr></table>
+<span class=s4><br>jcstone was thrown out just 16 times.</span><br>
+</td></tr>
+<tr><td class=ce><b>MintPalBot</b> knew exactly what to say, mentioning <b><i>"multipool"</i></b> 156 times.<br></td></tr>
+<tr><td class=cea>The loudest one was <b>beefburger</b> with yell percentage of 85%!<br>
+<span class=s4><br>DailyBlackcoin followed closely with 82% yells!</span><br>
+</td></tr>
+<tr><td class=ceb>
+<b>Soepkip</b> gave the most ops - actually 30 of them.<br>
+<br>
+<b>maarx</b> couldn't handle the responsibility and had to be deopped 16 times.<br>
+</td></tr>
+<tr><td class=cec><b>DailyBlackcoin</b> was either being philosophical or just plain clueless - 77% of lines contained questions.<br>
+<span class=s4><br>jovla was almost as bad, having a question ratio of 55%.</span><br>
+</td></tr>
+<tr><td class=cf><b>bcmarket</b> seemed to prefer talking to themself, writing over 5 lines in a row 266 times...<br>
+<span class=s4><br>Runner-up auto-chatter: africanos - was caught talking to themself 185 times.</span><br>
+</td></tr>
+<tr><td class=cfa><b>Soepkip</b> forgot to turn off the CAPS-lock, writing 780 lines in CAPS.<br>
+<span class=s4>Example:</span><table class=tinv><tr><td width=30 class=tinv>&nbsp;</td><td class=s5>4.4. 21:29 &lt;Soepkip&gt; <span class=sq>StableEvan ROFLOL</span><br></td></tr></table>
+</td></tr>
+<tr><td class=cfb><b>blackcoinbets</b> didn't know when to stop typing, averaging 274 letters per line.<br>
+<span class=s4><br>Channel average on #blackcoinpool was 39 letters.</span><br>
+</td></tr>
+<tr><td class=cfc>Total net split count: 15. On average that is 0,94 splits per week<span class=s4><br>
+<br>Most splits per day: 3 splits on 10.6.2014<br>
+<br>Longest net split occurred on 2.5.2014 10:34 and lasted for 941 h 30 min (31 people dropped during this split)<br>
+<br>The most people (261) dropped on 13.4.2014 5:32. This split lasted for 1 h 44 min.<br>
+</span></td></tr>
+<tr><td class=cd><table cellspacing=2 cellpadding=2 width="100%" class=t2 style="border:0px; right-padding: 10px">
+<tr><td colspan=3 class="tinv tac">#blackcoinpool's nick flooders (still haven't found the best one, blackie...)</td></tr>
+<tr><td class=tinv><b>blackie</b></td><td class=t3 style="border:0px; white-space:nowrap;">738 Nicks </td><td class=s4 style="border:0px;">blackie(2,3%), Blackie|4(2,2%), Blackie|93528(2,1%), Blackie|7955(2,1%), Blackie|73689(1,9%), Blackie_(1,5%), blackjack21(1,5%), Blackie|36381(1,4%), Blackie|77663(1,1%), Blackie|11254(1,0%), Blackie|58495(1,0%), Blackie|81592(1,0%), Blackie|69974(0,9%), Blackie|13463(0,9%), Blackie|61960(0,8%), Blackie|23543(0,8%), Blackie|95471(0,8%), Blackie|9389(0,7%), Blackie|20322(0,7%), Blackie|37723(0,7%...</td></tr>
+<tr><td class=tinv>Soepkip</td><td class=t3 style="border:0px; white-space:nowrap;">43 Nicks </td><td class=s4 style="border:0px;">Soepkip(67%), SoepBot(22%), SoepkipUMF(5,5%), Soepkip|MB(1,6%), SoepkipAFK(1,2%), SoepkipZzzZ(0,2%), SoepkipZzZ(0,2%), SoepkipUMF-AFK(0,2%), SoepkipMIAMI(0,1%), Soepbot2(0,1%), SoepkipDONTBUGME(0,1%), SoepkipTRAVEL(0,1%), SoepkipZzzZzz(0,1%), SoepkipCIGAR(0,1%), SoepkipZzzzZZZzz(0,1%), SoepkipBed(0,0%), SoepkipDH(0,0%), SoepkipZzZzZzZ(0,0%), Soepkip_(0,0%), SoepkipSad...</td></tr>
+<tr><td class=tinv>africanos</td><td class=t3 style="border:0px; white-space:nowrap;">42 Nicks </td><td class=s4 style="border:0px;">africanos(93%), africanos23(3,3%), africanosV2(0,7%), africanos_(0,6%), africanosAFK(0,5%), africanosCigar(0,3%), africanosPUMP(0,1%), afriNinjaLaunch(0,1%), AfricanosBRB(0,1%), africanos23_(0,1%), AfriFUD(0,1%), africanos29(0,1%), africanosDRUNK(0,1%), afriAFK(0,1%), africaBRB(0,1%), africanosPUMPS(0,0%), _africanos(0,0%), africAFK(0,0%), africanos-(0,0%), africanosIPO(0,0%), AfriVect...</td></tr>
+<tr><td class=tinv>w000tBot</td><td class=t3 style="border:0px; white-space:nowrap;">27 Nicks </td><td class=s4 style="border:0px;">w000tBot(73%), w000t(18%), w000tBot49(2,4%), w000t_(2,3%), w000t__(0,7%), w000tBot145(0,6%), w000tBot1(0,3%), w000tBot80(0,3%), w000tBot111(0,2%), w000tBot14(0,2%), w000tBot63(0,1%), w000tBot2(0,1%), w000t-Phone(0,1%), w000tBot39(0,0%), w000t_Phone(0,0%), w000tBot94(0,0%), w000tBot16(0,0%), w000tBot5(0,0%), w000tp(0,0%), w000t2(0,0%), w000ttest(0,0%), w000tphone...</td></tr>
+<tr><td class=tinv>MAC10</td><td class=t3 style="border:0px; white-space:nowrap;">26 Nicks </td><td class=s4 style="border:0px;">MAC10(39%), manager247(29%), manager247_work(9,1%), Mac_10(3,5%), _manager247(3,2%), manager4life(3,1%), Mac10_(2,4%), manager247|afk(2,2%), manager247_afk(1,7%), Mac10_work(1,5%), Mac10_afk(1,1%), Mango11(1,0%), manager247_Zzz(0,7%), managertemp(0,6%), MangoTango(0,6%), Mango_(0,4%), Mango(0,2%), manager247_Therm(0,1%), Mac10__(0,1%), [1]Mac10(0,0%), Mac10_man...</td></tr>
+</table></td></tr>
+</table><br>
+<a name="weekl"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">Weekly channel load</font>
+</center></td></tr></table></center></td></tr></table><br>
+<Table cellspacing=1 cellpadding=0><tr class=s1 valign=bottom>
+<td class=tgr><img src="pipe1.png" width="3" height="94"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="92"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="91"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="89"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="87"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="84"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="82"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="81"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="81"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="83"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="85"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="86"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="87"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="89"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="92"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="96"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="102"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="107"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="112"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="114"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="115"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="116"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="115"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="113"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="110"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="105"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="99"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="92"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="87"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="83"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="80"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="80"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="81"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="83"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="85"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="89"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="92"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="96"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="101"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="106"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="110"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="113"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="115"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="118"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="119"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="120"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="120"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="118"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="116"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="112"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="109"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="105"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="101"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="94"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="88"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="82"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="76"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="73"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="74"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="78"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="84"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="89"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="95"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="99"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="101"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="100"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="99"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="98"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="97"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="95"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="94"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="91"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="88"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="83"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="78"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="74"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="69"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="66"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="64"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="63"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="64"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="66"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="69"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="72"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="76"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="80"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="84"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="87"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="90"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="91"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="92"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="93"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="93"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="93"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="94"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="94"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="93"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="92"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="91"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="87"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="83"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="80"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="77"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="73"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="70"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="69"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="69"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="68"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="69"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="71"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="73"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="74"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="77"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="79"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="82"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="83"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="86"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="87"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="87"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="86"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="84"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="82"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="80"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="78"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="76"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="74"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="72"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="69"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="68"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="68"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="70"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="75"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="81"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="86"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="91"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="95"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="96"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="95"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="93"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="90"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="88"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="86"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="86"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="86"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="85"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="83"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="80"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="78"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="75"></td>
+<td class=tgr><img src="pipe1.png" width="3" height="74"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="74"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="75"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="75"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="76"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="77"></td>
+<td class=tgr><img src="pipe2.png" width="3" height="80"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="83"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="86"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="89"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="90"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="90"></td>
+<td class=tgr><img src="pipe3.png" width="3" height="90"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="91"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="91"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="92"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="94"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="95"></td>
+<td class=tgr><img src="pipe4.png" width="3" height="95"></td>
+</tr><tr class=s3>
+<td colspan=24  class=cd>Monday 15,5%</td>
+<td colspan=24  class=ca><b>Tuesday 16,3%</b></td>
+<td colspan=24  class=cd>Wednesday 15,2%</td>
+<td colspan=24  class=cd>Thursday 13,0%</td>
+<td colspan=24  class=cd>Friday 12,9%</td>
+<td colspan=24  class=cd>Saturday 13,3%</td>
+<td colspan=24  class=cd>Sunday 13,7%</td>
+</tr></table><br>
+<a name="time"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">Time of day stats</font>
+</center></td></tr></table></center></td></tr></table><br>
+<Table cellspacing=1 cellpadding=2 class="t2 tar"><!--11541-->
+<tr class=t1><td class=tinv>&nbsp;</td>
+<td class="ca tac">Nightcrawlers<br><span class=t6>(Hours 0-6)</span></td>
+<td class="cb tac">Early birds<br><span class=t6>(Hours 6-12)</span></td>
+<td class="cc tac">Afternoon shift<br><span class=t6>(Hours 12-18)</span></td>
+<td class="ca tac">Evening chatters<br><span class=t6>(Hours 18-24)</span></td>
+</tr>
+<tr><td class=cns>1</td><td class=cds>Soepkip - 10240<br><img src="pipe1.png" height="5" width="93"></td><td class=ces>africanos - 10988<br><img src="pipe2.png" height="5" width="100"></td>
+<td class=cfs>africanos - 10292<br><img src="pipe3.png" height="5" width="94"></td><td class=cds>Soepkip - 8615<br><img src="pipe4.png" height="5" width="78"></td></tr>
+<tr><td class=cn>2</td><td class=cd>goblynn - 8092<br><img src="pipe1.png" height="5" width="74"></td><td class=ce>DarkFox - 5278<br><img src="pipe2.png" height="5" width="48"></td>
+<td class=cf>Soepkip - 7995<br><img src="pipe3.png" height="5" width="73"></td><td class=cd>maarx - 7959<br><img src="pipe4.png" height="5" width="72"></td></tr>
+<tr><td class=cns>3</td><td class=cds>africanos - 7360<br><img src="pipe1.png" height="5" width="67"></td><td class=ces>goblynn - 3759<br><img src="pipe2.png" height="5" width="34"></td>
+<td class=cfs>maarx - 7156<br><img src="pipe3.png" height="5" width="65"></td><td class=cds>africanos - 7562<br><img src="pipe4.png" height="5" width="69"></td></tr>
+<tr><td class=cn>4</td><td class=cd>maarx - 6933<br><img src="pipe1.png" height="5" width="63"></td><td class=ce>Soepkip - 3730<br><img src="pipe2.png" height="5" width="34"></td>
+<td class=cf>DarkFox - 5887<br><img src="pipe3.png" height="5" width="54"></td><td class=cd>w000tBot - 5709<br><img src="pipe4.png" height="5" width="52"></td></tr>
+<tr><td class=cns>5</td><td class=cds>w000tBot - 4635<br><img src="pipe1.png" height="5" width="42"></td><td class=ces>chnchapters - 3721<br><img src="pipe2.png" height="5" width="34"></td>
+<td class=cfs>w000tBot - 5843<br><img src="pipe3.png" height="5" width="53"></td><td class=cds>goblynn - 5012<br><img src="pipe4.png" height="5" width="46"></td></tr>
+<tr><td class=cn>6</td><td class=cd>sinetek - 3907<br><img src="pipe1.png" height="5" width="36"></td><td class=ce>Amperage - 3463<br><img src="pipe2.png" height="5" width="32"></td>
+<td class=cf>surestrike - 4462<br><img src="pipe3.png" height="5" width="41"></td><td class=cd>Sevith - 4870<br><img src="pipe4.png" height="5" width="44"></td></tr>
+<tr><td class=cns>7</td><td class=cds>jcstone - 3668<br><img src="pipe1.png" height="5" width="33"></td><td class=ces>surestrike - 3451<br><img src="pipe2.png" height="5" width="31"></td>
+<td class=cfs>Gritt-N-Auld - 3617<br><img src="pipe3.png" height="5" width="33"></td><td class=cds>KBomba - 3761<br><img src="pipe4.png" height="5" width="34"></td></tr>
+<tr><td class=cn>8</td><td class=cd>chnchapters - 3056<br><img src="pipe1.png" height="5" width="28"></td><td class=ce>TheDogeOfWallSt - 3288<br><img src="pipe2.png" height="5" width="30"></td>
+<td class=cf>KBomba - 2985<br><img src="pipe3.png" height="5" width="27"></td><td class=cd>Gritt-N-Auld - 3423<br><img src="pipe4.png" height="5" width="31"></td></tr>
+<tr><td class=cns>9</td><td class=cds>Sevith - 2723<br><img src="pipe1.png" height="5" width="25"></td><td class=ces>Gritt-N-Auld - 3059<br><img src="pipe2.png" height="5" width="28"></td>
+<td class=cfs>Wurlitzer - 2929<br><img src="pipe3.png" height="5" width="27"></td><td class=cds>vect - 3211<br><img src="pipe4.png" height="5" width="29"></td></tr>
+<tr><td class=cn>10</td><td class=cd>TheDogeOfWallSt - 2620<br><img src="pipe1.png" height="5" width="24"></td><td class=ce>balfouri - 2936<br><img src="pipe2.png" height="5" width="27"></td>
+<td class=cf>Sevith - 2674<br><img src="pipe3.png" height="5" width="24"></td><td class=cd>dibdab - 2761<br><img src="pipe4.png" height="5" width="25"></td></tr>
+</table><br>
+<a name="long"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">Weekly statistics</font>
+</center></td></tr></table></center></td></tr></table><br>
+<Table cellspacing=1 cellpadding=2><tr class=s1 valign=bottom>
+<td class=tgr>33310<br><img src="pipeltv.png" width="28" height="28"></td>
+<td class=tgr>85909<br><img src="pipeltv.png" width="28" height="73"></td>
+<td class=tgr>60175<br><img src="pipeltv.png" width="28" height="51"></td>
+<td class=tgr>76921<br><img src="pipeltv.png" width="28" height="65"></td>
+<td class=s2>94505<br><img src="pipeltv.png" width="28" height="80"></td>
+<td class=tgr>59421<br><img src="pipeltv.png" width="28" height="50"></td>
+<td class=tgr>45247<br><img src="pipeltv.png" width="28" height="38"></td>
+<td class=tgr>39346<br><img src="pipeltv.png" width="28" height="33"></td>
+<td class=tgr>17287<br><img src="pipeltv.png" width="28" height="15"></td>
+<td class=tgr>37052<br><img src="pipeltv.png" width="28" height="31"></td>
+<td class=tgr>42902<br><img src="pipeltv.png" width="28" height="36"></td>
+<td class=tgr>36869<br><img src="pipeltv.png" width="28" height="31"></td>
+<td class=tgr>22655<br><img src="pipeltv.png" width="28" height="19"></td>
+<td class=tgr>16590<br><img src="pipeltv.png" width="28" height="14"></td>
+<td class=tgr>17458<br><img src="pipeltv.png" width="28" height="15"></td>
+<td class=tgr>25513<br><img src="pipeltv.png" width="28" height="22"></td>
+<td class=tgr>(Est.<br>19100)<br>6826<br><img src="pipelte_darkv.png" width="28" height="10" title="19100"><br><img src="pipeltv.png" width="28" height="6" title="6826"></td>
+</tr><tr class=s3>
+<td class=cb>20.3.</td>
+<td class=cb>24.3.</td>
+<td class=cb>31.3.</td>
+<td class=cb>7.4.</td>
+<td class=cb>14.4.</td>
+<td class=cb>21.4.</td>
+<td class=cb>28.4.</td>
+<td class=cb>5.5.</td>
+<td class=cb>12.5.</td>
+<td class=cb>19.5.</td>
+<td class=cb>26.5.</td>
+<td bgcolor="#444545">2.6.</td>
+<td bgcolor="#444545">9.6.</td>
+<td bgcolor="#444545">16.6.</td>
+<td bgcolor="#444545">23.6.</td>
+<td bgcolor="#444545">30.6.</td>
+<td bgcolor="#444444">7.7.</td>
+</tr></table>
+<span class=txt2>Total number of lines: 717986</span><br>
+<span class=txt2>Estimated number of lines for current section: 19100 lines</span><br><br>
+<span class=txt1>The most active day so far has been Monday 14.4.2014 with a line count of 20455</span><br><br>
+<a name="topics"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">Topic tracking</font>
+<br><font color="#FFFFFF" size="2" face="Arial">20 latest topics from #blackcoinpool
+</center></td></tr></table></center></td></tr></table><br>
+<Table border=0 cellspacing=1 cellpadding=2 class=t2><tr class=t1>
+<td class=ca>At</td>
+<td class=cb>Topic</td>
+<td class=cc>Nick</td></tr>
+<tr><td class="cds t6">6.7. 19:50</td><td class="ces t5" title=".::MANDATORY UPGRADE TO WALLET 1.1.0.1 (blackcoin.co):::· Pool status: All online ·:. 100 days of #BlackCoinPool! Let's celebrate .:· Solution for connection issues: http://pastebin.com/AcTPArz9 .:· We are gentlemen, rules: http://pastebin.com/4c7TePWJ ·:. Updated Pool PROMO: http://bit.ly/PoolPromo">.::MANDATORY UPGRADE TO WALLET <a href="http://1.1.0.1" class=t5 target="_blank">1.1.0.1</a> (<a href="http://blackcoin.co" class=t5 target="_blank">blackcoin.co</a>):::· Pool status:<br> All online ·:. 100 days of #BlackCoinPool! Let's celebrate .:· Solution for connection...</td><td class=cfs>chnchapters</td></tr>
+<tr><td class="cd t6">19:48</td><td class="ce t5" title=".::MANDATORY UPGRADE TO WALLET 1.1.0 (blackcoin.co):::· Pool status: All online ·:. 100 days of #BlackCoinPool! Let's celebrate .:· Solution for connection issues: http://pastebin.com/AcTPArz9 .:· We are gentlemen, rules: http://pastebin.com/4c7TePWJ ·:. Updated Pool PROMO: http://bit.ly/PoolPromo">.::MANDATORY UPGRADE TO WALLET 1.1.0 (<a href="http://blackcoin.co" class=t5 target="_blank">blackcoin.co</a>):::· Pool status:<br> All online ·:. 100 days of #BlackCoinPool! Let's celebrate .:· Solution for connection...</td><td class=cf>chnchapters</td></tr>
+<tr><td class="cds t6">19:45</td><td class="ces t5" title=".::MUST UPGRADE WALLET TO 1.1.0 for POSv2::..:· Pool status: All online ·:. 100 days of #BlackCoinPool! Let's celebrate .:· Solution for connection issues: http://pastebin.com/AcTPArz9 .:· We are gentlemen, rules: http://pastebin.com/4c7TePWJ ·:. Updated Pool PROMO: http://bit.ly/PoolPromo">.::MUST UPGRADE WALLET TO 1.1.0 for POSv2::..:· Pool status: All online<br> ·:. 100 days of #BlackCoinPool! Let's celebrate .:· Solution for connection issues:...</td><td class=cfs>chnchapters</td></tr>
+<tr><td class="cd t6">27.6. 2:13</td><td class="ce t5" title=".:· Pool status: All online ·:. 100 days of #BlackCoinPool! Let's celebrate .:· Solution for connection issues: http://pastebin.com/AcTPArz9 .:· We are gentlemen, rules: http://pastebin.com/4c7TePWJ ·:. Updated Pool PROMO: http://bit.ly/PoolPromo">.:· Pool status: All online ·:. 100 days of #BlackCoinPool! Let's celebrate .:·<br> Solution for connection issues: <a href="http://pastebin.com/AcTPArz9" class=t5 target="_blank">http://pastebin.com/AcTPArz9</a> .:· We are gentlemen...</td><td class=cf>Soepkip</td></tr>
+<tr><td class="cds t6">21.6. 20:30</td><td class="ces t5" title=".:· Pool status: All online ·:. BlackCoin at Bitcoin Beltway conference see: https://twitter.com/BlackCoinPool for LIVE updates! .:· Solution for connection issues: http://pastebin.com/AcTPArz9 .:· We are gentlemen, rules: http://pastebin.com/4c7TePWJ ·:. Updated Pool PROMO: http://bit.ly/PoolPromo">.:· Pool status: All online ·:. BlackCoin at Bitcoin Beltway conference see:<br> <a href="https://twitter.com/BlackCoinPool" class=t5 target="_blank">https://twitter.com/BlackCoinPool</a> for LIVE updates! .:· Solution for connection...</td><td class=cfs>StGNU</td></tr>
+<tr><td class="cd t6">6.6. 2:52</td><td class="ce t5" title=".:· Pool status: All online ·:. DOUBLE YOUR X11 HASHRATE: http://bit.ly/1kiTJf0 ·:. Translators needed! bit.ly/1kdKOdE .:· Solution for connection issues: http://pastebin.com/AcTPArz9 .:· We are gentlemen, rules: http://pastebin.com/4c7TePWJ ·:. Updated Pool PROMO: http://bit.ly/PoolPromo .:· Black Coin mentioned on Wallstreet Journal: http://blogs.wsj.com/moneybeat/2014/06/05/bit">.:· Pool status: All online ·:. DOUBLE YOUR X11 HASHRATE: <a href="http://bit.ly/1kiTJf0" class=t5 target="_blank">http://bit.ly/1kiTJf0<br></a> ·:. Translators needed! <a href="http://bit.ly/1kdKOdE" class=t5 target="_blank">bit.ly/1kdKOdE</a> .:· Solution for connection issues: <a href="http://pastebin.com/AcTPArz9" class=t5 target="_blank">http://p...</a></td><td class=cf>TheDogeOfWallSt</td></tr>
+<tr><td class="cds t6">2:52</td><td class="ces t5" title=".:· Pool status: All online ·:. DOUBLE YOUR X11 HASHRATE: http://bit.ly/1kiTJf0 ·:. Translators needed! bit.ly/1kdKOdE .:· Solution for connection issues: http://pastebin.com/AcTPArz9 .:· We are gentlemen, rules: http://pastebin.com/4c7TePWJ ·:. Updated Pool PROMO: http://bit.ly/PoolPromo .:· Black Coin mentioned on Wallstreet Journal: http://on.wsj.com/1jXFlDe">.:· Pool status: All online ·:. DOUBLE YOUR X11 HASHRATE: <a href="http://bit.ly/1kiTJf0" class=t5 target="_blank">http://bit.ly/1kiTJf0<br></a> ·:. Translators needed! <a href="http://bit.ly/1kdKOdE" class=t5 target="_blank">bit.ly/1kdKOdE</a> .:· Solution for connection issues: <a href="http://pastebin.com/AcTPArz9" class=t5 target="_blank">http://p...</a></td><td class=cfs>TheDogeOfWallSt</td></tr>
+<tr><td class="cd t6">4.6. 3:34</td><td class="ce t5" title=".:· Pool status: All online ·:. DOUBLE YOUR X11 HASHRATE: http://bit.ly/1kiTJf0 ·:. Translators needed! bit.ly/1kdKOdE .:· Solution for connection issues: http://pastebin.com/AcTPArz9 .:· We are gentlemen, rules: http://pastebin.com/4c7TePWJ ·:. Updated Pool PROMO: http://bit.ly/PoolPromo .:· BlackCast S01E03: http://theblackcast.com">.:· Pool status: All online ·:. DOUBLE YOUR X11 HASHRATE: <a href="http://bit.ly/1kiTJf0" class=t5 target="_blank">http://bit.ly/1kiTJf0<br></a> ·:. Translators needed! <a href="http://bit.ly/1kdKOdE" class=t5 target="_blank">bit.ly/1kdKOdE</a> .:· Solution for connection issues: <a href="http://pastebin.com/AcTPArz9" class=t5 target="_blank">http://p...</a></td><td class=cf>StGNU</td></tr>
+<tr><td class="cds t6">3:33</td><td class="ces t5" title=".:· Pool status: All online ·:. DOUBLE YOUR X11 HASHRATE: http://bit.ly/1kiTJf0 ·:. Translators needed! bit.ly/1kdKOdE .:· Solution for connection issues: http://pastebin.com/AcTPArz9 .:· We are gentlemen, rules: http://pastebin.com/4c7TePWJ ·:. Updated Pool PROMO: http://bit.ly/PoolPromo .:· BlackCast S01E03: http://www.reddit.com/r/blackcoin/comments/268i2z/blackcast_3_hosted_by">.:· Pool status: All online ·:. DOUBLE YOUR X11 HASHRATE: <a href="http://bit.ly/1kiTJf0" class=t5 target="_blank">http://bit.ly/1kiTJf0<br></a> ·:. Translators needed! <a href="http://bit.ly/1kdKOdE" class=t5 target="_blank">bit.ly/1kdKOdE</a> .:· Solution for connection issues: <a href="http://pastebin.com/AcTPArz9" class=t5 target="_blank">http://p...</a></td><td class=cfs>StGNU</td></tr>
+<tr><td class="cd t6">30.5. 20:59</td><td class="ce t5" title=".:· Pool status: All online ·:. Translators needed! bit.ly/1kdKOdE .:· Solution for connection issues: http://pastebin.com/AcTPArz9 .:· We are gentlemen, rules: http://pastebin.com/4c7TePWJ ·:. KNC TItan Promo https://medium.com/blackcoin-pool-news/c8ca3b8cfad9 .:· BlackCast S01E03: http://www.reddit.com/r/blackcoin/comments/268i2z/blackcast_3_hosted_by_jabulon_guests_soepkip">.:· Pool status: All online ·:. Translators needed! <a href="http://bit.ly/1kdKOdE" class=t5 target="_blank">bit.ly/1kdKOdE</a> .:· Solution<br> for connection issues: <a href="http://pastebin.com/AcTPArz9" class=t5 target="_blank">http://pastebin.com/AcTPArz9</a> .:· We are gentlemen...</td><td class=cf>StGNU</td></tr>
+<tr><td class="cds t6">20:58</td><td class="ces t5" title=".:· Pool status: All online ·:. Translators needed! bit.ly/1kdKOdE .:· Solution for connection issues: http://pastebin.com/AcTPArz9 .:· We are gentlemen, rules: http://pastebin.com/4c7TePWJ ·:. KNC TItan Promo https://medium.com/blackcoin-pool-news/c8ca3b8cfad9 .:· BlackCast S01E03 @ 7PM [TIMEZOME] Sunday: http://www.reddit.com/r/blackcoin/comments/268i2z/blackcast_3_hosted_by_jabu">.:· Pool status: All online ·:. Translators needed! <a href="http://bit.ly/1kdKOdE" class=t5 target="_blank">bit.ly/1kdKOdE</a> .:· Solution<br> for connection issues: <a href="http://pastebin.com/AcTPArz9" class=t5 target="_blank">http://pastebin.com/AcTPArz9</a> .:· We are gentlemen...</td><td class=cfs>StGNU</td></tr>
+<tr><td class="cd t6">28.5. 18:53</td><td class="ce t5" title=".:· Pool status: All online ·:. Solution for connection issues: http://pastebin.com/AcTPArz9 .:· We are gentlemen; rules: http://pastebin.com/4c7TePWJ ·:. KNC TItan Promo https://medium.com/blackcoin-pool-news/c8ca3b8cfad9 .:· BlackCast S01E03 @ 7PM [TIMEZOME] Sunday: http://www.reddit.com/r/blackcoin/comments/268i2z/blackcast_3_hosted_by_jabulon_guests_soepkip/">.:· Pool status: All online ·:. Solution for connection issues: <a href="http://pastebin.com/AcTPArz9" class=t5 target="_blank">http://pastebin.com/A...<br>...cTPArz9</a> .:· We are gentlemen; rules: <a href="http://pastebin.com/4c7TePWJ" class=t5 target="_blank">http://pastebin.com/4c7TePWJ</a> ·:. KNC...</td><td class=cf>TheDogeOfWallSt</td></tr>
+<tr><td class="cds t6">23.5. 8:54</td><td class="ces t5" title="Ⓑ Ⓑ Ⓑ POOL ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: http://pastebin.com/AcTPArz9 Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: http://pastebin.com/4c7TePWJ Ⓑ Ⓑ Ⓑ   http://news.blackcoinpool.com/news/announcing-the-knc-titan-promo-giveaway/ Ⓑ Ⓑ Ⓑ http://www.reddit.com/r/blackcoin/comments/268i2z/blackcast_3_hosted_by_jabulon_guests_soepkip/ BLACKCAST 7 PM SUNDAY!">Ⓑ Ⓑ Ⓑ POOL ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: <a href="http://pastebin.com/AcTPArz9" class=t5 target="_blank">http://pastebin.co...<br>...m/AcTPArz9</a> Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: <a href="http://pastebin.com/4c7TePWJ" class=t5 target="_blank">http://pastebin.com/4c7TePWJ</a></td><td class=cfs>TheDogeOfWallSt</td></tr>
+<tr><td class="cd t6">21.5. 19:40</td><td class="ce t5" title="Ⓑ Ⓑ Ⓑ POOL ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: http://pastebin.com/AcTPArz9 Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: http://pastebin.com/4c7TePWJ Ⓑ Ⓑ Ⓑ   http://news.blackcoinpool.com/news/announcing-the-knc-titan-promo-giveaway/ Ⓑ Ⓑ Ⓑ">Ⓑ Ⓑ Ⓑ POOL ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: <a href="http://pastebin.com/AcTPArz9" class=t5 target="_blank">http://pastebin.co...<br>...m/AcTPArz9</a> Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: <a href="http://pastebin.com/4c7TePWJ" class=t5 target="_blank">http://pastebin.com/4c7TePWJ</a></td><td class=cf>TheDogeOfWallSt</td></tr>
+<tr><td class="cds t6">20.5. 20:11</td><td class="ces t5" title="Ⓑ Ⓑ Ⓑ POOL ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: http://pastebin.com/AcTPArz9 Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: http://pastebin.com/4c7TePWJ Ⓑ Ⓑ Ⓑ   http://news.blackcoinpool.com/news/announcing-the-knc-titan-promo-giveaway/ Ⓑ Ⓑ Ⓑ  -- MAX BORGES AMA NOW LIVE - http://www.reddit.com/r/blackcoin/comments/261rks/this_is_melissa_doval_vp_of_finance_max_borges/">Ⓑ Ⓑ Ⓑ POOL ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: <a href="http://pastebin.com/AcTPArz9" class=t5 target="_blank">http://pastebin.co...<br>...m/AcTPArz9</a> Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: <a href="http://pastebin.com/4c7TePWJ" class=t5 target="_blank">http://pastebin.com/4c7TePWJ</a></td><td class=cfs>TheDogeOfWallSt</td></tr>
+<tr><td class="cd t6">13.5. 6:17</td><td class="ce t5" title="Ⓑ Ⓑ Ⓑ POOL ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: http://pastebin.com/AcTPArz9 Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: http://pastebin.com/4c7TePWJ Ⓑ Ⓑ Ⓑ   http://news.blackcoinpool.com/news/announcing-the-knc-titan-promo-giveaway/ Ⓑ Ⓑ Ⓑ  -- Any connection issues please read http://pastebin.com/AcTPArz9 or our new Getting Started  guide on the pool.">Ⓑ Ⓑ Ⓑ POOL ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: <a href="http://pastebin.com/AcTPArz9" class=t5 target="_blank">http://pastebin.co...<br>...m/AcTPArz9</a> Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: <a href="http://pastebin.com/4c7TePWJ" class=t5 target="_blank">http://pastebin.com/4c7TePWJ</a></td><td class=cf>StGNU</td></tr>
+<tr><td class="cds t6">5:53</td><td class="ces t5" title="Ⓑ Ⓑ Ⓑ POOL DOWN FOR 5MIN AT 12AM EST Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: http://pastebin.com/AcTPArz9 Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: http://pastebin.com/4c7TePWJ Ⓑ Ⓑ Ⓑ   http://news.blackcoinpool.com/news/announcing-the-knc-titan-promo-giveaway/ Ⓑ Ⓑ Ⓑ  -- Any connection issues please read http://pastebin.com/AcTPArz9 or our new Getting Started  guide on the p">Ⓑ Ⓑ Ⓑ POOL DOWN FOR 5MIN AT 12AM EST Ⓑ Ⓑ Ⓑ CONNECTION ISSUES<br> SOLUTION: <a href="http://pastebin.com/AcTPArz9" class=t5 target="_blank">http://pastebin.com/AcTPArz9</a> Ⓑ Ⓑ Ⓑ We are Gentleman - Rules:...</td><td class=cfs>StGNU</td></tr>
+<tr><td class="cd t6">12.5. 10:15</td><td class="ce t5" title="Ⓑ Ⓑ Ⓑ POOL V2 ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: http://pastebin.com/AcTPArz9 Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: http://pastebin.com/4c7TePWJ Ⓑ Ⓑ Ⓑ  http://news.blackcoinpool.com/news/announcing-the-knc-titan-promo-giveaway/ Ⓑ Ⓑ Ⓑ Scrypt + SHA256 Payments delayed because of Cryptsy deposits (being experienced by most  Cryptsy  users right now.) -- Any con">Ⓑ Ⓑ Ⓑ POOL V2 ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: <a href="http://pastebin.com/AcTPArz9" class=t5 target="_blank">http://pastebin...<br>....com/AcTPArz9</a> Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: <a href="http://pastebin.com/4c7TePWJ" class=t5 target="_blank">http://pastebin.com/4c7TePWJ</a></td><td class=cf>TheDogeOfWallSt</td></tr>
+<tr><td class="cds t6">10:15</td><td class="ces t5" title="Ⓑ Ⓑ Ⓑ POOL V2 ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: http://pastebin.com/AcTPArz9 Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: http://pastebin.com/4c7TePWJ Ⓑ Ⓑ Ⓑ  http://news.blackcoinpool.com/news/announcing-the-knc-titan-promo-giveaway/ Ⓑ Ⓑ Ⓑ  -- Any connection issues please read http://pastebin.com/AcTPArz9 or our new Getting Started guide on the pool.">Ⓑ Ⓑ Ⓑ POOL V2 ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: <a href="http://pastebin.com/AcTPArz9" class=t5 target="_blank">http://pastebin...<br>....com/AcTPArz9</a> Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: <a href="http://pastebin.com/4c7TePWJ" class=t5 target="_blank">http://pastebin.com/4c7TePWJ</a></td><td class=cfs>TheDogeOfWallSt</td></tr>
+<tr><td class="cd t6">10:06</td><td class="ce t5" title="Ⓑ Ⓑ Ⓑ POOL V2 ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: http://pastebin.com/Bih8yxce Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: http://pastebin.com/4c7TePWJ Ⓑ Ⓑ Ⓑ http://news.blackcoinpool.com/news/announcing-the-knc-titan-promo-giveaway/ Ⓑ Ⓑ Ⓑ If you are having connection issues please see: http://pastebin.com/Qg6b8zcN">Ⓑ Ⓑ Ⓑ POOL V2 ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: <a href="http://pastebin.com/Bih8yxce" class=t5 target="_blank">http://pastebin...<br>....com/Bih8yxce</a> Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: <a href="http://pastebin.com/4c7TePWJ" class=t5 target="_blank">http://pastebin.com/4c7TePWJ</a></td><td class=cf>TheDogeOfWallSt</td></tr>
+</table><br>
+<br><h5>20 random topics</h5>
+<Table border=0 cellspacing=1 cellpadding=2 class=t2><tr class=t1>
+<td class=cas>At</td>
+<td class=cbs>Topic</td>
+<td class=ccs>Nick</td></tr>
+<tr><td class="cd t6">12.5. 7:44</td><td class="ce t5" title="Ⓑ Ⓑ Ⓑ POOL V2 ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: http://pastebin.com/Bih8yxce Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: http://pastebin.com/4c7TePWJ  Ⓑ Ⓑ Ⓑ X11 &amp; Scrypt-N online! Ⓑ Ⓑ Ⓑ http://news.blackcoinpool.com/news/announcing-the-knc-titan-promo-giveaway/ Ⓑ Ⓑ Ⓑ Scrypt + SHA256 Payments delayed because of Cryptsy deposits (being experienced by most  Cr">Ⓑ Ⓑ Ⓑ POOL V2 ONLINE Ⓑ Ⓑ Ⓑ CONNECTION ISSUES SOLUTION: <a href="http://pastebin.com/Bih8yxce" class=t5 target="_blank">http://pastebin...<br>....com/Bih8yxce</a> Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: <a href="http://pastebin.com/4c7TePWJ" class=t5 target="_blank">http://pastebin.com/4c7TePWJ</a></td><td class=cf>StGNU</td></tr>
+<tr><td class="cds t6">5.5. 15:59</td><td class="ces t5" title="Ⓑ Ⓑ Ⓑ POOL ONLINE Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: http://pastebin.com/4c7TePWJ Ⓑ Ⓑ Ⓑ FIRST BLACK CAST: http://youtu.be/P2XpOQCtX3U Ⓑ Ⓑ Ⓑ X11 &amp; Scrypt-N online! Ⓑ Ⓑ Ⓑ http://www.reddit.com/r/blackcoin/comments/24rwjv/red_vs_blue_turns_black_the_first_ever_community/">Ⓑ Ⓑ Ⓑ POOL ONLINE Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: <a href="http://pastebin.com/4c7TePWJ" class=t5 target="_blank">http://pastebin.com/4c7T...<br>...ePWJ</a> Ⓑ Ⓑ Ⓑ FIRST BLACK CAST: <a href="http://youtu.be/P2XpOQCtX3U" class=t5 target="_blank">http://youtu.be/P2XpOQCtX3U</a> Ⓑ Ⓑ Ⓑ...</td><td class=cfs>TheDogeOfWallSt</td></tr>
+<tr><td class="cd t6">3.5. 3:40</td><td class="ce t5" title="Ⓑ Ⓑ Ⓑ POOL ONLINE Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: http://pastebin.com/4c7TePWJ Ⓑ Ⓑ Ⓑ FIRST BLACK CAST: http://youtu.be/P2XpOQCtX3U - WIZ SPLASH http://i.imgur.com/7IXxLWm.gif - BlackCoin Foundation is hiring a professional PR firm to represent BC https://bitcointalk.org/index.php?topic=469640.msg6516686#msg6516686 READ ALL ABOUT IT!!!">Ⓑ Ⓑ Ⓑ POOL ONLINE Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: <a href="http://pastebin.com/4c7TePWJ" class=t5 target="_blank">http://pastebin.com/4c7T...<br>...ePWJ</a> Ⓑ Ⓑ Ⓑ FIRST BLACK CAST: <a href="http://youtu.be/P2XpOQCtX3U" class=t5 target="_blank">http://youtu.be/P2XpOQCtX3U</a> - WIZ SPLASH...</td><td class=cf>TheDogeOfWallSt</td></tr>
+<tr><td class="cds t6">1.5. 18:47</td><td class="ces t5" title="Ⓑ Ⓑ Ⓑ  At 7pm EST Blackcoin Cast! http://www.twitch.tv/blackcoincast ! POOL ONLINE - USE useast.blackcoinpool.com !!! - COMMENCE MINING OPERATIONS: http://bit.ly/1hHYMDh  Ⓑ Ⓑ Ⓑ We are Gentleman - Rules: http://pastebin.com/4c7TePWJ Ⓑ Ⓑ Ⓑ">Ⓑ Ⓑ Ⓑ At 7pm EST Blackcoin Cast! <a href="http://www.twitch.tv/blackcoincast" class=t5 target="_blank">http://www.twitch.tv/blackcoincast</a> ! POOL<br> ONLINE - USE <a href="http://useast.blackcoinpool.com" class=t5 target="_blank">useast.blackcoinpool.com</a> !!! - COMMENCE MINING OPERATIONS:...</td><td class=cfs>Gritt-N-Auld</td></tr>
+<tr><td class="cd t6">27.4. 16:30</td><td class="ce t5" title="Ⓑ Ⓑ Ⓑ Current Pool Status: UP, still trying to resolve some final CloudFlare issues! - http://stats.blackcoinpool.com Ⓑ Ⓑ Ⓑ Extra Payout Idea: http://goo.gl/DjKYU1 Ⓑ Ⓑ Ⓑ">Ⓑ Ⓑ Ⓑ Current Pool Status: UP, still trying to resolve some final CloudFlare<br> issues! - <a href="http://stats.blackcoinpool.com" class=t5 target="_blank">http://stats.blackcoinpool.com</a> Ⓑ Ⓑ Ⓑ Extra Payout Idea: <a href="http://goo.gl/DjKYU1" class=t5 target="_blank">http://goo.gl/DjKYU1</a></td><td class=cf>Gritt-N-Auld</td></tr>
+<tr><td class="cds t6">24.4. 11:05</td><td class="ces t5" title="Ⓑ Ⓑ Ⓑ Current Pool Status: DOWN - Pool will be down for a security audit for at least 12 hours.  - We do NOT divulge our buying strategy. Stop Asking. Ⓑ Ⓑ Ⓑ">Ⓑ Ⓑ Ⓑ Current Pool Status: DOWN - Pool will be down for a security audit<br> for at least 12 hours. - We do NOT divulge our buying strategy. Stop Asking....</td><td class=cfs>Soepkip</td></tr>
+<tr><td class="cd t6">23.4. 1:12</td><td class="ce t5">Ⓑ Ⓑ Ⓑ Current Pool Status: UP - We do NOT divulge our buying strategy. Stop<br> Asking. Ⓑ Ⓑ Ⓑ</td><td class=cf>Soepkip</td></tr>
+<tr><td class="cds t6">13.4. 13:28</td><td class="ces t5" title="Current Pool Status: UP  - 5.9 GH/s - 1200+ MINERS!!! - Payouts 0:00 EST - Fill THIS: http://goo.gl/B0WWtT - http://www.reddit.com/r/blackcoin/comments/22rtpa/hey_guys_some_of_the_devs_from_blackcoinpoolcom/ -- ADDRESS BCoin1x1WLkqMPcJcuFvbHcErNfDcba5gB PLEASE CONTACT OPS IMMEDIATELY.">Current Pool Status: UP - 5.9 GH/s - 1200+ MINERS!!! - Payouts 0:00 EST -<br> Fill THIS: <a href="http://goo.gl/B0WWtT" class=t5 target="_blank">http://goo.gl/B0WWtT</a> - <a href="http://www.reddit.com/r/blackcoin/comments/22rtpa/hey_guys_some_of_the_devs_from_blackcoinpoolcom/" class=t5 target="_blank">http://www.reddit.com/r/blackcoin/comments/22...</a></td><td class=cfs>TheDogeOfWallSt</td></tr>
+<tr><td class="cd t6">12.4. 7:55</td><td class="ce t5" title="Current Pool Status: UP -  Payouts 04/10 POSTED - Bonus Payouts: http://pastebin.com/E4Lj7kyY - 3,2 GH/s - 750+ MINERS!!! - Payouts 0:00 EST - Fill THIS: http://goo.gl/B0WWtT - http://www.reddit.com/r/blackcoin/comments/22rtpa/hey_guys_some_of_the_devs_from_blackcoinpoolcom/ -- ADDRESS BCoin1x1WLkqMPcJcuFvbHcErNfDcba5gB PLEASE CONTACT OPS IMMEDIATELY.">Current Pool Status: UP - Payouts 04/10 POSTED - Bonus Payouts: <a href="http://pastebin.com/E4Lj7kyY" class=t5 target="_blank">http://pasteb...<br>...in.com/E4Lj7kyY</a> - 3,2 GH/s - 750+ MINERS!!! - Payouts 0:00 EST - Fill THIS:...</td><td class=cf>TheDogeOfWallSt</td></tr>
+<tr><td class="cds t6">5.4. 14:08</td><td class="ces t5" title="Current Pool Status: UP - Death Star is warming up nicely, #BlackFriday all day. Release Candidate 1.0 Codename: Black Friday is now live. Until DNS propogates use 107.170.114.59 -- http://www.blackcoinpool.com/news/payouts-are-stuck-again-on-cryptsy/">Current Pool Status: UP - Death Star is warming up nicely, #BlackFriday all<br> day. Release Candidate 1.0 Codename: Black Friday is now live. Until DNS...</td><td class=cfs>TheDogeOfWallSt</td></tr>
+<tr><td class="cd t6">2.4. 18:53</td><td class="ce t5" title="Current pool status: UP - Development Roadmap for March 31, 2014 - http://goo.gl/QrFxvT - BLACK FRIDAY COMETH. - Try to keep it pool business ##blackcoin for general stuffs">Current pool status: UP - Development Roadmap for March 31, 2014 - <a href="http://goo.gl/QrFxvT" class=t5 target="_blank">http://goo...<br>....gl/QrFxvT</a> - BLACK FRIDAY COMETH. - Try to keep it pool business ##blackcoin...</td><td class=cf>Soepkip</td></tr>
+<tr><td class="cds t6">1.4. 14:58</td><td class="ces t5">Current pool status: UP - Development Roadmap - <a href="http://goo.gl/QrFxvT" class=t5 target="_blank">http://goo.gl/QrFxvT</a></td><td class=cfs>TheDogeOfWallSt</td></tr>
+<tr><td class="cd t6">30.3. 0:17</td><td class="ce t5" title="Current pool status: UP - http://blackcoinpool.com/news/sha-256-ready-as-well-as-some-other-updates/ - SHA256 Should now be working with the front end. -- SHA pool seems to be having an issues with BFGMiner please use CGMiner for now.">Current pool status: UP - <a href="http://blackcoinpool.com/news/sha-256-ready-as-well-as-some-other-updates/" class=t5 target="_blank">http://blackcoinpool.com/news/sha-256-ready-as-well...<br>...-as-some-other-updates/</a> - SHA256 Should now be working with the front...</td><td class=cf>TheDogeOfWallSt</td></tr>
+<tr><td class="cds t6">27.3. 8:28</td><td class="ces t5" title="Current pool status: UP - Currently working on implementing SHA256 and more metrics for miners. Also please conduct yourself in a manner befitting a gentleman at all times in this channel.">Current pool status: UP - Currently working on implementing SHA256 and more<br> metrics for miners. Also please conduct yourself in a manner befitting a gentleman...</td><td class=cfs>TheDogeOfBlackSt</td></tr>
+<tr><td class="cd t6">26.3. 6:05</td><td class="ce t5" title="POOL IS UP - YOU CAN MINE - FIRST PAYOUTS SENT - 5 false addresses: http://pastebin.com/ynDU71sj - OPEN BETA - Statement from Multipool: http://pastebin.com/Wz6iGaUt --- CryptoRush Bashing = KICK - Read their statement! - http://goo.gl/vyp9Ms">POOL IS UP - YOU CAN MINE - FIRST PAYOUTS SENT - 5 false addresses:<br> <a href="http://pastebin.com/ynDU71sj" class=t5 target="_blank">http://pastebin.com/ynDU71sj</a> - OPEN BETA - Statement from Multipool: <a href="http://pastebin.com/Wz6iGaUt" class=t5 target="_blank">http://pas...</a></td><td class=cf>maarx</td></tr>
+<tr><td class="cds t6">25.3. 9:26</td><td class="ces t5">POOL DOWN FOR NOW - Open Beta -- Server is up, but currently not displaying<br> stats because of complete database overhaul.</td><td class=cfs>TheDoge Busy</td></tr>
+<tr><td class="cd t6">24.3. 14:19</td><td class="ce t5" title="Open Beta -- stick close to our twitter for updates @blackcoinpool - We are looking to payment and payout issues. This is our top priority right now, we know about it and are working on it.">Open Beta -- stick close to our twitter for updates @blackcoinpool - We are<br> looking to payment and payout issues. This is our top priority right now, we...</td><td class=cf>TheDoge Busy</td></tr>
+<tr><td class="cds t6">24.3. 5:23</td><td class="ces t5" title="Open Beta -- stick close to our twitter for updates @blackcoinpool - PAYOUTS ARE MANUAL - ONCE IN 24 HOURS NOW - MARKET DISCUSSION IN #blackcoinmarket PLEASE">Open Beta -- stick close to our twitter for updates @blackcoinpool - PAYOUTS<br> ARE MANUAL - ONCE IN 24 HOURS NOW - MARKET DISCUSSION IN #blackcoin...</td><td class=cfs>TheDoge Busy</td></tr>
+<tr><td class="cd t6">23.3. 2:21</td><td class="ce t5" title="Closed Beta up and running smoothly  - SCRYPT ONLY NOW - Q2 message = known issue - Contact +w000t for invites - Read the interview: http://btcjebus.wordpress.com/2014/03/22/blackcoinpool-com-interview/">Closed Beta up and running smoothly - SCRYPT ONLY NOW - Q2 message<br> = known issue - Contact +w000t for invites - Read the interview: <a href="http://btcjebus.wordpress.com/2014/03/22/blackcoinpool-com-interview/" class=t5 target="_blank">http://btcjebus...</a></td><td class=cf>Soepkip</td></tr>
+<tr><td class="cds t6">22.3. 11:56</td><td class="ces t5" title="#blackcoinpool Closed Beta up and running smoothly - CONTACT @TheDogeOfWallSt for closed beta invites. To PM &quot;/msg TheDogeOfWallSt Hey can I get a beta invite?&quot; - SCRYPT ONLY NOW - Q2 message = known issue - THIS IS BETAAA!">#blackcoinpool Closed Beta up and running smoothly - CONTACT @TheDogeOf...<br>...WallSt for closed beta invites. To PM &quot;/msg TheDogeOfWallSt Hey...</td><td class=cfs>Soepkip</td></tr>
+</table><br>
+<br><span class=txt2>164 topic changes since 20.3.2014</span><br><br>
+<a name="relat"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">#blackcoinpool relation map</font>
+</center></td></tr></table></center></td></tr></table><br>
+<img src="blackcoinpool_relmap.png" width="600" height="500" alt="#blackcoinpool relation map generated by mIRCStats v1.24"><br>
+<table class=txt2>
+<tr><td class="tal tinv">&bull; Line thickness corresponds to the relation strength</td></tr>
+<tr><td class="tal tinv">&bull; Line colors show the relation importance for each nick</td></tr>
+<tr><td class="tac tinv"><table><tr class=txt1>
+<td class="tinv tar">&nbsp; More important</td>
+<td width="13" class="box cs1">&nbsp;</td>
+<td width="13" class="box cs2">&nbsp;</td>
+<td width="13" class="box cs3">&nbsp;</td>
+<td width="13" class="box cs4">&nbsp;</td>
+<td width="13" class="box cs5">&nbsp;</td>
+<td class="tinv tal">Less important</td>
+</tr></table></td></tr>
+</table><br><br>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<br>
+</center></td></tr></table></center></td></tr></table><br>
+<table border=0 cellspacing=4 class=txt1>
+<tr><td class=tinv><a href="blackcoinpool.html" class=toc target="_self">1. Main page</a></td><td class=tinv><a href="blackcoinpool_page_2.html" class=toc target="_self">2. Detailed info</a></td><td class=tinv><a href="blackcoinpool_page_3.html" class=toc target="_self">3. Personal Stats</a></td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#dail" target="_self">Daily stats</a></td><td class=tinv><a href="blackcoinpool_page_2.html#cust" target="_self">Custom stats</a></td><td class=tinv><a href="blackcoinpool_page_3.html#pers" target="_self">Personal stats</a></td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#hourl" target="_self">Hourly stats</a></td><td class=tinv><a href="blackcoinpool_page_2.html#chat" target="_self">Chat partners</a></td><td rowspan=8 class=tinv>&nbsp;</td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#user" target="_self">User stats</a></td><td class=tinv><a href="blackcoinpool_page_2.html#activ" target="_self">Active days</a></td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#bign" target="_self">Big numbers</a></td><td class=tinv><a href="blackcoinpool_page_2.html#activ2" target="_self">Activity distribution</a></td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#weekl" target="_self">Weekly stats</a></td><td class=tinv><a href="blackcoinpool_page_2.html#linel" target="_self">Line lengths</a></td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#time" target="_self">Time of day stats</a></td><td class=tinv><a href="blackcoinpool_page_2.html#word" target="_self">Word stats</a></td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#long" target="_self">Long term stats</a></td><td class=tinv><a href="blackcoinpool_page_2.html#urltr" target="_self">URL tracking</a></td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#topics" target="_self">Topics table</a></td><td rowspan=2 class=tinv>&nbsp;</td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#relat" target="_self">Relation map</a></td></tr>
+</table><br>
+<a name="e32110"></a>
+<br><!-- DO NOT REMOVE THE COPYRIGHT INFO! -->
+<Table class=cr><tr><td class=tinv>
+This page was created on 9.7.2014 12:58 with <a href="http://www.mircstats.net/" target="_top">mIRCStats v1.24</a><br>
+Run time: 10 seconds. English language file done by Soepkip & thanks to drewdrew for license.<br>
+<a href="http://www.nic.fi/~mauvinen/mircstats/" target="_top">mIRCStats</a> is &copy 1998-2014 by Mikko "Ave" Auvinen
+</td></tr></table><br>
+</center></body></html>

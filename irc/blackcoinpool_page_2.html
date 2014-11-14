@@ -1,0 +1,1069 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- This page was created on 9.7.2014 12:58 with a registered version (#3117DE3) of mIRCStats v1.24 by Mikko "Ave" Auvinen -->
+<!-- SLPL parser engine configuration: "mIRC 7.22 compliant" created by Ave -->
+<!-- Do not modify the page source! (Lines: 923819) -->
+
+<!-- mIRCStats WWW: http://www.nic.fi/~mauvinen/mircstats/ -->
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>#blackcoinpool statistics created with mIRCStats v1.24 by Soepkip - Detailed info</title>
+<style type="text/css">
+<!--
+body { text-align: center; font-family: "Verdana", Arial, sans-serif; background-color: #303030; color: #FFFFFF; font-size: 12px }
+h1 { font-family: "Arial"; color: #FFFFFF; font-size: 26px; font-weight: normal; margin: 4px }
+h3 { font-family: "Arial"; color: #FFFFFF; font-size: 20px; font-weight: normal; margin: 3px }
+h4 { font-family: "Arial"; color: #F08000; font-size: 16px; font-weight: normal; margin: 2px }
+h5 { font-family: "Arial"; color: #FFFFFF; font-size: 16px; font-weight: normal; margin: 2px }
+table { border: 0px ; padding: 0px; border-spacing: 1px }
+img { border-width: 0px; }
+.ttxt { border: 0px; padding: 2px }
+.tgr,  .tinv { border: 0px }
+.tadj { border-style: none; border-collapse: collapse }
+.tadj td { border: 0px none; padding: 0px }
+.txt1 { font-family: "Verdana"; color: #FFFFFF; font-size: 12px; text-align: left }
+.txt2 { font-family: "Verdana"; color: #F08000; font-size: 12px; text-align: left }
+
+.t1 { font-family: "Verdana"; color: #F0F0F0; font-size: 12px; text-align: left; font-weight: bold }
+.t2 { font-family: "Verdana"; color: #E0E0E0; font-size: 12px; text-align: left; font-style: normal }
+.t5 { font-family:"Arial"; color:#E0E0E0; font-size:12px; text-align:left; font-weight:normal; font-style: italic }
+.t6 { font-family:"Verdana"; color:#E0E0E0; font-size:10px; text-align:right; font-style: normal; white-space:nowrap; }
+.tal { text-align: left }
+.tar { text-align: right }
+.tac { text-align: center }
+
+.s1 { font-family: "Arial"; color: #F08000; font-size: 9px; vertical-align: bottom; text-align: center  }
+.s2 { font-family: "Arial"; color: #FFFFFF; font-size: 9px; vertical-align: bottom; text-align: center ; border: 0px }
+.s3 { font-family: "Arial"; color: #E0E0E0; font-size: 9px; vertical-align: bottom; text-align: center }
+.s4 { font-family: "Verdana"; color: #E0E0E0; font-size: 10px; text-align: left }
+.s5 { font-family: "Verdana"; color: #E0E0E0; font-size: 10px; text-align: left; border:0px }
+.sq { font-style: italic }
+.win { font-weight: bold }
+.toc { font-family: "Arial"; color: #F08000; font-size: 16px; font-weight: normal; margin: 2px }
+.ra { font-family: "Arial"; color: #F0F0F0; font-size: 32px; text-align: center; border-style: solid; border-width: 4px; border-color: #ffffff #000000 #000000 #ffffff; }
+.rn { font-family:"Verdana"; color:#FFFFFF;font-size:16px; text-align:left;font-weight:bold; font-style:normal; }
+.rb { border-style:solid;border-width:3px 0px; border-color:#484848; color:#FFFFFF}
+.box { Border: 1px solid #F0F0F0 }
+.ac { font-family: "Verdana", Arial, sans-serif; color:#000000; font-size: 10px; vertical-align: middle; text-align: center }
+.am { vertical-align: top; Border: 1px solid #FFFFFF }
+.cr { background-color: #303030; padding: 2px; border-style: outset; border-width: 2px; font-family: Arial, sans-serif; color: #FFFFFF; font-size: 12px; vertical-align: middle; text-align: left }
+.ca { background-color: #505050 }
+.cb { background-color: #484848 }
+.cc { background-color: #404040 }
+.cbg { background-color: #303030 }
+.cn { background-color: #F08000 }
+.cd { background-color: #505050 }
+.ce { background-color: #484848 }
+.cf { background-color: #404040 }
+.cns { background-color: #F39933 }
+.cas { background-color: #737373 }
+.cbs { background-color: #6C6C6C }
+.ccs { background-color: #666666 }
+.cds { background-color: #737373 }
+.ces { background-color: #6C6C6C }
+.cfs { background-color: #666666 }
+.cda { background-color: #4E4E4E }
+.cdb { background-color: #4C4C4C }
+.cdc { background-color: #4A4A4A }
+.cea { background-color: #464646 }
+.ceb { background-color: #444444 }
+.cec { background-color: #424242 }
+.cfa { background-color: #444444 }
+.cfb { background-color: #484848 }
+.cfc { background-color: #4C4C4C }
+.cs0 { background-color: #A0A0A0 }
+.cs1 { background-color: #FF0000 }
+.cs2 { background-color: #FFFF00 }
+.cs3 { background-color: #00FF00 }
+.cs4 { background-color: #00FFFF }
+.cs5 { background-color: #0000FF }
+.cacl { background-color: #FF0000 }
+.cacm { background-color: #FFFF00 }
+.cach { background-color: #00FF00 }
+.cs1a { background-color: #FF7F00 }
+.cs2a { background-color: #7FFF00 }
+.cs3a { background-color: #00FF7F }
+.cs4a { background-color: #007FFF }
+A { color: #FFFFFF }
+-->
+</style>
+
+</head>
+<body><center>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<br>
+</center></td></tr></table></center></td></tr></table><br>
+<!-- mircstatsheader.txt: Add here your own header html code! -->
+
+ 
+<a href="blackcoinpool.html" target="_self">1. Main page</a>
+ | 2. Detailed info
+ | <a href="blackcoinpool_page_3.html" target="_self">3. Personal Stats</a>
+<br><br>
+<a name="cust"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">Top 10 smiley using guys on #blackcoinpool</font>
+</center></td></tr></table></center></td></tr></table><br>
+<Table cellspacing=1 cellpadding=2 class=t2>
+<tr class=t1><td class=tinv>&nbsp;</td>
+<td class=ca> Nick </td>
+<td class=cb> Lines Written </td>
+<td colspan=2 class=cc> Random Quote </td>
+</tr>
+<tr><td class="cns tar">1</td>
+<td class=cds> <b>Wurlitzer</b> </td>
+<td class=ces><img src="pipecs.png" height="15" width="80" align=middle>&nbsp;2657</td>
+<td class="cfs t6"> 30.3. 16:03 </td>
+<td class="cfs t5"> "hawkalator, yeah of course ... on secound :)"</td>
+</tr>
+<tr><td class="cn tar">2</td>
+<td class=cd> balfouri </td>
+<td class=ce><img src="pipecs.png" height="15" width="66" align=middle>&nbsp;2207</td>
+<td class="cf t6"> 24.3. 11:45 </td>
+<td class="cf t5"> "I told you ;)"</td>
+</tr>
+<tr><td class="cns tar">3</td>
+<td class=cds> africanos </td>
+<td class=ces><img src="pipecs.png" height="15" width="64" align=middle>&nbsp;2117</td>
+<td class="cfs t6"> 27.3. 23:31 </td>
+<td class="cfs t5"> "36 hours of mining Hirocoin was 1138 :)"</td>
+</tr>
+<tr><td class="cn tar">4</td>
+<td class=cd> Soepkip </td>
+<td class=ce><img src="pipecs.png" height="15" width="53" align=middle>&nbsp;1773</td>
+<td class="cf t6"> 30.3. 4:37 </td>
+<td class="cf t5"> "how y'all like my new address ;)"</td>
+</tr>
+<tr><td class="cns tar">5</td>
+<td class=cds> maarx </td>
+<td class=ces><img src="pipecs.png" height="15" width="50" align=middle>&nbsp;1651</td>
+<td class="cfs t6"> 23.5. 19:42 </td>
+<td class="cfs t5"> "maybe a reddit topic :)"</td>
+</tr>
+<tr><td class="cn tar">6</td>
+<td class=cd> purg </td>
+<td class=ce><img src="pipecs.png" height="15" width="46" align=middle>&nbsp;1528</td>
+<td class="cf t6"> 29.4. 5:13 </td>
+<td class="cf t5"> "have you figured out that in a world without fiat war was a hard thing to plan for governments<br> ?:D"</td>
+</tr>
+<tr><td class="cns tar">7</td>
+<td class=cds> KBomba </td>
+<td class=ces><img src="pipecs.png" height="15" width="33" align=middle>&nbsp;1083</td>
+<td class="cfs t6"> 8.6. 16:33 </td>
+<td class="cfs t5"> "Ok, than I shall grey it out &quot;Multipool switching under construction&quot; :D"</td>
+</tr>
+<tr><td class="cn tar">8</td>
+<td class=cd> BiTMiND </td>
+<td class=ce><img src="pipecs.png" height="15" width="32" align=middle>&nbsp;1060</td>
+<td class="cf t6"> 21.3. 10:18 </td>
+<td class="cf t5"> "wondering if any of those sites were mine.. ;)"</td>
+</tr>
+<tr><td class="cns tar">9</td>
+<td class=cds> DarkFox </td>
+<td class=ces><img src="pipecs.png" height="15" width="32" align=middle>&nbsp;1054</td>
+<td class="cfs t6"> 21.6. 16:35 </td>
+<td class="cfs t5"> "Hell; make it 500 btc floor @ 50k ? :D"</td>
+</tr>
+<tr><td class="cn tar">10</td>
+<td class=cd> goblynn </td>
+<td class=ce><img src="pipecs.png" height="15" width="26" align=middle>&nbsp;869</td>
+<td class="cf t6"> 4.5. 5:31 </td>
+<td class="cf t5"> "<a href="https://soundcloud.com/goblynn/wood-step/s-IbpGZ" class=t5 target="_blank">https://soundcloud.com/goblynn/wood-step/s-IbpGZ</a> new song im working on :)"</td>
+</tr>
+</table><br>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">Top 10 people wanting to drive the price down on #blackcoinpool</font>
+</center></td></tr></table></center></td></tr></table><br>
+<Table cellspacing=1 cellpadding=2 class=t2>
+<tr class=t1><td class=tinv>&nbsp;</td>
+<td class=ca> Nick </td>
+<td class=cb> Lines Written </td>
+<td colspan=2 class=cc> Random Quote </td>
+</tr>
+<tr><td class="cns tar">1</td>
+<td class=cds> <b>africanos</b> </td>
+<td class=ces><img src="pipecs.png" height="15" width="80" align=middle>&nbsp;565</td>
+<td class="cfs t6"> 29.3. 22:58 </td>
+<td class="cfs t5"> "I will start a major dump in 10 minutes"</td>
+</tr>
+<tr><td class="cn tar">2</td>
+<td class=cd> Soepkip </td>
+<td class=ce><img src="pipecs.png" height="15" width="34" align=middle>&nbsp;241</td>
+<td class="cf t6"> 27.3. 15:26 </td>
+<td class="cf t5"> "I JUST READ ON QQ THAT THE CHINESE ARE PLANNING TO DUMP!"</td>
+</tr>
+<tr><td class="cns tar">3</td>
+<td class=cds> maarx </td>
+<td class=ces><img src="pipecs.png" height="15" width="27" align=middle>&nbsp;193</td>
+<td class="cfs t6"> 13.5. 4:57 </td>
+<td class="cfs t5"> "are you dumping McKie ? :P"</td>
+</tr>
+<tr><td class="cn tar">4</td>
+<td class=cd> surestrike </td>
+<td class=ce><img src="pipecs.png" height="15" width="21" align=middle>&nbsp;151</td>
+<td class="cf t6"> 18.4. 9:28 </td>
+<td class="cf t5"> "If holders here have more than 50% of the 75 mill, then surely we can have some sort of protection<br> against the big dumps?"</td>
+</tr>
+<tr><td class="cns tar">5</td>
+<td class=cds> syllabear </td>
+<td class=ces><img src="pipecs.png" height="15" width="21" align=middle>&nbsp;147</td>
+<td class="cfs t6"> 2.7. 1:50 </td>
+<td class="cfs t5"> "maarx: the vol is 97k during the dump. not sure if 97k dumped"</td>
+</tr>
+<tr><td class="cn tar">6</td>
+<td class=cd> justtryme90 </td>
+<td class=ce><img src="pipecs.png" height="15" width="19" align=middle>&nbsp;131</td>
+<td class="cf t6"> 23.3. 20:39 </td>
+<td class="cf t5"> "this will be dumped eventually"</td>
+</tr>
+<tr><td class="cns tar">7</td>
+<td class=cds> dibdab </td>
+<td class=ces><img src="pipecs.png" height="15" width="15" align=middle>&nbsp;108</td>
+<td class="cfs t6"> 23.5. 10:31 </td>
+<td class="cfs t5"> "im not much on conspiracy believer but BLK suppression is weird. Its like dumpers rather keep<br> price low than make better profit"</td>
+</tr>
+<tr><td class="cn tar">8</td>
+<td class=cd> Ashdrake-Bot </td>
+<td class=ce><img src="pipecs.png" height="15" width="15" align=middle>&nbsp;108</td>
+<td class="cf t6"> 30.4. 2:50 </td>
+<td class="cf t5"> "the dump roughly 12hours ago, with those huge candles really took us down a peg, we were<br> barely above retracement then, dump happend and we started to trend downwards."</td>
+</tr>
+<tr><td class="cns tar">9</td>
+<td class=cds> cryptol </td>
+<td class=ces><img src="pipecs.png" height="15" width="15" align=middle>&nbsp;103</td>
+<td class="cfs t6"> 2.4. 19:59 </td>
+<td class="cfs t5" title="brammien yeah you're right, but that's just the reality every coin deals with - if the coin can't survive the trading, obviously the fundamental belief wasn't there in the first place - I think BC will easily weather any dumps, since we're out of PoW, belief is very strong in this coin and growing daily - we have the foundation to withstand fiat profiteers."> "brammien yeah you're right, but that's just the reality every coin deals with - if the coin can't survive<br> the trading, obviously the fundamental belief wasn't there in the first place - I think BC will easily..."</td>
+</tr>
+<tr><td class="cn tar">10</td>
+<td class=cd> DarkFox </td>
+<td class=ce><img src="pipecs.png" height="15" width="13" align=middle>&nbsp;94</td>
+<td class="cf t6"> 13.5. 14:48 </td>
+<td class="cf t5"> "wizfarm: Question about blackshield; if you want to get a payout, do you buy the blackshield's<br> btc ? (Say, dumping 100k bc)"</td>
+</tr>
+</table><br>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">Top 10 people that kept asking about the price</font>
+</center></td></tr></table></center></td></tr></table><br>
+<Table cellspacing=1 cellpadding=2 class=t2>
+<tr class=t1><td class=tinv>&nbsp;</td>
+<td class=ca> Nick </td>
+<td class=cb> Lines Written </td>
+<td colspan=2 class=cc> Random Quote </td>
+</tr>
+<tr><td class="cns tar">1</td>
+<td class=cds> <b>w000tBot</b> </td>
+<td class=ces><img src="pipecs.png" height="15" width="80" align=middle>&nbsp;879</td>
+<td class="cfs t6"> 14.4. 3:11 </td>
+<td class="cfs t5"> "Last price: 0.00052500 BTC | Yesterday price: 0.00039340 BTC | Change: +33.45% | High: 0.00054250<br> BTC | Low: 0.00015555 BTC | Volume : 3498.187 BTC"</td>
+</tr>
+<tr><td class="cn tar">2</td>
+<td class=cd> Milbot </td>
+<td class=ce><img src="pipecs.png" height="15" width="53" align=middle>&nbsp;581</td>
+<td class="cf t6"> 23.4. 7:21 </td>
+<td class="cf t5"> "Mintpal Price: 0.00039500 - +12.22"</td>
+</tr>
+<tr><td class="cns tar">3</td>
+<td class=cds> africanos </td>
+<td class=ces><img src="pipecs.png" height="15" width="45" align=middle>&nbsp;495</td>
+<td class="cfs t6"> 28.5. 6:55 </td>
+<td class="cfs t5"> "when the price was at 80K sat"</td>
+</tr>
+<tr><td class="cn tar">4</td>
+<td class=cd> surestrike </td>
+<td class=ce><img src="pipecs.png" height="15" width="38" align=middle>&nbsp;421</td>
+<td class="cf t6"> 23.4. 9:12 </td>
+<td class="cf t5"> "When i see BC price rise... this is what i listen to.. <a href="http://www.youtube.com/watch?v=nYfpynEV2sw" class=t5 target="_blank">http://www.youtube.com/watch?v=nYfpynEV2sw</a>"</td>
+</tr>
+<tr><td class="cns tar">5</td>
+<td class=cds> Soepkip </td>
+<td class=ces><img src="pipecs.png" height="15" width="36" align=middle>&nbsp;394</td>
+<td class="cfs t6"> 21.3. 13:31 </td>
+<td class="cfs t5"> "price now is 95 again"</td>
+</tr>
+<tr><td class="cn tar">6</td>
+<td class=cd> MintPalBot </td>
+<td class=ce><img src="pipecs.png" height="15" width="32" align=middle>&nbsp;351</td>
+<td class="cf t6"> 21.3. 12:07 </td>
+<td class="cf t5"> "Last price: 562.41 USD | High: 607.88 USD | Low: 558.02 USD | VWAP: 587.5 USD | Volume: 16441.8...<br>...4328045"</td>
+</tr>
+<tr><td class="cns tar">7</td>
+<td class=cds> maarx </td>
+<td class=ces><img src="pipecs.png" height="15" width="30" align=middle>&nbsp;335</td>
+<td class="cfs t6"> 12.4. 16:11 </td>
+<td class="cfs t5"> "nice. and what happened when u saw the price?"</td>
+</tr>
+<tr><td class="cn tar">8</td>
+<td class=cd> Ashdrake-Bot </td>
+<td class=ce><img src="pipecs.png" height="15" width="30" align=middle>&nbsp;326</td>
+<td class="cf t6"> 29.4. 2:08 </td>
+<td class="cf t5"> "then 1000 people have to buy it a lower price"</td>
+</tr>
+<tr><td class="cns tar">9</td>
+<td class=cds> goblynn </td>
+<td class=ces><img src="pipecs.png" height="15" width="28" align=middle>&nbsp;310</td>
+<td class="cfs t6"> 4.4. 7:11 </td>
+<td class="cfs t5"> "bc is like 7 billion dollar market"</td>
+</tr>
+<tr><td class="cn tar">10</td>
+<td class=cd> MrCoins </td>
+<td class=ce><img src="pipecs.png" height="15" width="27" align=middle>&nbsp;301</td>
+<td class="cf t6"> 25.6. 21:12 </td>
+<td class="cf t5" title="Take a look at ENRG, some good stuff coming out in next couple of weeks, then it'll hit mintal. Get in early if you have some spare BTC knocking abot. Buy &lt; 150 sat where possible, let orders come to you, do not chase the price up :) -&gt; https://twitter.com/CryptoDabbler/status/481876831197753344"> "Take a look at ENRG, some good stuff coming out in next couple of weeks, then it'll hit mintal. Get<br> in early if you have some spare BTC knocking abot. Buy &lt; 150 sat where possible, let orders..."</td>
+</tr>
+</table><br>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">Top 10 people wanting to drive the price up on #blackcoinpool</font>
+</center></td></tr></table></center></td></tr></table><br>
+<Table cellspacing=1 cellpadding=2 class=t2>
+<tr class=t1><td class=tinv>&nbsp;</td>
+<td class=ca> Nick </td>
+<td class=cb> percentage </td>
+<td colspan=2 class=cc> Random Quote </td>
+</tr>
+<tr><td class="cns tar">1</td>
+<td class=cds> <b>rrob</b> </td>
+<td class=ces><img src="pipecs.png" height="15" width="80" align=middle>&nbsp;12,0%</td>
+<td class="cfs t6"> 27.4. 19:39 </td>
+<td class="cfs t5"> "if bc pool pumps up more buzz for Friday promo price will be crazy"</td>
+</tr>
+<tr><td class="cn tar">2</td>
+<td class=cd> fontaspumps </td>
+<td class=ce><img src="pipecs.png" height="15" width="78" align=middle>&nbsp;11,7%</td>
+<td class="cf t6"> 2.4. 19:12 </td>
+<td class="cf t5"> "maybe toothfairy pumps"</td>
+</tr>
+<tr><td class="cns tar">3</td>
+<td class=cds> BCFTW </td>
+<td class=ces><img src="pipecs.png" height="15" width="67" align=middle>&nbsp;10,0%</td>
+<td class="cfs t6"> 23.4. 0:03 </td>
+<td class="cfs t5"> "GRS is beeing pumped :D"</td>
+</tr>
+<tr><td class="cn tar">4</td>
+<td class=cd> notforsale </td>
+<td class=ce><img src="pipecs.png" height="15" width="53" align=middle>&nbsp;8,00%</td>
+<td class="cf t6"> 25.4. 21:44 </td>
+<td class="cf t5"> "is there a pump on BC coming up?"</td>
+</tr>
+<tr><td class="cns tar">5</td>
+<td class=cds> SimkoMinerOnMoon </td>
+<td class=ces><img src="pipecs.png" height="15" width="49" align=middle>&nbsp;7,41%</td>
+<td class="cfs t6"> 3.5. 14:32 </td>
+<td class="cfs t5"> "Is this the Fibonači or Elliot waves we see? :) Or just stupid pump?"</td>
+</tr>
+<tr><td class="cn tar">6</td>
+<td class=cd> haeg </td>
+<td class=ce><img src="pipecs.png" height="15" width="48" align=middle>&nbsp;7,22%</td>
+<td class="cf t6"> 15.4. 23:45 </td>
+<td class="cf t5"> "maartentjewut: i dont think so, i dont see why it should unless we get another whale pump, but<br> not by normal movement. why should the price increase at all? any reason but manipulation?"</td>
+</tr>
+<tr><td class="cns tar">7</td>
+<td class=cds> hellyeahent </td>
+<td class=ces><img src="pipecs.png" height="15" width="46" align=middle>&nbsp;6,90%</td>
+<td class="cfs t6"> 4.5. 0:24 </td>
+<td class="cfs t5"> "is there some whale killer pump group ?"</td>
+</tr>
+<tr><td class="cn tar">8</td>
+<td class=cd> Rody9iron </td>
+<td class=ce><img src="pipecs.png" height="15" width="45" align=middle>&nbsp;6,76%</td>
+<td class="cf t6"> 23.4. 16:44 </td>
+<td class="cf t5"> "this will be a pump like no other pump, thats for sure lol"</td>
+</tr>
+<tr><td class="cns tar">9</td>
+<td class=cds> darby </td>
+<td class=ces><img src="pipecs.png" height="15" width="41" align=middle>&nbsp;6,15%</td>
+<td class="cfs t6"> 27.3. 0:01 </td>
+<td class="cfs t5"> "I hope pumpers get rabies"</td>
+</tr>
+<tr><td class="cn tar">10</td>
+<td class=cd> blackk </td>
+<td class=ce><img src="pipecs.png" height="15" width="40" align=middle>&nbsp;6,00%</td>
+<td class="cf t6"> 22.4. 8:52 </td>
+<td class="cf t5"> "for another pump i feel"</td>
+</tr>
+</table><br>
+<a name="chat"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">Chat partners</font>
+<br><font color="#FFFFFF" size="2" face="Arial">(they really like talking to each other...)
+</center></td></tr></table></center></td></tr></table><br>
+<Table cellspacing=1 cellpadding=2 class=t2>
+<tr><td class="cns tac" rowspan=2>1 </td>
+<td class="cds tar"><b>Soepkip</b></td><td class=ces><b>africanos</b></td>
+</tr><tr><td class=cfs colspan=2><img src="pipe1.png" height=7 width=59><img src="pipe2.png" height=7 width=30><img src="pipe3.png" height=7 width=60><img src="pipe4.png" height=7 width=51></td></tr>
+<tr><td class="cn tac" rowspan=2>2 </td>
+<td class="cd tar">DarkFox</td><td class=ce>syllabear</td>
+</tr><tr><td class=cf colspan=2><img src="pipe1.png" height=7 width=33><img src="pipe2.png" height=7 width=80><img src="pipe3.png" height=7 width=74></td></tr>
+<tr><td class="cns tac" rowspan=2>3 </td>
+<td class="cds tar">Soepkip</td><td class=ces>goblynn</td>
+</tr><tr><td class=cfs colspan=2><img src="pipe1.png" height=7 width=81><img src="pipe2.png" height=7 width=19><img src="pipe3.png" height=7 width=23><img src="pipe4.png" height=7 width=54></td></tr>
+<tr><td class="cn tac" rowspan=2>4 </td>
+<td class="cd tar">Soepkip</td><td class=ce>maarx</td>
+</tr><tr><td class=cf colspan=2><img src="pipe1.png" height=7 width=55><img src="pipe2.png" height=7 width=9><img src="pipe3.png" height=7 width=42><img src="pipe4.png" height=7 width=44></td></tr>
+<tr><td class="cns tac" rowspan=2>5 </td>
+<td class="cds tar">Soepkip</td><td class=ces>w000tBot</td>
+</tr><tr><td class=cfs colspan=2><img src="pipe1.png" height=7 width=44><img src="pipe2.png" height=7 width=10><img src="pipe3.png" height=7 width=37><img src="pipe4.png" height=7 width=41></td></tr>
+<tr><td class="cn tac" rowspan=2>6 </td>
+<td class="cd tar">DarkFox</td><td class=ce>africanos</td>
+</tr><tr><td class=cf colspan=2><img src="pipe1.png" height=7 width=11><img src="pipe2.png" height=7 width=52><img src="pipe3.png" height=7 width=65><img src="pipe4.png" height=7 width=1></td></tr>
+<tr><td class="cns tac" rowspan=2>7 </td>
+<td class="cds tar">w000tBot</td><td class=ces>africanos</td>
+</tr><tr><td class=cfs colspan=2><img src="pipe1.png" height=7 width=22><img src="pipe2.png" height=7 width=9><img src="pipe3.png" height=7 width=38><img src="pipe4.png" height=7 width=25></td></tr>
+<tr><td class="cn tac" rowspan=2>8 </td>
+<td class="cd tar">Soepkip</td><td class=ce>TheDogeOfWallSt</td>
+</tr><tr><td class=cf colspan=2><img src="pipe1.png" height=7 width=31><img src="pipe2.png" height=7 width=23><img src="pipe3.png" height=7 width=22><img src="pipe4.png" height=7 width=15></td></tr>
+<tr><td class="cns tac" rowspan=2>9 </td>
+<td class="cds tar">africanos</td><td class=ces>goblynn</td>
+</tr><tr><td class=cfs colspan=2><img src="pipe1.png" height=7 width=36><img src="pipe2.png" height=7 width=20><img src="pipe3.png" height=7 width=15><img src="pipe4.png" height=7 width=19></td></tr>
+<tr><td class="cn tac" rowspan=2>10 </td>
+<td class="cd tar">KBomba</td><td class=ce>Soepkip</td>
+</tr><tr><td class=cf colspan=2><img src="pipe1.png" height=7 width=21><img src="pipe2.png" height=7 width=2><img src="pipe3.png" height=7 width=28><img src="pipe4.png" height=7 width=39></td></tr>
+</table><br>
+<a name="activ"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">Active day counts</font>
+<br><font color="#FFFFFF" size="2" face="Arial">Most days active
+</center></td></tr></table></center></td></tr></table><br>
+<Table cellspacing=1 cellpadding=2 class=t2>
+<tr class=t1><td class=tinv>&nbsp;</td>
+<td class=ca> Nick </td>
+<td class=cb> Number of days </td>
+<td class=cc> First seen </td>
+<td class=ca> percentage </td></tr>
+<tr><td class="cns tar">1</td><td class="cds win"> Soepkip </td>
+<td class=ces><img src="pipeac.png" height="15" width="80" align=middle>&nbsp;108</td>
+<td class=cfs> 20.3.2014 </td>
+<td class=cds title="108 / 112 = 96,4%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 96% </td></tr></table></td></tr>
+<tr><td class="cn tar">2</td><td class="cd win"> w000tBot </td>
+<td class=ce><img src="pipeac.png" height="15" width="80" align=middle>&nbsp;108</td>
+<td class=cf> 20.3.2014 </td>
+<td class=cd title="108 / 112 = 96,4%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 96% </td></tr></table></td></tr>
+<tr><td class="cns tar">3</td><td class=cds> Ralphvd </td>
+<td class=ces><img src="pipeac.png" height="15" width="79" align=middle>&nbsp;107</td>
+<td class=cfs> 20.3.2014 </td>
+<td class=cds title="107 / 112 = 95,5%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 96% </td></tr></table></td></tr>
+<tr><td class="cn tar">4</td><td class=cd> BiTMiND </td>
+<td class=ce><img src="pipeac.png" height="15" width="79" align=middle>&nbsp;106</td>
+<td class=cf> 20.3.2014 </td>
+<td class=cd title="106 / 112 = 94,6%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 95% </td></tr></table></td></tr>
+<tr><td class="cns tar">5</td><td class=cds> maarx </td>
+<td class=ces><img src="pipeac.png" height="15" width="76" align=middle>&nbsp;103</td>
+<td class=cfs> 20.3.2014 </td>
+<td class=cds title="103 / 112 = 92,0%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 92% </td></tr></table></td></tr>
+<tr><td class="cn tar">6</td><td class=cd> Vizique </td>
+<td class=ce><img src="pipeac.png" height="15" width="76" align=middle>&nbsp;102</td>
+<td class=cf> 20.3.2014 </td>
+<td class=cd title="102 / 112 = 91,1%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 91% </td></tr></table></td></tr>
+<tr><td class="cns tar">7</td><td class=cds> KBomba </td>
+<td class=ces><img src="pipeac.png" height="15" width="75" align=middle>&nbsp;101</td>
+<td class=cfs> 20.3.2014 </td>
+<td class=cds title="101 / 112 = 90,2%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 90% </td></tr></table></td></tr>
+<tr><td class="cn tar">8</td><td class=cd> dibdab </td>
+<td class=ce><img src="pipeac.png" height="15" width="70" align=middle>&nbsp;95</td>
+<td class=cf> 20.3.2014 </td>
+<td class=cd title="95 / 112 = 84,8%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 85% </td></tr></table></td></tr>
+<tr><td class="cns tar">9</td><td class=cds> syllabear </td>
+<td class=ces><img src="pipeac.png" height="15" width="68" align=middle>&nbsp;92</td>
+<td class=cfs> 28.3.2014 </td>
+<td class=cds title="92 / 104 = 88,5%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 88% </td></tr></table></td></tr>
+<tr><td class="cn tar">10</td><td class=cd> sinetek </td>
+<td class=ce><img src="pipeac.png" height="15" width="67" align=middle>&nbsp;91</td>
+<td class=cf> 2.4.2014 </td>
+<td class=cd title="91 / 99 = 91,9%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 92% </td></tr></table></td></tr>
+<tr><td class="cns tar">11</td><td class=cds> vect </td>
+<td class=ces><img src="pipeac.png" height="15" width="67" align=middle>&nbsp;91</td>
+<td class=cfs> 22.3.2014 </td>
+<td class=cds title="91 / 110 = 82,7%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 83% </td></tr></table></td></tr>
+<tr><td class="cn tar">12</td><td class=cd> DarkFox </td>
+<td class=ce><img src="pipeac.png" height="15" width="66" align=middle>&nbsp;89</td>
+<td class=cf> 28.3.2014 </td>
+<td class=cd title="89 / 104 = 85,6%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 86% </td></tr></table></td></tr>
+<tr><td class="cns tar">13</td><td class=cds> balfouri </td>
+<td class=ces><img src="pipeac.png" height="15" width="64" align=middle>&nbsp;86</td>
+<td class=cfs> 20.3.2014 </td>
+<td class=cds title="86 / 112 = 76,8%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 77% </td></tr></table></td></tr>
+<tr><td class="cn tar">14</td><td class=cd> Gritt-N-Auld </td>
+<td class=ce><img src="pipeac.png" height="15" width="64" align=middle>&nbsp;86</td>
+<td class=cf> 6.4.2014 </td>
+<td class=cd title="86 / 95 = 90,5%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 91% </td></tr></table></td></tr>
+<tr><td class="cns tar">15</td><td class=cds> FeeRaHuri </td>
+<td class=ces><img src="pipeac.png" height="15" width="62" align=middle>&nbsp;84</td>
+<td class=cfs> 23.3.2014 </td>
+<td class=cds title="84 / 109 = 77,1%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 77% </td></tr></table></td></tr>
+<tr><td class="cn tar">16</td><td class=cd> Wurlitzer </td>
+<td class=ce><img src="pipeac.png" height="15" width="60" align=middle>&nbsp;81</td>
+<td class=cf> 23.3.2014 </td>
+<td class=cd title="81 / 109 = 74,3%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 74% </td></tr></table></td></tr>
+<tr><td class="cns tar">17</td><td class=cds> blade87 </td>
+<td class=ces><img src="pipeac.png" height="15" width="59" align=middle>&nbsp;79</td>
+<td class=cfs> 20.3.2014 </td>
+<td class=cds title="79 / 112 = 70,5%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 71% </td></tr></table></td></tr>
+<tr><td class="cn tar">18</td><td class=cd> zooka </td>
+<td class=ce><img src="pipeac.png" height="15" width="58" align=middle>&nbsp;78</td>
+<td class=cf> 6.4.2014 </td>
+<td class=cd title="78 / 95 = 82,1%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 82% </td></tr></table></td></tr>
+<tr><td class="cns tar">19</td><td class=cds> L3p </td>
+<td class=ces><img src="pipeac.png" height="15" width="57" align=middle>&nbsp;77</td>
+<td class=cfs> 21.3.2014 </td>
+<td class=cds title="77 / 111 = 69,4%"><table width="100%" class=t2><tr><td width="17" class="cacm box">&nbsp;</td><td class=tinv> 69% </td></tr></table></td></tr>
+<tr><td class="cn tar">20</td><td class=cd> Arigard </td>
+<td class=ce><img src="pipeac.png" height="15" width="56" align=middle>&nbsp;76</td>
+<td class=cf> 24.3.2014 </td>
+<td class=cd title="76 / 108 = 70,4%"><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> 70% </td></tr></table></td></tr>
+</table><br><br>
+<h5>Most consecutive days active</h5>
+<Table cellspacing=1 cellpadding=2 class=t2>
+<tr class=t1><td class=tinv>&nbsp;</td>
+<td class=ca> Nick </td>
+<td class=cb> Number of days </td>
+<td class=cc> At </td>
+<td class=ca> Currently </td></tr>
+<tr><td class="cns tar">1</td><td class="cds win"> africanos </td>
+<td class=ces><img src="pipeac.png" height="15" width="80" align=middle>&nbsp;56</td>
+<td class=cfs> 20.3. - 14.5.2014 </td>
+<td class=cds><table width="100%" class=t2><tr><td width="17" class="cacm box">&nbsp;</td><td class=tinv> Last active 4 days ago (5.7.2014) </td></tr></table></td></tr>
+<tr><td class="cn tar">2</td><td class="cd win"> KBomba </td>
+<td class=ce><img src="pipeac.png" height="15" width="80" align=middle>&nbsp;56</td>
+<td class=cf> 20.3. - 14.5.2014 </td>
+<td class=cd><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv title="Last active Yesterday"> Currently 4 days active *</td></tr></table></td></tr>
+<tr><td class="cns tar">3</td><td class="cds win"> Soepkip </td>
+<td class=ces><img src="pipeac.png" height="15" width="80" align=middle>&nbsp;56</td>
+<td class=cfs> 20.3. - 14.5.2014 </td>
+<td class=cds><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> Currently 52 days active </td></tr></table></td></tr>
+<tr><td class="cn tar">4</td><td class="cd win"> w000tBot </td>
+<td class=ce><img src="pipeac.png" height="15" width="80" align=middle>&nbsp;56</td>
+<td class=cf> 20.3. - 14.5.2014 </td>
+<td class=cd><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> Currently 52 days active </td></tr></table></td></tr>
+<tr><td class="cns tar">5</td><td class=cds> goblynn </td>
+<td class=ces><img src="pipeac.png" height="15" width="79" align=middle>&nbsp;55</td>
+<td class=cfs> 20.3. - 13.5.2014 </td>
+<td class=cds><table width="100%" class=t2><tr><td width="17" class="cacm box">&nbsp;</td><td class=tinv> Last active 2 weeks ago (20.6.2014) </td></tr></table></td></tr>
+<tr><td class="cn tar">6</td><td class=cd> vect </td>
+<td class=ce><img src="pipeac.png" height="15" width="76" align=middle>&nbsp;53</td>
+<td class=cf> 22.3. - 13.5.2014 </td>
+<td class=cd><table width="100%" class=t2><tr><td width="17" class="cacm box">&nbsp;</td><td class=tinv> Last active 3 days ago (6.7.2014) </td></tr></table></td></tr>
+<tr><td class="cns tar">7</td><td class=cds> cryptol </td>
+<td class=ces><img src="pipeac.png" height="15" width="76" align=middle>&nbsp;53</td>
+<td class=cfs> 22.3. - 13.5.2014 </td>
+<td class=cds><table width="100%" class=t2><tr><td width="17" class="cacm box">&nbsp;</td><td class=tinv> Last active 4 weeks ago (7.6.2014) </td></tr></table></td></tr>
+<tr><td class="cn tar">8</td><td class=cd> DumpyDump </td>
+<td class=ce><img src="pipeac.png" height="15" width="74" align=middle>&nbsp;52</td>
+<td class=cf> 19.5. - 9.7.2014 </td>
+<td class=cd><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class="tinv win"> Currently 52 days active </td></tr></table></td></tr>
+<tr><td class="cns tar">9</td><td class=cds> maarx </td>
+<td class=ces><img src="pipeac.png" height="15" width="74" align=middle>&nbsp;52</td>
+<td class=cfs> 19.5. - 9.7.2014 </td>
+<td class=cds><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class="tinv win"> Currently 52 days active </td></tr></table></td></tr>
+<tr><td class="cn tar">10</td><td class=cd> Ralphvd </td>
+<td class=ce><img src="pipeac.png" height="15" width="74" align=middle>&nbsp;52</td>
+<td class=cf> 19.5. - 9.7.2014 </td>
+<td class=cd><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class="tinv win"> Currently 52 days active </td></tr></table></td></tr>
+<tr><td class="cns tar">11</td><td class=cds> blackie </td>
+<td class=ces><img src="pipeac.png" height="15" width="74" align=middle>&nbsp;52</td>
+<td class=cfs> 19.5. - 9.7.2014 </td>
+<td class=cds><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class="tinv win"> Currently 52 days active </td></tr></table></td></tr>
+<tr><td class="cn tar">12</td><td class=cd> syllabear </td>
+<td class=ce><img src="pipeac.png" height="15" width="74" align=middle>&nbsp;52</td>
+<td class=cf> 19.5. - 9.7.2014 </td>
+<td class=cd><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class="tinv win"> Currently 52 days active </td></tr></table></td></tr>
+<tr><td class="cns tar">13</td><td class=cds> blade87 </td>
+<td class=ces><img src="pipeac.png" height="15" width="64" align=middle>&nbsp;45</td>
+<td class=cfs> 20.3. - 3.5.2014 </td>
+<td class=cds><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> Currently 2 days active </td></tr></table></td></tr>
+<tr><td class="cn tar">14</td><td class=cd> BiTMiND </td>
+<td class=ce><img src="pipeac.png" height="15" width="63" align=middle>&nbsp;44</td>
+<td class=cf> 1.4. - 14.5.2014 </td>
+<td class=cd><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> Currently 24 days active </td></tr></table></td></tr>
+<tr><td class="cns tar">15</td><td class=cds> balfouri </td>
+<td class=ces><img src="pipeac.png" height="15" width="60" align=middle>&nbsp;42</td>
+<td class=cfs> 20.3. - 30.4.2014 </td>
+<td class=cds><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv title="Last active Yesterday"> Currently 8 days active *</td></tr></table></td></tr>
+<tr><td class="cn tar">16</td><td class=cd> Wizfarm </td>
+<td class=ce><img src="pipeac.png" height="15" width="60" align=middle>&nbsp;42</td>
+<td class=cf> 23.3. - 3.5.2014 </td>
+<td class=cd><table width="100%" class=t2><tr><td width="17" class="cacm box">&nbsp;</td><td class=tinv> Last active 5 weeks ago (4.6.2014) </td></tr></table></td></tr>
+<tr><td class="cns tar">17</td><td class=cds> DogeyMcDoge </td>
+<td class=ces><img src="pipeac.png" height="15" width="60" align=middle>&nbsp;42</td>
+<td class=cfs> 20.3. - 30.4.2014 </td>
+<td class=cds><table width="100%" class=t2><tr><td width="17" class="cacm box">&nbsp;</td><td class=tinv> Last active 13 days ago (26.6.2014) </td></tr></table></td></tr>
+<tr><td class="cn tar">18</td><td class=cd> Vizique </td>
+<td class=ce><img src="pipeac.png" height="15" width="59" align=middle>&nbsp;41</td>
+<td class=cf> 20.3. - 29.4.2014 </td>
+<td class=cd><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> Currently 37 days active </td></tr></table></td></tr>
+<tr><td class="cns tar">19</td><td class=cds> tuj </td>
+<td class=ces><img src="pipeac.png" height="15" width="59" align=middle>&nbsp;41</td>
+<td class=cfs> 22.3. - 1.5.2014 </td>
+<td class=cds><table width="100%" class=t2><tr><td width="17" class="cacm box">&nbsp;</td><td class=tinv> Last active 3 days ago (6.7.2014) </td></tr></table></td></tr>
+<tr><td class="cn tar">20</td><td class=cd> Gezoez </td>
+<td class=ce><img src="pipeac.png" height="15" width="59" align=middle>&nbsp;41</td>
+<td class=cf> 25.3. - 4.5.2014 </td>
+<td class=cd><table width="100%" class=t2><tr><td width="17" class="cach box">&nbsp;</td><td class=tinv> Currently 6 days active </td></tr></table></td></tr>
+</table><br><br>
+<a name="activ2"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">Activity distribution</font>
+<br><font color="#FFFFFF" size="2" face="Arial">3/2014 - 7/2014
+</center></td></tr></table></center></td></tr></table><br>
+<Table border=0 cellspacing=1 cellpadding=2 class=t6>
+<tr class=t1>
+<td class=ca>Lines per day</td>
+<td class=cb>Number of days</td>
+<tr><td class=cds><table width="100%" class="t6 tinv"><tr><td width="17" class="cs1 box">&nbsp;</td><td class=tinv>20000..22499</td></tr></table></td>
+<td class="ces tal"> <img src="pipeac.png" width="6" height=17 class=ac> 1 (0,9%) </td></tr>
+<tr><td class=cd><table width="100%" class="t6 tinv"><tr><td width="17" class="cs1a box">&nbsp;</td><td class=tinv>17500..19999</td></tr></table></td>
+<td class="ce tal"> 0 (0%) </td></tr>
+<tr><td class=cds><table width="100%" class="t6 tinv"><tr><td width="17" class="cs2 box">&nbsp;</td><td class=tinv>15000..17499</td></tr></table></td>
+<td class="ces tal"> <img src="pipeac.png" width="17" height=17 class=ac> 3 (2,7%) </td></tr>
+<tr><td class=cd><table width="100%" class="t6 tinv"><tr><td width="17" class="cs2a box">&nbsp;</td><td class=tinv>12500..14999</td></tr></table></td>
+<td class="ce tal"> <img src="pipeac.png" width="17" height=17 class=ac> 3 (2,7%) </td></tr>
+<tr><td class=cds><table width="100%" class="t6 tinv"><tr><td width="17" class="cs3 box">&nbsp;</td><td class=tinv>10000..12499</td></tr></table></td>
+<td class="ces tal"> <img src="pipeac.png" width="56" height=17 class=ac> 10 (8,9%) </td></tr>
+<tr><td class=cd><table width="100%" class="t6 tinv"><tr><td width="17" class="cs3a box">&nbsp;</td><td class=tinv>7500..9999</td></tr></table></td>
+<td class="ce tal"> <img src="pipeac.png" width="122" height=17 class=ac> 22 (20%) </td></tr>
+<tr><td class=cds><table width="100%" class="t6 tinv"><tr><td width="17" class="cs4 box">&nbsp;</td><td class=tinv>5000..7499</td></tr></table></td>
+<td class="ces tal"> <img src="pipeac.png" width="150" height=17 class=ac> 27 (24%) </td></tr>
+<tr><td class=cd><table width="100%" class="t6 tinv"><tr><td width="17" class="cs4a box">&nbsp;</td><td class=tinv>2500..4999</td></tr></table></td>
+<td class="ce tal"> <img src="pipeac.png" width="150" height=17 class=ac> 27 (24%) </td></tr>
+<tr><td class=cds><table width="100%" class="t6 tinv"><tr><td width="17" class="cs5 box">&nbsp;</td><td class=tinv>1..2499</td></tr></table></td>
+<td class="ces tal"> <img src="pipeac.png" width="83" height=17 class=ac> 15 (13%) </td></tr>
+<tr><td class=cd><table width="100%" class=t6 style="border:0px;"><tr><td width="17" class="cs0 ac">&nbsp;</td><td class=tinv>0</td></tr></table></td>
+<td class="ce tal"> <img src="pipeac.png" width="22" height=17 class=ac> 4 (3,6%) </td></tr>
+</table><br>
+<a name="linel"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">Average line lengths</font>
+</center></td></tr></table></center></td></tr></table><br>
+<Table border=0 cellspacing=1 cellpadding=2 class=t2>
+<tr class=t1>
+<td class=ca>Line length</td>
+<td class=cb>Count</td>
+<td class=cc>Nicks</td>
+<tr><td class="cds tar">63..</td>
+<td class="ces tal"><img src="pipeac.png" width="72" height=17 class=t2> 49</td>
+<td class="cfs tal" title="...t(131), IronBlack(127), DailyBlackcoin(124), SimkoMinerOnMoon(112), flaminius(109), BlackBot(104), kevvo(102), Tringi(88,9), haeg(87,7), Shiny Pidgey(86,9), Milfbot(83,8), blkchainBot(82,2), loikkio(79,0), BlackCoin-TipBot(78,3), digicidal(78,3), raw1(77,1), Simkominer(77,1), Lolzerz(75,8), Black..."><span class=win>blackcoinbets(274)</span>, deb0rah(163), PoolPickerBot(149), BlackCoinReddi...</td>
+<tr><td class="cd tar">60..62</td>
+<td class="ce tal"><img src="pipeac.png" width="13" height=17 class=t2> 9</td>
+<td class="cf tal" title="...,1), MurderousKirk(62,1), BlackDoge(61,0), Ignition75(61,0), frump(61,0), maniacos(60,6)">scurvyhash(62,7), TooTHPiCK(62,5), DarkBot(62,4), Blackandwhite(62...</td>
+<tr><td class="cds tar">57..59</td>
+<td class="ces tal"><img src="pipeac.png" width="35" height=17 class=t2> 24</td>
+<td class="cfs tal" title="...Nutz(59,3), zalman(59,1), buy-black(59,1), CryptocurrencyTa(59,1), bulletproofinves(58,9), noerc(58,6), A-(58,5), CG(58,5), kiwidoge(58,4), bean(58,3), fedupcoin(58,1), ilovebtc(58,0), evt(57,8), bcmarket(57,6), Subtuppel(57,5), dogeywoof(57,3), RouletteRun(57,2), Jilixi(57,2), blackdez(57,1), cr...">Ashdrake-Bot(59,9), xranby(59,9), MintPalBot(59,7), cryptol(59,6), bc ...</td>
+<tr><td class="cd tar">54..56</td>
+<td class="ce tal"><img src="pipeac.png" width="32" height=17 class=t2> 22</td>
+<td class="cf tal" title="...Rawdawg-1(56,1), Nefri(56,1), Blackington(55,9), nicomah(55,6), Gezoez(55,5), MrCoins(54,9), chance(54,8), beetee2(54,8), ghizzle(54,8), Razkin(54,8), Wild(54,7), amigdala(54,6), trippinleopard(54,6), BC forever(54,6), w000tBotTest(54,4), jovla(54,1), Renovatio(54,1)">NC(56,9), creon(56,6), Raindeer(56,6), CElston(56,4), Syaoran(56,3), ...</td>
+<tr><td class="cds tar">51..53</td>
+<td class="ces tal"><img src="pipeac.png" width="32" height=17 class=t2> 22</td>
+<td class="cfs tal" title="...3), soundsyco(53,1), ecochav(53,1), foaman(53,0), MintPal-Jay(52,8), draco71(52,6), money(52,2), ener g(52,1), xirdo(52,0), Ratty(52,0), RainMan28(51,9), rayhaque(51,8), BlackCoinLover(51,8), blah07(51,8), honey-badger(51,3), Camel(51,2), w000tBot(51,0), boxxa(51,0)">xen0s(53,9), jackfruit(53,8), rmd79(53,8), hffd(53,7), Walrusbonzo(53,...</td>
+<tr><td class="cd tar">48..50</td>
+<td class="ce tal"><img src="pipeac.png" width="62" height=17 class=t2> 42</td>
+<td class="cf tal" title="...vmode(50,8), joeman(50,6), michidragon(50,5), drgdf(50,4), d8ncer(50,4), artiface(50,4), northener(50,4), WolongBot(50,3), babyKraken(50,3), [APM](50,3), LoppsE(50,2), varicelli(50,2), Diddums(50,1), Ghash(49,9), insanid(49,9), cryptokid32(49,7), dirtypolecat(49,6), BigBlackCoin(49,4), Heisenmine...">MemoryShock(50,9), xranby multisig(50,9), fedge(50,9), Fry(50,9), de...</td>
+<tr><td class="cds tar">45..47</td>
+<td class="ces tal"><img src="pipeac.png" width="57" height=17 class=t2> 39</td>
+<td class="cfs tal" title="...MintPal-Jason(47,6), Bitcoin42(47,5), Ramirez(47,5), dstanit(47,4), TxCrypto(47,4), GregoryTheGreat(47,2), Top8(47,0), Shiney Pidgey(47,0), TheDude(46,9), digudugdoge(46,8), ApoloTwo(46,7), jean92(46,6), JackBlack(46,6), nov3a4(46,6), DutchBastard(46,6), charloz24(46,4), thedudereap(46,2), Geldsc...">bobby1776(48,0), bob(47,9), TenaciousC(47,7), DrasticRaven(47,7), ...</td>
+<tr><td class="cd tar">42..44</td>
+<td class="ce tal"><img src="pipeac.png" width="88" height=17 class=t2> 60</td>
+<td class="cf tal" title="...vleugel(44,5), darby(44,5), Th3 PH03NiX(44,2), zmija(44,2), adarkvox(44,1), blackswanmx(44,0), l3mmy(44,0), HardStyle(43,9), DAS BC(43,9), BitcoinVillage(43,9), SBC-Gavin(43,9), lalalalala(43,8), Kujira(43,8), the1mantis(43,8), lectrolux(43,7), ggg(43,6), derp(43,6), [Hect0rius](43,6), hplest(43,...">Gnarltusk(44,9), krip(44,9), Johnny|3lazed(44,6), BAZONGLES(44,6), ...</td>
+<tr><td class="cds tar">39..41</td>
+<td class="ces tal"><img src="pipeac.png" width="96" height=17 class=t2> 65</td>
+<td class="cfs tal" title="...w2021(41,8), invest4al(41,8), sphinxy(41,7), whack(41,6), Lykurgus(41,5), Echoenigma(41,5), glennbuck(41,3), haos(41,3), ryrty(41,3), Shadey(41,2), Bitcoin Mafia(41,2), hashpuppy(41,2), Sebuh(41,1), Xtrem(41,1), bcminer(41,0), Jabolo(40,9), zspitfire04(40,9), finiternity(40,9), papkol(40,8), Butr...">DumpyDump(42,0), tordaddy(41,9), jfernanz(41,9), kikaida(41,8), drew...</td>
+<tr><td class="cd tar">36..38</td>
+<td class="ce tal"><img src="pipeac.png" width="109" height=17 class=t2> 74</td>
+<td class="cf tal" title="...SPHIAX(38,9), othe(38,7), bobdobbs`(38,6), btcmkr(38,6), jwinterm(38,5), llamabucket(38,5), Blackcoinboy(38,5), Un0(38,5), basicus(38,5), OneBraveDoge(38,5), coaex(38,4), sinkingpool(38,4), yu119995(38,3), drunkonsound(38,3), Arigard(38,3), Merzhin(38,3), BurntA(38,2), WutNext99(38,2), Kaumai(38,...">kvelertakV3(39,0), dmbp(38,9), SecondHandTiger(38,9), zub1(38,9), A...</td>
+<tr><td class="cds tar">33..35</td>
+<td class="ces tal"><img src="pipeac.png" width="124" height=17 class=t2> 84</td>
+<td class="cfs tal" title="...8), Falcon256(35,8), mooBot(35,7), dimsu(35,7), radaaaaam(35,7), Bigcabrito(35,5), blaccck(35,5), Radiostatic(35,3), str1ngs(35,3), |00Smurf(35,2), crypt0h4z3(35,2), banjokid2000(35,2), ddeaNewtOn(35,2), iMil(35,1), mist(35,1), Maxikose(35,0), pestoquinty(35,0), tangelo(35,0), terozzz(35,0), gisc...">CoinMoo(36,0), nov(35,9), Xuthus(35,9), moljnos(35,9), KidArigard(35,...</td>
+<tr><td class="cd tar">30..32</td>
+<td class="ce tal"><img src="pipeac.png" width="150" height=17 class=t2> 102</td>
+<td class="cf tal" title="...mvchua(32,6), tarzandude(32,6), afinegan(32,6), |2c293(32,6), hbhades(32,6), Boreiv(32,6), r0b1nuk(32,5), Seitti(32,5), lelu(32,5), lordzed101(32,5), Bumpy SK(32,5), MAC10(32,4), KBomba(32,4), Liberymind(32,3), slic(32,3), badon420(32,3), CT-5555(32,2), big miner(32,2), upYOURS(32,2), DarKNight(3...">OGF(33,0), DarkM(32,9), Lc(32,8), Gritt-N-Auld(32,8), ayywinn(32,7), ...</td>
+<tr><td class="cds tar">27..29</td>
+<td class="ces tal"><img src="pipeac.png" width="112" height=17 class=t2> 76</td>
+<td class="cfs tal" title="...phin(29,9), PaQit(29,9), twists(29,9), je fro(29,8), affmees(29,8), reque(29,8), elichai2(29,8), KeAdO(29,7), gggggg(29,6), mintsaux(29,6), NigelFarage(29,6), NoCoins(29,6), CptnKrunch(29,5), nasty(29,5), slm4(29,4), bronan(29,4), popman66(29,4), Tuto(29,3), antr4x(29,3), SuperBlack(29,3), Dra(29...">sfirion(30,0), BlackDogOfWallSt(30,0), mckie(30,0), Jomb(30,0), BCDol...</td>
+<tr><td class="cd tar">24..26</td>
+<td class="ce tal"><img src="pipeac.png" width="101" height=17 class=t2> 69</td>
+<td class="cf tal" title="..., Kebooz(26,7), itsjustme(26,7), Seittibatman(26,7), sorrowfox(26,6), josephproudhon(26,6), dickies(26,6), FeeRaHuri(26,6), MizticNZ(26,6), Smujo(26,5), broo(26,5), albertdros(26,5), adachi(26,2), VLKLEO(26,2), Sevith(26,2), Amsterdamnedx(26,1), blackmonster9(26,1), Junkratt(26,1), fuuuuuu(26,1),...">duedb(26,9), blazingwhale(26,9), CarlCox(26,9), mpmcsweeney(26,9)...</td>
+<tr><td class="cds tar">21..23</td>
+<td class="ces tal"><img src="pipeac.png" width="63" height=17 class=t2> 43</td>
+<td class="cfs tal" title="...etlight(23,7), MegaMining(23,5), BelTirid(23,5), janko33(23,5), prisius(23,4), CARSH(23,3), PumpyPump(23,3), lineage(23,3), ngonga(23,2), default|zzz(23,1), joxs(23,0), balfouri(22,9), Wurlitzer(22,8), overscore(22,8), Janezki(22,7), slavo(22,7), SammoSideKick(22,5), duedbb(22,4), JIMMY007(22,4),...">Blackisback(23,8), Animatronicvs(23,8), nikk(23,8), kartojal(23,8), stre...</td>
+<tr><td class="cd tar">..20</td>
+<td class="ce tal"><img src="pipeac.png" width="71" height=17 class=t2> 48</td>
+<td class="cf tal" title="..., mintstr(20,9), Teezy(20,7), rrob(20,6), StonedPenguin(20,5), MegaMine(20,2), rsx19(20,2), kinere(20,2), BlackPearl(20,1), asd(20,0), africanosNinja(19,9), MrK(19,8), blobo(19,6), x2x1(19,6), asdas(19,5), asdasd(19,3), MegaMiner(19,2), Tamrob(19,1), MoonBob(19,0), dexu(19,0), Asfreng(18,6), Shop...">name0815(21,0), slater x(21,0), kopach(20,9), keyboardcowboy(20,9)...</td>
+</table><br>
+<span class=txt2>Not displaying nicks with less than 50 lines</span><br>
+<br>
+<a name="word"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">#blackcoinpool's popular words</font>
+</center></td></tr></table></center></td></tr></table><br>
+<Table border=0 cellspacing=1 cellpadding=2 class=t2>
+<tr class=t1><td class="cn tac">Count</td>
+<td class=ca>Word</td>
+<td class=cb>Last used by</td>
+<td class=cc>At</td></tr>
+<tr><td class="cns tac">14360</td>
+<td class="cds t5">"there"</td>
+<td class=ces>Gezoez</td>
+<td class="cfs t6">Today 12:38</td></tr>
+<tr><td class="cn tac">12859</td>
+<td class="cd t5">"price"</td>
+<td class=ce>maarx</td>
+<td class="cf t6">Today 10:06</td></tr>
+<tr><td class="cns tac">12555</td>
+<td class="cds t5">"about"</td>
+<td class=ces>maarx</td>
+<td class="cfs t6">Today 10:05</td></tr>
+<tr><td class="cn tac">12275</td>
+<td class="cd t5">"think"</td>
+<td class=ce>prisius</td>
+<td class="cf t6">Today 4:21</td></tr>
+<tr><td class="cns tac">10660</td>
+<td class="cds t5">"coins"</td>
+<td class=ces>RouletteRun</td>
+<td class="cfs t6">Today 3:02</td></tr>
+<tr><td class="cn tac">10605</td>
+<td class="cd t5">"would"</td>
+<td class=ce>Fraxinus</td>
+<td class="cf t6">Today 9:58</td></tr>
+<tr><td class="cns tac">10584</td>
+<td class="cds t5">"people"</td>
+<td class=ces>RouletteRun</td>
+<td class="cfs t6">Today 4:09</td></tr>
+<tr><td class="cn tac">9273</td>
+<td class="cd t5">"going"</td>
+<td class=ce>blade87</td>
+<td class="cf t6">Today 5:05</td></tr>
+<tr><td class="cns tac">7633</td>
+<td class="cds t5">"Right"</td>
+<td class=ces>Fraxinus</td>
+<td class="cfs t6">Today 9:53</td></tr>
+<tr><td class="cn tac">7544</td>
+<td class="cd t5">"still"</td>
+<td class=ce>Fraxinus</td>
+<td class="cf t6">Today 9:58</td></tr>
+</table><br>
+<br><h5>Frequently mentioned nicks:</h5>
+<Table border=0 cellspacing=1 cellpadding=2 class=t2>
+<tr class=t1><td class="cns tac">Count</td>
+<td class=cas>Word</td>
+<td class=cbs>Last used by</td>
+<td class=ccs>At</td></tr>
+<tr><td class="cn tac">6425</td>
+<td class="cd t5">"mintstr"</td>
+<td class=ce>Fraxinus</td>
+<td class="cf t6">Today 10:09</td></tr>
+<tr><td class="cns tac">6109</td>
+<td class="cds t5">"Soepkip"</td>
+<td class=ces>syllabear</td>
+<td class="cfs t6">Today 12:55</td></tr>
+<tr><td class="cn tac">5940</td>
+<td class="cd t5">"africanos"</td>
+<td class=ce>OGF</td>
+<td class="cf t6">Yesterday 12:04</td></tr>
+<tr><td class="cns tac">4790</td>
+<td class="cds t5">"money"</td>
+<td class=ces>DailyBlackcoin</td>
+<td class="cfs t6">Today 12:53</td></tr>
+<tr><td class="cn tac">3781</td>
+<td class="cd t5">"maarx"</td>
+<td class=ce>mckie</td>
+<td class="cf t6">Today 5:53</td></tr>
+</table><br>
+<br><h5>These people talk in their own (strange) language...</h5>
+<Table border=0 cellspacing=1 cellpadding=2 class=t2 style="white-space:nowrap">
+<tr class=t1><td class="cns tac">Count</td>
+<td class=cas>Nick</td>
+<td class=cbs>Randomly selected sample (amount)</td>
+<tr><td class="cn tac">162</td>
+<td class=cd>africanos</td>
+<td class="ce t5">"SEO/SEM"(14), "heehe"(3), "payup"(3), "kanis"(3), "junks"(3), "bimmer"(3), "ABOUT*"(3), <br>"90ish"(3), "shorterm"(4), "appraoch"(3), "organising"(9), "ehehehhe"(3), "S.Africa"(4), ...</td></tr>
+<tr><td class="cns tac">157</td>
+<td class=cds>w000tBot</td>
+<td class="ces t5">"Donnate"(19), "0.7MH/s"(20), "proffit"(3), "38mh/s"(6), "7.7MH/s"(11), "poolMH/s"(3), <br>"5MHMH/s"(3), "58MH/s"(3), "3.7MH/s"(5), "5.1MH/s"(5), "6.6MH/s"(4), "0.06MH/s"(3), ...</td></tr>
+<tr><td class="cn tac">141</td>
+<td class=cd>maarx</td>
+<td class="ce t5">"xcept"(6), "passw"(4), "bizzy"(3), "slaap"(3), "delet"(3), "chipp"(3), "dawgnip"(4), <br>"achtung"(4), "outgrow"(3), "succeeds"(6), "Lavabit"(3), "reaally"(3), "MailPile"(3), ...</td></tr>
+<tr><td class="cns tac">131</td>
+<td class=cds>chnchapters</td>
+<td class="ces t5">"courts"(5), "cement"(5), "perfer"(3), "replys"(3), "blinds"(3), "throwin"(4), "furnace"(3), <br>"oceania"(3), "WAYYYYY"(3), "pukeing"(3), "accounted"(9), "platnium"(5), "guarntee"(4), ...</td></tr>
+<tr><td class="cn tac">123</td>
+<td class=cd>DarkFox</td>
+<td class="ce t5">"stalk"(4), "/exec"(3), "*can*"(3), "*linux"(4), "lambda"(3), "words="(3), "tabfail"(5), <br>"enables"(5), "hilight"(3), "len=46"(5), "flags=SA"(5), "recorder"(3), "main.cpp"(3), ...</td></tr>
+<tr><td class="cns tac">104</td>
+<td class=cds>Amperage</td>
+<td class="ces t5">"resin"(14), "evade"(3), "vette"(3), "4mbit"(5), "teslas"(4), "frikkin"(7), "hardon"(3), <br>"enlight"(4), "HANGERS"(3), "obtained"(6), "mounted"(3), "ignition"(5), "salesman"(5), ...</td></tr>
+<tr><td class="cn tac">98</td>
+<td class=cd>Soepkip</td>
+<td class="ce t5">"HADOUKEN"(44), "pmmed"(6), "anyhoe"(5), "BETAAA"(4), "okayyy"(3), "gettng"(3), <br>"zazzle"(3), "hellooo"(3), "accpeted"(6), "apparant"(4), "GALICIAN"(4), "cryptoes"(3), ...</td></tr>
+<tr><td class="cns tac">93</td>
+<td class=cds>surestrike</td>
+<td class="ces t5">"speng"(13), "corgi"(5), "trixx"(4), "saris"(4), "pirce"(3), "flirt"(3), "bunker"(5), "butler"(3), <br>"escaped"(4), "Space-X"(6), "peolple"(3), "highley"(3), "jewgold"(3), "vampires"(6), ...</td></tr>
+<tr><td class="cn tac">90</td>
+<td class=cd>Gritt-N-Auld</td>
+<td class="ce t5">"amazes"(11), "weibo"(7), "skirt"(3), "reflux"(3), "fucing"(3), "tumbling"(8), "mallets"(5), <br>"partied"(3), "appeals"(3), "crackers"(5), "responce"(5), "deducted"(5), "Sweetness"(5), ...</td></tr>
+<tr><td class="cns tac">89</td>
+<td class=cds>BiTMiND</td>
+<td class="ces t5">"pffff"(12), "usenet"(7), "lithium"(8), "XCCoin"(5), "normaly"(8), "clunky"(4), "BCcard"(4), <br>"kthxbye"(3), "Bizarre"(3), "surround"(3), "cryptsy*"(3), "kwkwkwkwk"(4), ...</td></tr>
+</table><br>
+<br><h5>These pairs like to talk in their own special language</h5>
+<Table border=0 cellspacing=1 cellpadding=2 class=t2 style="white-space:nowrap">
+<tr class=t1><td class="cns tac">Count</td>
+<td class=cas>Nicks</td>
+<td class=cbs>Randomly selected sample (amount)</td>
+<tr><td class="cn tac">43</td>
+<td class=cd>Soepkip and maarx</td>
+<td class="ce t5">"mello"(9), "werkt"(5), "authorized"(35), "muchos"(7), "Pidgey"(7), "skewed"(6), <br>"nommed"(5), "fulltime"(10), "Roarrr"(4), "esports"(5), "academic"(7), "devteam"(4), ...</td></tr>
+<tr><td class="cns tac">42</td>
+<td class=cds>africanos and w000tBot</td>
+<td class="ces t5">"28mh/s"(31), "29MH/s"(23), "2.5MH/s"(44), "2.8mh/s"(47), "moarr"(5), "24mh/s"(11), <br>"22MH/s"(10), "36btc"(6), "82MH/s"(6), "34mh/s"(5), "87mh/s"(4), "1.1mh/s"(7), ...</td></tr>
+<tr><td class="cn tac">41</td>
+<td class=cd>africanos and Amperage</td>
+<td class="ce t5">"elpida"(26), "srypt"(11), "Soepkit"(16), "flips"(4), "them*"(4), "afloat"(7), "Houston"(7), <br>"thrust"(4), "exchage"(6), "helper"(3), "austin"(3), "workout"(4), "goverments"(13), ...</td></tr>
+<tr><td class="cns tac">41</td>
+<td class=cds>africanos and Soepkip</td>
+<td class="ces t5">"slater"(30), "G-blades"(32), "ribbon"(7), "dwell"(3), "8gh/s"(6), "uniques"(8), "_worker"(7), <br>"Justed"(3), "eligable"(5), "PORTUGUESE"(10), "seperately"(9), "dogepool"(3), ...</td></tr>
+<tr><td class="cn tac">33</td>
+<td class=cd>africanos and goblynn</td>
+<td class="ce t5">"sakes"(9), "shitloads"(20), "tours"(7), "apology"(10), "there*"(7), "spead"(4), <br>"hehehehhe"(15), "bcpal"(3), "eats*"(3), "3mill"(5), "canned"(5), "thouhg"(3), "upsets"(3), ...</td></tr>
+<tr><td class="cns tac">31</td>
+<td class=cds>africanos and surestrike</td>
+<td class="ces t5">"omaha"(9), "facing"(11), "neeed"(8), "floow"(5), "crook"(5), "chipped"(8), "addded"(3), <br>"linned"(3), "harpooned"(11), "tranfer"(5), "micheal"(4), "seatbelts"(7), "5million"(6), ...</td></tr>
+<tr><td class="cn tac">29</td>
+<td class=cd>Soepkip and goblynn</td>
+<td class="ce t5">"cared"(16), "erectile"(30), "horde"(8), "ehhhh"(8), "goddamnit"(20), "worky"(6), "aobut"(5), <br>"yaaaa"(4), "diplo"(3), "cough*"(5), "dysfunction"(29), "profession"(16), "FUUUCK"(4), ...</td></tr>
+<tr><td class="cns tac">28</td>
+<td class=cds>Soepkip and Gritt-N-Auld</td>
+<td class="ces t5">"teehee"(16), "wayyy"(11), "danish"(13), "ashes"(8), "fumes"(4), "equity"(7), "takea"(3), <br>"Dinklage"(11), "firstly"(7), "mcdonald"(7), "postive"(3), "nederlands"(11), "dividend"(4), ...</td></tr>
+<tr><td class="cn tac">28</td>
+<td class=cd>africanos and maarx</td>
+<td class="ce t5">"alittle"(175), "rised"(13), "moons"(12), "ehehe"(7), "davids"(9), "gamblers"(14), <br>"down*"(5), "paid*"(4), "edits"(3), "anywya"(5), "chassis"(6), "goodluck"(7), "cohonas"(3), ...</td></tr>
+<tr><td class="cns tac">24</td>
+<td class=cds>goblynn and zooka</td>
+<td class="ces t5">"drying"(14), "phoenix"(15), "*facepalm"(41), "givin"(7), "jally"(6), "unzip"(4), "horns"(4), <br>"organism"(12), "kitties"(7), "shooter"(4), "phalaris"(6), "backbone"(6), "tongues"(3), ...</td></tr>
+</table><br>
+<br><h5>Recently found popular words</h5>
+<Table border=0 cellspacing=1 cellpadding=2 class=t2>
+<tr class=t1><td class=tinv>&nbsp;</td>
+<td class=ca>Word</td>
+<td class=cb>First used by</td>
+<td class=cc>At</td></tr>
+<tr><td class="cns tac">1</td>
+<td class="cds t5">"3lazed"(33)</td>
+<td class=ces>BlackCoin-TipBot</td>
+<td class="cfs t6">4.6. 22:37</td></tr>
+<tr><td class="cn tac">2</td>
+<td class="cd t5">"#vericoin"(50)</td>
+<td class=ce>maarx</td>
+<td class="cf t6">7.6. 0:05</td></tr>
+<tr><td class="cns tac">3</td>
+<td class="cds t5">"minerals"(108)</td>
+<td class=ces>MoonMan</td>
+<td class="cfs t6">3.6. 17:41</td></tr>
+<tr><td class="cn tac">4</td>
+<td class="cd t5">"BlackBit"(34)</td>
+<td class=ce>maarx</td>
+<td class="cf t6">25.6. 23:31</td></tr>
+<tr><td class="cns tac">5</td>
+<td class="cds t5">"wines"(3)</td>
+<td class=ces>surestrike</td>
+<td class="cfs t6">2.6. 8:53</td></tr>
+<tr><td class="cn tac">6</td>
+<td class="cd t5">"azendoo"(18)</td>
+<td class=ce>noerc</td>
+<td class="cf t6">10.6. 6:12</td></tr>
+<tr><td class="cns tac">7</td>
+<td class="cds t5">"croatia"(7)</td>
+<td class=ces>King Schultz</td>
+<td class="cfs t6">12.6. 19:01</td></tr>
+<tr><td class="cn tac">8</td>
+<td class="cd t5">"cheech"(3)</td>
+<td class=ce>blackie</td>
+<td class="cf t6">8.6. 10:09</td></tr>
+<tr><td class="cns tac">9</td>
+<td class="cds t5">"Wizfart"(10)</td>
+<td class=ces>maarx</td>
+<td class="cfs t6">18.6. 20:43</td></tr>
+<tr><td class="cn tac">10</td>
+<td class="cd t5">"CoinKing"(16)</td>
+<td class=ce>sinetek</td>
+<td class="cf t6">15.6. 3:09</td></tr>
+</table><br>
+<br><h5>Special words by time of day</h5>
+<Table cellspacing=1 cellpadding=2 class="t2 tal">
+<tr class=t1><td class=tinv>&nbsp;</td>
+<td class="ca tac">Hours 0-6</td>
+<td class="ca tac">Hours 6-12</td>
+<td class="ca tac">Hours 12-18</td>
+<td class="ca tac">Hours 18-24</td>
+</tr>
+<tr class=t5><td class="cns t6 tac">1</td><td class=cds>"tempo"(6)</td><td class=ces>"unicode"(15)</td>
+<td class=cfs>"corned"(21)</td><td class=cds>"grams"(8)</td></tr>
+<tr class=t5><td class="cn t6 tac">2</td><td class=cd>"uniform"(7)</td><td class=ce>"Borat"(4)</td>
+<td class=cf>"devoice"(10)</td><td class=cd>"nudes"(7)</td></tr>
+<tr class=t5><td class="cns t6 tac">3</td><td class=cds>"cacti"(6)</td><td class=ces>"fiance"(18)</td>
+<td class=cfs>"mockup"(12)</td><td class=cds>"snappy"(5)</td></tr>
+<tr class=t5><td class="cn t6 tac">4</td><td class=cd>"fluke"(6)</td><td class=ce>"EFNet"(7)</td>
+<td class=cf>"gpu-z"(7)</td><td class=cd>"darts"(4)</td></tr>
+<tr class=t5><td class="cns t6 tac">5</td><td class=cds>"foots"(5)</td><td class=ces>"exclude"(7)</td>
+<td class=cfs>"skates"(14)</td><td class=cds>"geuss"(4)</td></tr>
+<tr class=t5><td class="cn t6 tac">6</td><td class=cd>"fubar"(3)</td><td class=ce>"Anima"(4)</td>
+<td class=cf>"bloke"(3)</td><td class=cd>"*Keep"(19)</td></tr>
+<tr class=t5><td class="cns t6 tac">7</td><td class=cds>"preach"(7)</td><td class=ces>"arrays"(6)</td>
+<td class=cfs>"thiefs"(8)</td><td class=cds>"Elbow"(6)</td></tr>
+<tr class=t5><td class="cn t6 tac">8</td><td class=cd>"studios"(7)</td><td class=ce>"https"(6)</td>
+<td class=cf>"Ypres"(7)</td><td class=cd>"brasil"(10)</td></tr>
+<tr class=t5><td class="cns t6 tac">9</td><td class=cds>"PoStr"(5)</td><td class=ces>"scour"(4)</td>
+<td class=cfs>"Dublin"(6)</td><td class=cds>"squash"(5)</td></tr>
+<tr class=t5><td class="cn t6 tac">10</td><td class=cd>"armin"(11)</td><td class=ce>"BC/xxx"(8)</td>
+<td class=cf>"pennys"(30)</td><td class=cd>"aboot"(4)</td></tr>
+</table><br>
+<br><h5>Special words by day of week</h5>
+<Table cellspacing=1 cellpadding=2 class="t2 tal">
+<tr class=t1><td class=tinv>&nbsp;</td>
+<td class="ca tac">Monday</td>
+<td class="ca tac">Tuesday -<br>Thursday</td>
+<td class="ca tac">Friday</td>
+<td class="ca tac">Saturday -<br>Sunday</td>
+</tr>
+<tr class=t5><td class="cns t6 tac">1</td><td class=cds>"nigel"(10)</td><td class=ces>"booted"(46)</td>
+<td class=cfs>"pennys"(30)</td><td class=cds>"putty"(18)</td></tr>
+<tr class=t5><td class="cn t6 tac">2</td><td class=cd>"boosh"(20)</td><td class=ce>"Johnny"(48)</td>
+<td class=cf>"tissues"(6)</td><td class=cd>"Portugal"(45)</td></tr>
+<tr class=t5><td class="cns t6 tac">3</td><td class=cds>"gpu-z"(7)</td><td class=ces>"Italian"(31)</td>
+<td class=cfs>"dingo"(3)</td><td class=cds>"pkill"(14)</td></tr>
+<tr class=t5><td class="cn t6 tac">4</td><td class=cd>"granular"(12)</td><td class=ce>"3lazed"(33)</td>
+<td class=cf>"eines"(3)</td><td class=cd>"voter"(6)</td></tr>
+<tr class=t5><td class="cns t6 tac">5</td><td class=cds>"alpine"(5)</td><td class=ces>"smith"(21)</td>
+<td class=cfs>"tomoto"(7)</td><td class=cds>"agran"(14)</td></tr>
+<tr class=t5><td class="cn t6 tac">6</td><td class=cd>"tosti"(5)</td><td class=ce>"wooden"(30)</td>
+<td class=cf>"path=/"(6)</td><td class=cd>"flare"(18)</td></tr>
+<tr class=t5><td class="cns t6 tac">7</td><td class=cds>"choooooo"(9)</td><td class=ces>"fatty"(12)</td>
+<td class=cfs>"blues"(6)</td><td class=cds>"devoice"(10)</td></tr>
+<tr class=t5><td class="cn t6 tac">8</td><td class=cd>"warfare"(6)</td><td class=ce>"PPLNS"(23)</td>
+<td class=cf>"Guido"(4)</td><td class=cd>"zadig"(13)</td></tr>
+<tr class=t5><td class="cns t6 tac">9</td><td class=cds>"gyros"(6)</td><td class=ces>"rightcoin"(23)</td>
+<td class=cfs>"awoken"(3)</td><td class=cds>"retina"(12)</td></tr>
+<tr class=t5><td class="cn t6 tac">10</td><td class=cd>"modems"(6)</td><td class=ce>"rubix"(18)</td>
+<td class=cf>"defcon"(3)</td><td class=cd>"mogonzo"(45)</td></tr>
+</table><br>
+<br>
+<a name="urltr"></a>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<font color="#FFFFFF" size="4" face="Arial">URL Tracking</font>
+<br><font color="#FFFFFF" size="2" face="Arial">20 latest URLs from #blackcoinpool
+</center></td></tr></table></center></td></tr></table><br>
+<Table border=0 cellspacing=1 cellpadding=2 class=t2><tr class=t1>
+<td class=ca>At</td>
+<td class=cb>URL</td>
+<td class=cc>Nick</td></tr>
+<tr><td class="cds t6">Today 12:53</td><td class="ces t5"><a href="http://www.dailyblackcoin.com/?p=2943" class=t5 target="_blank">http://www.dailyblackcoin.com/?p=2943</a></td><td class=cfs>DailyBlackcoin</td></tr>
+<tr><td class="cd t6">12:38</td><td class="ce t5"><a href="http://www.cryptoalts.com" class=t5 target="_blank">http://www.cryptoalts.com</a><br><span class=t6>&nbsp;First mentioned by blade87 on 23.3.. Used 260 times.</span></td><td class=cf>Gezoez</td></tr>
+<tr><td class="cds t6">12:38</td><td class="ces t5"><a href="http://www.dutchpool.eu" class=t5 target="_blank">http://www.dutchpool.eu</a><br><span class=t6>&nbsp;First mentioned by Gezoez on Today 12:38.</span></td><td class=cfs>Gezoez</td></tr>
+<tr><td class="cd t6">12:25</td><td class="ce t5"><a href="https://www.youtube.com/watch?v=ciX2kse12ag" class=t5 target="_blank">https://www.youtube.com/watch?v=ciX2kse12ag</a></td><td class=cf>Vizique</td></tr>
+<tr><td class="cds t6">7:15</td><td class="ces t5"><a href="http://www.likelyanswer.com/6749946/Funding-Request---Guerilla-Coin" class=t5 target="_blank">http://www.likelyanswer.com/6749946/Funding-Request---Guerilla-Coin</a></td><td class=cfs>glennbuck</td></tr>
+<tr><td class="cd t6">6:04</td><td class="ce t5"><a href="http://www.wired.co.uk/news/archive/2014-07/01/shakil-khan-coindesk" class=t5 target="_blank">http://www.wired.co.uk/news/archive/2014-07/01/shakil-khan-coindesk</a></td><td class=cf>RouletteRun</td></tr>
+<tr><td class="cds t6">6:03</td><td class="ces t5"><a href="http://www.youtube.com/watch?v=OQfjIw3mivc" class=t5 target="_blank">http://www.youtube.com/watch?v=OQfjIw3mivc</a></td><td class=cfs>glennbuck</td></tr>
+<tr><td class="cd t6">6:00</td><td class="ce t5"><a href="http://www.reddit.com/r/blackcoin/comments/2a3ps6/looking_to_sell_hd_7870_via_blackhalo_contact/" class=t5 target="_blank">http://www.reddit.com/r/blackcoin/comments/2a3ps6/looking_to_sell_hd_7870_...<br>...via_blackhalo_contact/</a><br><span class=t6>&nbsp;First mentioned by blade87 on Yesterday 3:19. Used 7 times.</span></td><td class=cf>blade87</td></tr>
+<tr><td class="cds t6">5:28</td><td class="ces t5"><a href="http://www.kiwiirc.com" class=t5 target="_blank">www.kiwiirc.com</a><br><span class=t6>&nbsp;First mentioned by BiTMiND on 13.4. 23:19. Used 10 times.</span></td><td class=cfs>BCbot</td></tr>
+<tr><td class="cd t6">5:02</td><td class="ce t5"><a href="http://i.imgur.com/fUostqs.jpg" class=t5 target="_blank">http://i.imgur.com/fUostqs.jpg</a></td><td class=cf>sinetek</td></tr>
+<tr><td class="cds t6">4:47</td><td class="ces t5"><a href="http://img.4plebs.org/boards/pol/image/1396/43/1396437241211.jpg" class=t5 target="_blank">http://img.4plebs.org/boards/pol/image/1396/43/1396437241211.jpg</a></td><td class=cfs>prisius</td></tr>
+<tr><td class="cd t6">4:46</td><td class="ce t5"><a href="https://bitcointalk.org/index.php?topic=677671.0" class=t5 target="_blank">https://bitcointalk.org/index.php?topic=677671.0</a><br><span class=t6>&nbsp;First mentioned by jdebunt on 5.7. 11:01. Used 3 times.</span></td><td class=cf>Libertymind</td></tr>
+<tr><td class="cds t6">4:45</td><td class="ces t5"><a href="http://www.blackdogecoin.com" class=t5 target="_blank">www.blackdogecoin.com</a></td><td class=cfs>Libertymind</td></tr>
+<tr><td class="cd t6">4:39</td><td class="ce t5"><a href="http://i.imgur.com/vrvg3rL.png" class=t5 target="_blank">http://i.imgur.com/vrvg3rL.png</a></td><td class=cf>chnchapters</td></tr>
+<tr><td class="cds t6">4:33</td><td class="ces t5"><a href="http://i.imgur.com/HeIbRuz.png" class=t5 target="_blank">http://i.imgur.com/HeIbRuz.png</a></td><td class=cfs>chnchapters</td></tr>
+<tr><td class="cd t6">4:30</td><td class="ce t5"><a href="http://i.imgur.com/dVk0Tgk.jpg" class=t5 target="_blank">http://i.imgur.com/dVk0Tgk.jpg</a></td><td class=cf>chnchapters</td></tr>
+<tr><td class="cds t6">4:26</td><td class="ces t5"><a href="http://en.wikipedia.org/wiki/A_Serbian_Film" class=t5 target="_blank">http://en.wikipedia.org/wiki/A_Serbian_Film</a></td><td class=cfs>sinetek</td></tr>
+<tr><td class="cd t6">4:23</td><td class="ce t5"><a href="http://deepweblinks.org/wp-content/uploads/2013/08/deep-web-links.jpg" class=t5 target="_blank">http://deepweblinks.org/wp-content/uploads/2013/08/deep-web-links.jpg</a></td><td class=cf>morph eus</td></tr>
+<tr><td class="cds t6">2:29</td><td class="ces t5"><a href="http://en.wikipedia.org/wiki/Hera" class=t5 target="_blank">http://en.wikipedia.org/wiki/Hera</a></td><td class=cfs>glennbuck</td></tr>
+<tr><td class="cd t6">2:26</td><td class="ce t5"><a href="http://pp.hera.me/H533gv" class=t5 target="_blank">http://pp.hera.me/H533gv</a></td><td class=cf>glennbuck</td></tr>
+</table><br>
+<br><h5>Most popular URLs</h5>
+<Table border=0 cellspacing=1 cellpadding=2 class=t2><tr class=t1><td class=tinv>&nbsp;</td>
+<td class=cas>URL</td>
+<td class=cbs>Count</td>
+<td class=ccs colspan=2>First used by</td></tr>
+<tr><td class="cn tar">1</td><td class="cd t5"><a href="http://www.dailyblackcoin.com" class=t5 target="_blank">www.dailyblackcoin.com</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="100"> <b>693</b></td><td class=cfs>maarx</td><td class="cfs t6">20.4. 4:27</td>
+<tr><td class="cns tar">2</td><td class="cds t5"><a href="http://www.blackcoinpool.com" class=t5 target="_blank">www.blackcoinpool.com</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="87"> 608</td><td class=cfs>TheDogeOfWallSt</td><td class="cfs t6">20.3. 8:20</td>
+<tr><td class="cn tar">3</td><td class="cd t5"><a href="http://www.hardwarepal.com/black-coin-mining-farm/" class=t5 target="_blank">http://www.hardwarepal.com/black-coin-mining-farm/</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="58"> 402</td><td class=cfs>africanos</td><td class="cfs t6">24.4. 0:21</td>
+<tr><td class="cns tar">4</td><td class="cds t5"><a href="http://goo.gl/c9B3RN" class=t5 target="_blank">http://goo.gl/c9B3RN</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="42"> 292</td><td class=cfs>DarkBot</td><td class="cfs t6">10.4. 15:40</td>
+<tr><td class="cn tar">5</td><td class="cd t5"><a href="http://www.cryptoalts.com" class=t5 target="_blank">http://www.cryptoalts.com</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="37"> 260</td><td class=cfs>blade87</td><td class="cfs t6">23.3. 20:02</td>
+<tr><td class="cns tar">6</td><td class="cds t5"><a href="http://poolpicker.eu/" class=t5 target="_blank">http://poolpicker.eu/</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="32"> 228</td><td class=cfs>zyzz</td><td class="cfs t6">25.3. 16:10</td>
+<tr><td class="cn tar">7</td><td class="cd t5"><a href="http://www.lovecrypto.com/vote" class=t5 target="_blank">http://www.lovecrypto.com/vote</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="32"> 222</td><td class=cfs>kassado</td><td class="cfs t6">5.4. 19:50</td>
+<tr><td class="cns tar">8</td><td class="cds t5"><a href="https://cryptrader.com/charts/mintpal/bc/btc" class=t5 target="_blank">https://cryptrader.com/charts/mintpal/bc/btc</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="29"> 206</td><td class=cfs>CrypTrader</td><td class="cfs t6">23.3. 23:52</td>
+<tr><td class="cn tar">9</td><td class="cd t5"><a href="http://blackcoin.co" class=t5 target="_blank">blackcoin.co</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="29"> 204</td><td class=cfs>Soepkip</td><td class="cfs t6">20.3. 23:58</td>
+<tr><td class="cns tar">10</td><td class="cds t5"><a href="http://blackponzi.com" class=t5 target="_blank">http://blackponzi.com</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="27"> 190</td><td class=cfs>TxCrypto</td><td class="cfs t6">25.5. 13:13</td>
+<tr><td class="cn tar">11</td><td class="cd t5"><a href="https://i.imgur.com/XaquiJc.png" class=t5 target="_blank">https://i.imgur.com/XaquiJc.png</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="22"> 154</td><td class=cfs>DumpyDump</td><td class="cfs t6">20.5. 10:06</td>
+<tr><td class="cns tar">12</td><td class="cds t5"><a href="http://prelude.io" class=t5 target="_blank">http://prelude.io</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="19"> 135</td><td class=cfs>rasputnik</td><td class="cfs t6">21.3. 18:19</td>
+<tr><td class="cn tar">13</td><td class="cd t5"><a href="http://theblackdogeofwallstreet.com/" class=t5 target="_blank">http://theblackdogeofwallstreet.com/</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="17"> 118</td><td class=cfs>syllabear</td><td class="cfs t6">25.5. 13:14</td>
+<tr><td class="cns tar">14</td><td class="cds t5"><a href="http://stats.blackcoinpool.com" class=t5 target="_blank">stats.blackcoinpool.com</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="16"> 111</td><td class=cfs>Mikk2k2</td><td class="cfs t6">25.4. 14:38</td>
+<tr><td class="cn tar">15</td><td class="cd t5"><a href="http://goo.gl/he0LVD" class=t5 target="_blank">http://goo.gl/he0LVD</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="13"> 95</td><td class=cfs>africanos</td><td class="cfs t6">14.4. 14:37</td>
+<tr><td class="cns tar">16</td><td class="cds t5"><a href="http://stratum+tcp://useast.blackcoinpool.com" class=t5 target="_blank">stratum+tcp://useast.blackcoinpool.com</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="13"> 94</td><td class=cfs>svojoe</td><td class="cfs t6">29.4. 19:17</td>
+<tr><td class="cn tar">17</td><td class="cd t5"><a href="http://www.dogeofwallstreet.com" class=t5 target="_blank">www.dogeofwallstreet.com</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="12"> 89</td><td class=cfs>TheDogeOfWallSt</td><td class="cfs t6">20.3. 8:32</td>
+<tr><td class="cns tar">18</td><td class="cds t5"><a href="http://blkchain.info" class=t5 target="_blank">blkchain.info</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="12"> 88</td><td class=cfs>UdjinM6</td><td class="cfs t6">27.4. 4:11</td>
+<tr><td class="cn tar">19</td><td class="cd t5"><a href="https://bitcoinwisdom.com/markets/mintpal/bcbtc" class=t5 target="_blank">https://bitcoinwisdom.com/markets/mintpal/bcbtc</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="12"> 86</td><td class=cfs>MintPal-Jay</td><td class="cfs t6">22.4. 15:09</td>
+<tr><td class="cns tar">20</td><td class="cds t5"><a href="http://reddit.com/r/blackcoin" class=t5 target="_blank">http://reddit.com/r/blackcoin</a></td>
+<td class=ces><img src="pipeur.png" height="15" width="11"> 83</td><td class=cfs>Soepkip</td><td class="cfs t6">24.3. 21:47</td>
+</table><br>
+<br><h5>20 random URLs</h5>
+<Table border=0 cellspacing=1 cellpadding=2 class=t2><tr class=t1>
+<td class=ca>At</td>
+<td class=cb>URL</td>
+<td class=cc>First used by</td></tr>
+<tr><td class="cds t6">6.7. 17:37</td><td class="ces t5"><a href="https://getaddr.bitnodes.io" class=t5 target="_blank">https://getaddr.bitnodes.io</a></td><td class=cfs>Vizique</td></tr>
+<tr><td class="cd t6">26.6. 22:53</td><td class="ce t5"><a href="https://bittrex.com/Market/?MarketName=BTC-MNR" class=t5 target="_blank">https://bittrex.com/Market/?MarketName=BTC-MNR</a></td><td class=cf>bobcaticus</td></tr>
+<tr><td class="cds t6">21.6. 6:27</td><td class="ces t5"><a href="http://ioccc.org/1987/wall.c" class=t5 target="_blank">http://ioccc.org/1987/wall.c</a></td><td class=cfs>DarkFox</td></tr>
+<tr><td class="cd t6">10.6. 10:52</td><td class="ce t5"><a href="http://www.naturalnews.com/045495_assassination_drones_autonomous_killing_facial_recognition.html" class=t5 target="_blank">http://www.naturalnews.com/045495_assassination_drones_autonomous_killin...<br>...g_facial_recognition.html</a></td><td class=cf>Xuthus</td></tr>
+<tr><td class="cds t6">6.6. 13:06</td><td class="ces t5"><a href="http://fc04.deviantart.net/fs45/i/2009/109/1/2/Rat_furry_by_wolf_lion.jpg" class=t5 target="_blank">http://fc04.deviantart.net/fs45/i/2009/109/1/2/Rat_furry_by_wolf_lion.jpg</a><br><span class=t6>&nbsp;Used 2 times.</span></td><td class=cfs>syllabear</td></tr>
+<tr><td class="cd t6">12.5. 13:21</td><td class="ce t5"><a href="http://postimg.org/image/3uokguoft/" class=t5 target="_blank">http://postimg.org/image/3uokguoft/</a></td><td class=cf>africanos</td></tr>
+<tr><td class="cds t6">6.5. 0:40</td><td class="ces t5"><a href="http://shibe.pool.mn/" class=t5 target="_blank">http://shibe.pool.mn/</a></td><td class=cfs>L3p</td></tr>
+<tr><td class="cd t6">2.5. 22:04</td><td class="ce t5"><a href="http://www.cryptoalts.com/stats/?miner=BDVzHDnFyht4Dpic16wp4CP3R8TPF2rDW7" class=t5 target="_blank">http://www.cryptoalts.com/stats/?miner=BDVzHDnFyht4Dpic16wp4CP3R8TPF2...<br>...rDW7</a></td><td class=cf>XBladeX</td></tr>
+<tr><td class="cds t6">30.4. 17:20</td><td class="ces t5"><a href="https://www.indiegogo.com/projects/bitcoin-dark-wallet#home" class=t5 target="_blank">https://www.indiegogo.com/projects/bitcoin-dark-wallet#home</a></td><td class=cfs>crypt0h4z3</td></tr>
+<tr><td class="cd t6">30.4. 11:59</td><td class="ce t5"><a href="http://www.dailyblackcoin.com/blackcoinpool-profitable/" class=t5 target="_blank">http://www.dailyblackcoin.com/blackcoinpool-profitable/</a></td><td class=cf>Ralphvd</td></tr>
+<tr><td class="cds t6">23.4. 22:34</td><td class="ces t5"><a href="https://twitter.com/SoepkipCrypto/status/459067772576600064" class=t5 target="_blank">https://twitter.com/SoepkipCrypto/status/459067772576600064</a><br><span class=t6>&nbsp;Used 2 times.</span></td><td class=cfs>Soepkip</td></tr>
+<tr><td class="cd t6">17.4. 23:32</td><td class="ce t5"><a href="https://www.youtube.com/watch?v=Ewze_YnXaVo" class=t5 target="_blank">https://www.youtube.com/watch?v=Ewze_YnXaVo</a></td><td class=cf>willzminame</td></tr>
+<tr><td class="cds t6">15.4. 14:31</td><td class="ces t5"><a href="https://www.youtube.com/watch?v=4wvpdBnfiZo" class=t5 target="_blank">https://www.youtube.com/watch?v=4wvpdBnfiZo</a><br><span class=t6>&nbsp;Used 6 times.</span></td><td class=cfs>Wizfarm</td></tr>
+<tr><td class="cd t6">13.4. 4:11</td><td class="ce t5"><a href="http://i.imgur.com/zEZuDXq.jpg" class=t5 target="_blank">http://i.imgur.com/zEZuDXq.jpg</a></td><td class=cf>cryptol</td></tr>
+<tr><td class="cds t6">13.4. 0:30</td><td class="ces t5"><a href="http://www.evga.com/Products/ProductList.aspx?type=0&amp;family=GeForce+TITAN+Series+Family&amp;chipset=GTX+TITAN+BLACK" class=t5 target="_blank">http://www.evga.com/Products/ProductList.aspx?type=0&amp;family=GeForce+TITA...<br>...N+Series+Family&amp;chipset=GTX+TITAN+BLACK</a></td><td class=cfs>BiTMiND</td></tr>
+<tr><td class="cd t6">9.4. 18:58</td><td class="ce t5"><a href="http://www.timeanddate.com/countdown/create" class=t5 target="_blank">http://www.timeanddate.com/countdown/create</a></td><td class=cf>buy-black</td></tr>
+<tr><td class="cds t6">7.4. 14:34</td><td class="ces t5"><a href="https://torrentfreak.com/sweden-kidnapped-my-friend-pirate-bay-co-founder-anakata-120810/" class=t5 target="_blank">https://torrentfreak.com/sweden-kidnapped-my-friend-pirate-bay-co-founder-an...<br>...akata-120810/</a></td><td class=cfs>Gritt</td></tr>
+<tr><td class="cd t6">29.3. 6:26</td><td class="ce t5"><a href="http://www.blackcoin.co/bounties/" class=t5 target="_blank">http://www.blackcoin.co/bounties/</a><br><span class=t6>&nbsp;Used 16 times.</span></td><td class=cf>DarkFox</td></tr>
+<tr><td class="cds t6">24.3. 4:01</td><td class="ces t5"><a href="http://imgur.com/H9xEAH4" class=t5 target="_blank">http://imgur.com/H9xEAH4</a></td><td class=cfs>hawkalator</td></tr>
+<tr><td class="cd t6">22.3. 0:34</td><td class="ce t5"><a href="https://bitcointalk.org/index.php?topic=469640.new#new" class=t5 target="_blank">https://bitcointalk.org/index.php?topic=469640.new#new</a><br><span class=t6>&nbsp;Used 7 times.</span></td><td class=cf>popers</td></tr>
+</table><br>
+<br><span class=txt2>11352 unique URLs collected since 20.3.2014</span><br><br>
+<br><table width="95%" cellspacing=0 cellpadding=2 border=0><tr><td class=ca><center><table width="100%" cellspacing=0 border=0><tr><td class=cbg><center>
+<br>
+</center></td></tr></table></center></td></tr></table><br>
+<table border=0 cellspacing=4 class=txt1>
+<tr><td class=tinv><a href="blackcoinpool.html" class=toc target="_self">1. Main page</a></td><td class=tinv><a href="blackcoinpool_page_2.html" class=toc target="_self">2. Detailed info</a></td><td class=tinv><a href="blackcoinpool_page_3.html" class=toc target="_self">3. Personal Stats</a></td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#dail" target="_self">Daily stats</a></td><td class=tinv><a href="blackcoinpool_page_2.html#cust" target="_self">Custom stats</a></td><td class=tinv><a href="blackcoinpool_page_3.html#pers" target="_self">Personal stats</a></td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#hourl" target="_self">Hourly stats</a></td><td class=tinv><a href="blackcoinpool_page_2.html#chat" target="_self">Chat partners</a></td><td rowspan=8 class=tinv>&nbsp;</td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#user" target="_self">User stats</a></td><td class=tinv><a href="blackcoinpool_page_2.html#activ" target="_self">Active days</a></td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#bign" target="_self">Big numbers</a></td><td class=tinv><a href="blackcoinpool_page_2.html#activ2" target="_self">Activity distribution</a></td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#weekl" target="_self">Weekly stats</a></td><td class=tinv><a href="blackcoinpool_page_2.html#linel" target="_self">Line lengths</a></td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#time" target="_self">Time of day stats</a></td><td class=tinv><a href="blackcoinpool_page_2.html#word" target="_self">Word stats</a></td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#long" target="_self">Long term stats</a></td><td class=tinv><a href="blackcoinpool_page_2.html#urltr" target="_self">URL tracking</a></td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#topics" target="_self">Topics table</a></td><td rowspan=2 class=tinv>&nbsp;</td></tr>
+<tr><td class=tinv><a href="blackcoinpool.html#relat" target="_self">Relation map</a></td></tr>
+</table><br>
+<a name="e32110"></a>
+<br><!-- DO NOT REMOVE THE COPYRIGHT INFO! -->
+<Table class=cr><tr><td class=tinv>
+<a href="http://www.mircstats.net/" target="_top">mIRCStats v1.24</a> &copy Mikko "Ave" Auvinen.
+</td></tr></table><br><!-- Run time: 10 seconds -->
+</center></body></html>
